@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/QQZhao/Documents/WPI/Courses/2017_Fall/MobileComputing/Final_Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/layout-v11/notification_media_cancel_action.xml",
+        "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/layout-v11/notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/Users/QQZhao/Documents/WPI/Courses/2017_Fall/MobileComputing/Final_Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_narrow.xml",
+        "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/layout-v11/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/Users/QQZhao/Documents/WPI/Courses/2017_Fall/MobileComputing/Final_Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media.xml",
+        "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/layout-v11/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/Users/QQZhao/Documents/WPI/Courses/2017_Fall/MobileComputing/Final_Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_custom.xml",
+        "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/layout-v11/notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "/Users/QQZhao/Documents/WPI/Courses/2017_Fall/MobileComputing/Final_Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_narrow_custom.xml",
+        "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/layout-v11/notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "/Users/QQZhao/Documents/WPI/Courses/2017_Fall/MobileComputing/Final_Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/layout-v11/notification_media_action.xml",
+        "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/layout-v11/notification_media_action.xml"
+    }
+]
