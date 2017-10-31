@@ -9,7 +9,7 @@ The mobile part of final project.
 6.CarPoolManagerActivity  <br>
 7.SettingAcitity
 ## Andriod APIs
-1.Map  <br>  
+1.Map  <br>
 2.Gps  <br>
 3.GeoCode/GeoDecode <br>
 4.Camera
