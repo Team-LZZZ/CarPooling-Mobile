@@ -1,4 +1,7 @@
-#Sat Oct 28 23:01:53 EDT 2017
-base.0=/Users/QQZhao/Documents/WPI/Courses/2017_Fall/MobileComputing/Final_Project/CarPooling-Mobile/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+#Wed Nov 01 23:03:32 EDT 2017
+base.0=C\:\\Users\\Qingquan Zhao\\Documents\\ComputerScience_WPI\\2017_Fall\\CS528_Mobile\\Final_Project\\Mobile\\CarPooling-Mobile\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_c112129ade6f7e7c2c8e577d96bbb49c1e3c8a03
+renamed.1=classes2.dex
 renamed.0=classes.dex
-file.0=/Users/QQZhao/Documents/WPI/Courses/2017_Fall/MobileComputing/Final_Project/CarPooling-Mobile/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+file.1=C\:\\Users\\Qingquan Zhao\\Documents\\ComputerScience_WPI\\2017_Fall\\CS528_Mobile\\Final_Project\\Mobile\\CarPooling-Mobile\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_63b65b6017ece65145645808614ee83706f46930\\classes.dex
+base.1=C\:\\Users\\Qingquan Zhao\\Documents\\ComputerScience_WPI\\2017_Fall\\CS528_Mobile\\Final_Project\\Mobile\\CarPooling-Mobile\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_63b65b6017ece65145645808614ee83706f46930
+file.0=C\:\\Users\\Qingquan Zhao\\Documents\\ComputerScience_WPI\\2017_Fall\\CS528_Mobile\\Final_Project\\Mobile\\CarPooling-Mobile\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_c112129ade6f7e7c2c8e577d96bbb49c1e3c8a03\\classes.dex

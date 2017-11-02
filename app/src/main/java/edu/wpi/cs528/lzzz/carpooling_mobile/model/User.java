@@ -1,5 +1,7 @@
 package edu.wpi.cs528.lzzz.carpooling_mobile.model;
 
+import android.graphics.Bitmap;
+
 /**
  * Created by QQZhao on 10/28/17.
  */
@@ -7,7 +9,8 @@ package edu.wpi.cs528.lzzz.carpooling_mobile.model;
 public class User {
 
     private String username;
-    private String password;
+    private Bitmap photo;
+    private int phone;
 
     public String getUsername() {
         return username;
@@ -17,11 +20,19 @@ public class User {
         this.username = username;
     }
 
-    public String getPassword() {
-        return password;
+    public Bitmap getPhoto() {
+        return photo;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setPhoto(Bitmap photo) {
+        this.photo = photo;
+    }
+
+    public int getPhone() {
+        return phone;
+    }
+
+    public void setPhone(int phone) {
+        this.phone = phone;
     }
 }
