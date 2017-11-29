@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\debug\jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/debug/jniLibs"/></dataSet></merger>

@@ -30,7 +30,7 @@ public class ConnectionHandler implements IConnectionAsyncTaskDelegate {
         // handle response message code here
         // update GUI
         // update model
-        TextView textView = (TextView) this.activity.findViewById(R.id.textView);
-        textView.setText(response.getContent());
+//        TextView textView = (TextView) this.activity.findViewById(R.id.textView);
+//        textView.setText(response.getContent());
     }
 }

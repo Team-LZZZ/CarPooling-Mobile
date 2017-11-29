@@ -1,95 +1,116 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml:2:1-24:12
+ADDED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml:2:1-26:12
 	package
-		ADDED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml:3:5-51
-		INJECTED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml
+		ADDED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml:3:5-51
+		INJECTED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml:6:5-79
+ADDED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml:6:5-79
 	android:name
-		ADDED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml:6:22-76
+		ADDED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml:6:22-76
 application
-ADDED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml:8:5-22:19
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\26221c3e58e87c69a95ce41acf8bf86346d0bd52\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\d2450fa4dcdd0c1b9eeff6cb2ca3151046cbde65\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\5349b4ce2a9786e39f8733560c703e381088772e\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\9f32569b355b67d0a4e903bd1967dcef1746d98a\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\c359e484e4e2311351031c24d66ac36b89d071ee\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\78e2e8938a05338074a70e06dd4d9feb788cc10a\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\2e466fc4bfc82a9e1b9587e638a5ae95adc06217\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\bf02a4d1b308eba70c805358b8a311fe85bbc26d\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\98ca8eb1e55ed1c50c598accd4e7a9733ea605de\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Qingquan Zhao\.android\build-cache\3b72960945b9642a70f982f898ac3dab3c9d4869\output\AndroidManifest.xml:9:5-20
+ADDED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml:8:5-24:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha3] /Users/liweihao/.android/build-cache/76de6fa13fa81d1a0b2287390e02ed7f886b3251/output/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:cardview-v7:25.1.0] /Users/liweihao/.android/build-cache/e4e74b867aae15525f39444a1dac8c51e991bf89/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:25.1.0] /Users/liweihao/.android/build-cache/a6df1fc70315b9d5823a8fb79caecebf88271715/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/liweihao/.android/build-cache/eafe1e2df66e6e78d11dee783ef57d577ca024d0/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/liweihao/.android/build-cache/53c39504f193e10ad23463b88eeb83fe823df86c/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.1.0] /Users/liweihao/.android/build-cache/c8599566950cd7a642e171eb4f4a8418dc4d9a59/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/liweihao/.android/build-cache/1c7e829632f7cce6784cf8cfdd084eecc1897eda/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/liweihao/.android/build-cache/c3949ca3d10d0e111db02e2105de3c8e9c3f4b55/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/liweihao/.android/build-cache/b1add6617d1a562788c144b19dddd9a02173e11f/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/liweihao/.android/build-cache/4a57700ecbebecd08c4f43d72bf167841e7e09b2/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/liweihao/.android/build-cache/88c029efacc0aac6e776ad7b4d514bed10774cbe/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/liweihao/.android/build-cache/fe37716a3cae3b5705bb3f78f3692bcd419abe70/output/AndroidManifest.xml:29:5-20
+MERGED from [com.mikhaellopez:circularimageview:3.0.2] /Users/liweihao/.android/build-cache/e18b664475e26c743dae7896cd180442f954fd5c/output/AndroidManifest.xml:11:5-13:38
 	android:label
-		ADDED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml:11:9-41
+		ADDED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml:11:9-41
 	android:supportsRtl
-		ADDED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml:13:9-35
+		ADDED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml:13:9-35
 	android:roundIcon
-		ADDED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml:12:9-54
+		ADDED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml:12:9-54
 	android:allowBackup
-		ADDED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml:9:9-35
+		ADDED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml:9:9-35
 	android:icon
-		ADDED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml:10:9-43
+		ADDED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml:10:9-43
 	android:theme
-		ADDED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml:14:9-40
+		ADDED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml:14:9-40
 activity#edu.wpi.cs528.lzzz.carpooling_mobile.MainActivity
-ADDED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml:15:9-21:20
+ADDED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml:15:9-21:20
 	android:name
-		ADDED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml:15:19-47
+		ADDED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml:15:19-47
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml:16:13-20:29
+ADDED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml:16:13-20:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml:17:17-69
+ADDED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml:17:17-69
 	android:name
-		ADDED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml:17:25-66
+		ADDED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml:17:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml:19:17-77
+ADDED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml:19:27-74
+		ADDED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml:19:27-74
+activity#edu.wpi.cs528.lzzz.carpooling_mobile.LoginActivity
+ADDED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml:22:9-124
+	android:theme
+		ADDED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml:22:85-121
+	android:name
+		ADDED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml:22:19-84
+activity#edu.wpi.cs528.lzzz.carpooling_mobile.SignupActivity
+ADDED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml:23:9-125
+	android:theme
+		ADDED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml:23:86-122
+	android:name
+		ADDED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml:23:19-85
 uses-sdk
-INJECTED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\26221c3e58e87c69a95ce41acf8bf86346d0bd52\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\d2450fa4dcdd0c1b9eeff6cb2ca3151046cbde65\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\5349b4ce2a9786e39f8733560c703e381088772e\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\9f32569b355b67d0a4e903bd1967dcef1746d98a\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\c359e484e4e2311351031c24d66ac36b89d071ee\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\78e2e8938a05338074a70e06dd4d9feb788cc10a\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\2e466fc4bfc82a9e1b9587e638a5ae95adc06217\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\bf02a4d1b308eba70c805358b8a311fe85bbc26d\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\98ca8eb1e55ed1c50c598accd4e7a9733ea605de\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Qingquan Zhao\.android\build-cache\3b72960945b9642a70f982f898ac3dab3c9d4869\output\AndroidManifest.xml:5:5-7:41
+INJECTED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha3] /Users/liweihao/.android/build-cache/76de6fa13fa81d1a0b2287390e02ed7f886b3251/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:cardview-v7:25.1.0] /Users/liweihao/.android/build-cache/e4e74b867aae15525f39444a1dac8c51e991bf89/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:25.1.0] /Users/liweihao/.android/build-cache/a6df1fc70315b9d5823a8fb79caecebf88271715/output/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/liweihao/.android/build-cache/eafe1e2df66e6e78d11dee783ef57d577ca024d0/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/liweihao/.android/build-cache/53c39504f193e10ad23463b88eeb83fe823df86c/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:25.1.0] /Users/liweihao/.android/build-cache/ce3b5ef74de1effb8cbfdd95f21c7f200321d463/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.1.0] /Users/liweihao/.android/build-cache/c8599566950cd7a642e171eb4f4a8418dc4d9a59/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/liweihao/.android/build-cache/1c7e829632f7cce6784cf8cfdd084eecc1897eda/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/liweihao/.android/build-cache/c3949ca3d10d0e111db02e2105de3c8e9c3f4b55/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/liweihao/.android/build-cache/b1add6617d1a562788c144b19dddd9a02173e11f/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/liweihao/.android/build-cache/4a57700ecbebecd08c4f43d72bf167841e7e09b2/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/liweihao/.android/build-cache/88c029efacc0aac6e776ad7b4d514bed10774cbe/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/liweihao/.android/build-cache/fe37716a3cae3b5705bb3f78f3692bcd419abe70/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.mikhaellopez:circularimageview:3.0.2] /Users/liweihao/.android/build-cache/e18b664475e26c743dae7896cd180442f954fd5c/output/AndroidManifest.xml:7:5-9:41
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\26221c3e58e87c69a95ce41acf8bf86346d0bd52\output\AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:design:25.1.0] /Users/liweihao/.android/build-cache/a6df1fc70315b9d5823a8fb79caecebf88271715/output/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Qingquan Zhao\Documents\ComputerScience_WPI\2017_Fall\CS528_Mobile\Final_Project\Mobile\CarPooling-Mobile\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\26221c3e58e87c69a95ce41acf8bf86346d0bd52\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\d2450fa4dcdd0c1b9eeff6cb2ca3151046cbde65\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\5349b4ce2a9786e39f8733560c703e381088772e\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\9f32569b355b67d0a4e903bd1967dcef1746d98a\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\c359e484e4e2311351031c24d66ac36b89d071ee\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\78e2e8938a05338074a70e06dd4d9feb788cc10a\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\2e466fc4bfc82a9e1b9587e638a5ae95adc06217\output\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\bf02a4d1b308eba70c805358b8a311fe85bbc26d\output\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\98ca8eb1e55ed1c50c598accd4e7a9733ea605de\output\AndroidManifest.xml:25:5-27:41
+ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/liweihao/.android/build-cache/eafe1e2df66e6e78d11dee783ef57d577ca024d0/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/liweihao/.android/build-cache/53c39504f193e10ad23463b88eeb83fe823df86c/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/liweihao/.android/build-cache/1c7e829632f7cce6784cf8cfdd084eecc1897eda/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/liweihao/.android/build-cache/c3949ca3d10d0e111db02e2105de3c8e9c3f4b55/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/liweihao/.android/build-cache/b1add6617d1a562788c144b19dddd9a02173e11f/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/liweihao/.android/build-cache/4a57700ecbebecd08c4f43d72bf167841e7e09b2/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/liweihao/.android/build-cache/88c029efacc0aac6e776ad7b4d514bed10774cbe/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/liweihao/.android/build-cache/fe37716a3cae3b5705bb3f78f3692bcd419abe70/output/AndroidManifest.xml:25:5-27:41
 	android:value
-		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\26221c3e58e87c69a95ce41acf8bf86346d0bd52\output\AndroidManifest.xml:27:9-38
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/AndroidManifest.xml:27:9-38
 	android:name
-		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\26221c3e58e87c69a95ce41acf8bf86346d0bd52\output\AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/AndroidManifest.xml:26:9-47

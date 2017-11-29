@@ -19,6 +19,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="edu.wpi.cs528.lzzz.carpooling_mobile.LoginActivity" android:theme="@style/AppTheme.Dark" />
+        <activity android:name="edu.wpi.cs528.lzzz.carpooling_mobile.SignupActivity" android:theme="@style/AppTheme.Dark" />
     </application>
 
 </manifest>
