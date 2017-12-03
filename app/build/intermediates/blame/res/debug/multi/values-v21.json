@@ -4076,9 +4076,28 @@
                     "startLine": 279,
                     "startColumn": 4,
                     "startOffset": 20451,
-                    "endLine": 281,
+                    "endColumn": 121,
+                    "endOffset": 20568
+                },
+                "from": {
+                    "file": "/Users/liweihao/.android/build-cache/0d19662788842365a56f97e2aeb690c72d71c661/output/res/values-v21/appinvite_styles.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 101,
+                        "endColumn": 121,
+                        "endOffset": 218
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 280,
+                    "startColumn": 4,
+                    "startOffset": 20573,
+                    "endLine": 282,
                     "endColumn": 12,
-                    "endOffset": 20621
+                    "endOffset": 20743
                 },
                 "from": {
                     "file": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/values-v21/values-v21.xml",
@@ -4094,12 +4113,12 @@
             },
             {
                 "to": {
-                    "startLine": 282,
+                    "startLine": 283,
                     "startColumn": 4,
-                    "startOffset": 20626,
-                    "endLine": 286,
+                    "startOffset": 20748,
+                    "endLine": 287,
                     "endColumn": 12,
-                    "endOffset": 20962
+                    "endOffset": 21084
                 },
                 "from": {
                     "file": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/values-v21/values-v21.xml",
@@ -4115,12 +4134,12 @@
             },
             {
                 "to": {
-                    "startLine": 287,
+                    "startLine": 288,
                     "startColumn": 4,
-                    "startOffset": 20967,
-                    "endLine": 289,
+                    "startOffset": 21089,
+                    "endLine": 290,
                     "endColumn": 12,
-                    "endOffset": 21160
+                    "endOffset": 21282
                 },
                 "from": {
                     "file": "/Users/liweihao/.android/build-cache/a6df1fc70315b9d5823a8fb79caecebf88271715/output/res/values-v21/values-v21.xml",

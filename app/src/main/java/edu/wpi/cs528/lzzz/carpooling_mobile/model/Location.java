@@ -1,24 +1,31 @@
 package edu.wpi.cs528.lzzz.carpooling_mobile.model;
 
+import com.google.android.gms.maps.model.LatLng;
+
 /**
  * Created by QZhao on 11/1/2017.
  */
 
-public abstract class Location {
+public class Location {
 
-    private int streetNumber;
+    private String streetNumber;
     private String street;
     private String City;
     private String state;
-    private int zip;
-    private long Longitude;
-    private long latitude;
+    private String zip;
 
-    public int getStreetNumber() {
+    private LatLng latLng;
+    private String name;
+
+    public Location(String name) {
+        this.name = name;
+    }
+
+    public String getStreetNumber() {
         return streetNumber;
     }
 
-    public void setStreetNumber(int streetNumber) {
+    public void setStreetNumber(String streetNumber) {
         this.streetNumber = streetNumber;
     }
 
@@ -46,27 +53,27 @@ public abstract class Location {
         this.state = state;
     }
 
-    public int getZip() {
+    public String getZip() {
         return zip;
     }
 
-    public void setZip(int zip) {
+    public void setZip(String zip) {
         this.zip = zip;
     }
 
-    public long getLongitude() {
-        return Longitude;
+    public LatLng getLatLng() {
+        return latLng;
     }
 
-    public void setLongitude(long longitude) {
-        Longitude = longitude;
+    public void setLatLng(LatLng latLng) {
+        this.latLng = latLng;
     }
 
-    public long getLatitude() {
-        return latitude;
+    public String getName() {
+        return name;
     }
 
-    public void setLatitude(long latitude) {
-        this.latitude = latitude;
+    public void setName(String name) {
+        this.name = name;
     }
 }

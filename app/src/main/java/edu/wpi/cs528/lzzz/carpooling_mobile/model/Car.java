@@ -11,6 +11,13 @@ public class Car {
     private String plate;
     private int seatsLimit;
 
+    public Car(String make, String model, String plate, int seatsLimit) {
+        this.make = make;
+        this.model = model;
+        this.plate = plate;
+        this.seatsLimit = seatsLimit;
+    }
+
     public String getMake() {
         return make;
     }

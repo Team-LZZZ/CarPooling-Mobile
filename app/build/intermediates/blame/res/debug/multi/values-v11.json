@@ -990,6 +990,25 @@
                         "endOffset": 14072
                     }
                 }
+            },
+            {
+                "to": {
+                    "startLine": 192,
+                    "startColumn": 4,
+                    "startOffset": 14077,
+                    "endColumn": 117,
+                    "endOffset": 14190
+                },
+                "from": {
+                    "file": "/Users/liweihao/.android/build-cache/0d19662788842365a56f97e2aeb690c72d71c661/output/res/values-v11/appinvite_styles.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 101,
+                        "endColumn": 117,
+                        "endOffset": 214
+                    }
+                }
             }
         ]
     },

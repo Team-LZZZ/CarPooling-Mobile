@@ -13,6 +13,9 @@ import java.net.ConnectException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import java.util.Map;
 
 import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonConstants;
@@ -35,6 +38,15 @@ public class BaseConnection{
             URL url = new URL(httpRequest.getUrl());
             conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod(httpRequest.getMethod());
+//            conn.getHeaderFields().put("Content-Type","application/json;charset=UTF-8");
+ //           conn.setRequestProperty("Content-Type","application/json; charset=UTF-8");
+            conn.setRequestProperty("Content-Type","text/xml; charset=UTF-8");
+            Log.i(CommonConstants.LogPrefix, conn.getHeaderField("content-type"));
+            int i = 1;
+            while(i < 10)
+            Log.i(CommonConstants.LogPrefix, conn.getHeaderField(i++));
+
+
 
             // add params for post method
             if (httpRequest.getMethod().equals("POST")){

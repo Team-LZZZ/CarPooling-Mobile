@@ -14,6 +14,11 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import edu.wpi.cs528.lzzz.carpooling_mobile.connection.HttpRequestMessage;
+import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.ConnectionHandler;
+import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.SignUpHandler;
+import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonConstants;
+
 public class MainActivity extends AppCompatActivity{
 
     private Button testButton;
@@ -31,6 +36,19 @@ public class MainActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        final SignUpHandler signUpHandler = new SignUpHandler(this);
+        HttpRequestMessage request = new HttpRequestMessage();
+        request.setMethod("POST");
+//        request.setBody(userJson);
+        request.setUrl(CommonConstants.BASE_URL + "reg");
+//                request.setMethod("POST");
+//                request.addParam("name", "morpheus");
+//                request.addParam("job", "worker");
+//                request.setUrl("https://reqres.in/api/users");
+
+        signUpHandler.connectForResponse(request);
+
+
 
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
@@ -38,7 +56,6 @@ public class MainActivity extends AppCompatActivity{
 //        final ConnectionHandler connectionHandler = new ConnectionHandler(this);
 //
 //        testButton = (Button) findViewById(R.id.testConnectionBtn);
-//        textView = (TextView)  findViewById(R.id.textView);
 //
 //        testButton.setOnClickListener(new View.OnClickListener() {
 //            @Override

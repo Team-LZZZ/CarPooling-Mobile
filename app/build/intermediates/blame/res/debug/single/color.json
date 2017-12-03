@@ -32,12 +32,20 @@
         "source": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\color\\abc_tint_spinner.xml"
     },
     {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/common_plus_signin_btn_text_dark.xml",
+        "source": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/color/common_plus_signin_btn_text_dark.xml"
+    },
+    {
         "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\Documents\\ComputerScience_WPI\\2017_Fall\\CS528_Mobile\\Final_Project\\Mobile\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_light.xml",
         "source": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\color\\abc_hint_foreground_material_light.xml"
     },
     {
         "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/design_tint_password_toggle.xml",
         "source": "/Users/liweihao/.android/build-cache/a6df1fc70315b9d5823a8fb79caecebf88271715/output/res/color/design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/common_plus_signin_btn_text_light.xml",
+        "source": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/color/common_plus_signin_btn_text_light.xml"
     },
     {
         "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_btn_colored_text_material.xml",
@@ -98,6 +106,10 @@
     {
         "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_tint_default.xml",
         "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/color/abc_tint_default.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/wallet_secondary_text_holo_dark.xml",
+        "source": "/Users/liweihao/.android/build-cache/2304a69e66c80c87743e99836d3050bee033282b/output/res/color/wallet_secondary_text_holo_dark.xml"
     },
     {
         "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\Documents\\WPI\\Courses\\2017_Fall\\MobileComputing\\Final_Project\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_borderless_text_material.xml",
@@ -216,6 +228,14 @@
         "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/color/abc_tint_spinner.xml"
     },
     {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/wallet_primary_text_holo_light.xml",
+        "source": "/Users/liweihao/.android/build-cache/2304a69e66c80c87743e99836d3050bee033282b/output/res/color/wallet_primary_text_holo_light.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
         "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_tint_switch_track.xml",
         "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/color/abc_tint_switch_track.xml"
     },
@@ -246,5 +266,9 @@
     {
         "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\Documents\\ComputerScience_WPI\\2017_Fall\\CS528_Mobile\\Final_Project\\Mobile\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_text_material.xml",
         "source": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\color\\abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/color/common_google_signin_btn_text_light.xml"
     }
 ]
