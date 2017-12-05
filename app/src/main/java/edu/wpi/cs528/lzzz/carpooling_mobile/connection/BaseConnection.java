@@ -38,15 +38,8 @@ public class BaseConnection{
             URL url = new URL(httpRequest.getUrl());
             conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod(httpRequest.getMethod());
-//            conn.getHeaderFields().put("Content-Type","application/json;charset=UTF-8");
- //           conn.setRequestProperty("Content-Type","application/json; charset=UTF-8");
-            conn.setRequestProperty("Content-Type","text/xml; charset=UTF-8");
-            Log.i(CommonConstants.LogPrefix, conn.getHeaderField("content-type"));
-            int i = 1;
-            while(i < 10)
-            Log.i(CommonConstants.LogPrefix, conn.getHeaderField(i++));
-
-
+            conn.setRequestProperty("Content-Type", "application/json");
+            conn.setRequestProperty("Accept", "application/json");
 
             // add params for post method
             if (httpRequest.getMethod().equals("POST")){
@@ -54,7 +47,9 @@ public class BaseConnection{
                 conn.setDoOutput(true);
                 OutputStream os = conn.getOutputStream();
                 BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
-                writer.write(getPostDataParams(httpRequest.getParams()));
+//                writer.write(getPostDataParams(httpRequest.getParams()));
+                writer.write(httpRequest.getBody());
+                Log.i(CommonConstants.LogPrefix, httpRequest.getBody());
                 writer.flush();
                 writer.close();
             }
@@ -70,6 +65,7 @@ public class BaseConnection{
                 responseContent.append(line);
             }
             httpResponse.setContent(responseContent.toString());
+            Log.i(CommonConstants.LogPrefix, httpResponse.getStatus() + "    " + httpResponse.getContent());
             reader.close();
         } catch (Exception e) {
             httpResponse.setContent(CommonExceptionMessages.CONNECTION_FAILURE);

@@ -36,20 +36,6 @@ public class MainActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final SignUpHandler signUpHandler = new SignUpHandler(this);
-        HttpRequestMessage request = new HttpRequestMessage();
-        request.setMethod("POST");
-//        request.setBody(userJson);
-        request.setUrl(CommonConstants.BASE_URL + "reg");
-//                request.setMethod("POST");
-//                request.addParam("name", "morpheus");
-//                request.addParam("job", "worker");
-//                request.setUrl("https://reqres.in/api/users");
-
-        signUpHandler.connectForResponse(request);
-
-
-
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
 

@@ -23,6 +23,7 @@ import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.ConnectionHandler;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.SignUpHandler;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.User;
 import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonConstants;
+import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonExceptionMessages;
 
 public class SignupActivity extends AppCompatActivity {
     private static final String TAG = "SignupActivity";
@@ -100,17 +101,11 @@ public class SignupActivity extends AppCompatActivity {
         Gson gson = new Gson();
         String userJson = gson.toJson(user);
 
-//        HttpRequestMessage request = new HttpRequestMessage();
-//                request.setMethod("POST");
-//                request.setBody(userJson);
-//                request.setUrl(CommonConstants.BASE_URL + "reg");
-////                request.setMethod("POST");
-////                request.addParam("name", "morpheus");
-////                request.addParam("job", "worker");
-////                request.setUrl("https://reqres.in/api/users");
-//
-//                signUpHandler.connectForResponse(request);
-
+        HttpRequestMessage request = new HttpRequestMessage();
+                request.setMethod("POST");
+                request.setBody(userJson);
+                request.setUrl(CommonConstants.BASE_URL + "reg");
+                signUpHandler.connectForResponse(request);
         Log.i(CommonConstants.LogPrefix, userJson);
 
 
@@ -119,8 +114,10 @@ public class SignupActivity extends AppCompatActivity {
                     public void run() {
                         // On complete call either onSignupSuccess or onSignupFailed
                         // depending on success
-                        onSignupSuccess();
-                        // onSignupFailed();
+                        if (CommonConstants.isSignUp)
+                            onSignupSuccess();
+                        else
+                            onSignupFailed();
                         progressDialog.dismiss();
                     }
                 }, 2000);
@@ -134,7 +131,7 @@ public class SignupActivity extends AppCompatActivity {
     }
 
     public void onSignupFailed() {
-        Toast.makeText(getBaseContext(), "Login failed", Toast.LENGTH_LONG).show();
+        Toast.makeText(getBaseContext(), CommonExceptionMessages.REGISTER_FAILURE, Toast.LENGTH_LONG).show();
 
         _signupButton.setEnabled(true);
     }

@@ -11,15 +11,23 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import edu.wpi.cs528.lzzz.carpooling_mobile.connection.HttpRequestMessage;
+import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.LogInHandler;
+import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.SignUpHandler;
+import edu.wpi.cs528.lzzz.carpooling_mobile.model.User;
+import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonConstants;
+import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonExceptionMessages;
 
 public class LoginActivity extends AppCompatActivity {
     private static final String TAG = "LoginActivity";
     private static final int REQUEST_SIGNUP = 0;
 
-    @Bind(R.id.input_email)
-    EditText _emailText;
+    @Bind(R.id.input_username)
+    EditText _usernameText;
     @Bind(R.id.input_password)
     EditText _passwordText;
     @Bind(R.id.btn_login)
@@ -70,22 +78,37 @@ public class LoginActivity extends AppCompatActivity {
         progressDialog.setMessage("Authenticating...");
         progressDialog.show();
 
-        String email = _emailText.getText().toString();
+        String username = _usernameText.getText().toString();
         String password = _passwordText.getText().toString();
 
 
+        final LogInHandler logInHandler = new LogInHandler(this);
+        User user = new User();
+//        user.setEmail(email);
+        user.setUsername(username);
+        user.setPassword(password);
+
+        Gson gson = new Gson();
+        String userJson = gson.toJson(user);
+
+        HttpRequestMessage request = new HttpRequestMessage();
+        request.setMethod("POST");
+        request.setBody(userJson);
+        request.addParam("name",username);
+        request.addParam("password", password);
+        request.setUrl(CommonConstants.BASE_URL + "login");
+        logInHandler.connectForResponse(request);
 
 
-
-
-        // TODO: Implement your own authentication logic here.
 
         new android.os.Handler().postDelayed(
                 new Runnable() {
                     public void run() {
                         // On complete call either onLoginSuccess or onLoginFailed
-                        onLoginSuccess();
-                        // onLoginFailed();
+                        if (CommonConstants.isLogIn)
+                            onLoginSuccess();
+                        else
+                             onLoginFailed();
                         progressDialog.dismiss();
                     }
                 }, 3000);
@@ -96,6 +119,8 @@ public class LoginActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == REQUEST_SIGNUP) {
             if (resultCode == RESULT_OK) {
+
+
 
                 // TODO: Implement successful signup logic here
                 // By default we just finish the Activity and log them in automatically
@@ -116,7 +141,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void onLoginFailed() {
-        Toast.makeText(getBaseContext(), "Login failed", Toast.LENGTH_LONG).show();
+        Toast.makeText(getBaseContext(), CommonExceptionMessages.LOGIN_FAILURE, Toast.LENGTH_LONG).show();
 
         _loginButton.setEnabled(true);
     }
@@ -124,14 +149,14 @@ public class LoginActivity extends AppCompatActivity {
     public boolean validate() {
         boolean valid = true;
 
-        String email = _emailText.getText().toString();
+        String username = _usernameText.getText().toString();
         String password = _passwordText.getText().toString();
 
-        if (email.isEmpty() || !android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            _emailText.setError("enter a valid email address");
+        if (username.isEmpty()) {
+            _usernameText.setError("username can not be null");
             valid = false;
         } else {
-            _emailText.setError(null);
+            _usernameText.setError(null);
         }
 
         if (password.isEmpty() || password.length() < 4 || password.length() > 10) {

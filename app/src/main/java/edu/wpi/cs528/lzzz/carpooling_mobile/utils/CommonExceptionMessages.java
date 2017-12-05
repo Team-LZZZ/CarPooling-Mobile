@@ -8,5 +8,6 @@ public class CommonExceptionMessages {
 
     // connection
     public static String CONNECTION_FAILURE = "Can not connect to server";
-
+    public static String LOGIN_FAILURE = "User not exist";
+    public static String REGISTER_FAILURE = "";
 }
