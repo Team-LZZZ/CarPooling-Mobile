@@ -1,30 +1,24 @@
 package edu.wpi.cs528.lzzz.carpooling_mobile.handlers;
 
-import android.support.v4.app.Fragment;
-import android.util.Log;
-
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import edu.wpi.cs528.lzzz.carpooling_mobile.SearchFragment;
 import edu.wpi.cs528.lzzz.carpooling_mobile.connection.ConnectionAsyncTask;
 import edu.wpi.cs528.lzzz.carpooling_mobile.connection.HttpRequestMessage;
 import edu.wpi.cs528.lzzz.carpooling_mobile.connection.HttpResponseMessage;
 import edu.wpi.cs528.lzzz.carpooling_mobile.connection.IConnectionAsyncTaskDelegate;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.CarPool;
-import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonConstants;
 import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonExceptionMessages;
 
 
-public class CarpoolsHandler implements IConnectionAsyncTaskDelegate {
-    private final String TAG = "CarpoolsHandler";
+public class OfferHandler implements IConnectionAsyncTaskDelegate {
+    private final String TAG = "OfferHandler";
     private IConnectionStatus ConnectionStatus;
 
-    public CarpoolsHandler(IConnectionStatus connectionStatus){
+    public OfferHandler(IConnectionStatus connectionStatus){
         this.ConnectionStatus = connectionStatus;
     }
 

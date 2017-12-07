@@ -1,7 +1,10 @@
 package edu.wpi.cs528.lzzz.carpooling_mobile;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -12,20 +15,30 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
 import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.ui.PlacePicker;
+import com.google.gson.Gson;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.IConnectionStatus;
+import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.OfferHandler;
+import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
+import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonConstants;
+import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonUtils;
 
 public class OfferFragment extends Fragment {
 
     public static final String ARG_PAGE = "ARG_PAGE";
     private static final int REQUEST_PLACE_PICKER_FOR_FROM_ADDRESS = 1;
     private static final int REQUEST_PLACE_PICKER_FOR_TO_ADDRESS = 2;
+
+    private ProgressDialog progressDialog;
+    private OfferHandler offerHandler;
 
     public int mPageNo;
     @Bind(R.id.select_button)
@@ -86,9 +99,62 @@ public class OfferFragment extends Fragment {
                 }
             }
         };
+
         mFromAddressText.setOnClickListener(selectAddressListener);
         mToAddressText.setOnClickListener(selectAddressListener);
+
+
+
+
+        mButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Gson gson = new Gson();
+
+                String offerJson = "";
+
+                offerHandler = new OfferHandler(new IConnectionStatus() {
+
+                    @Override
+                    public void onComplete(Boolean isSuccess, String additionalInfos) {
+                        progressDialog.dismiss();
+                        if (isSuccess){
+                            onMakeOfferSuccess();
+                        }else{
+                            onFailed(additionalInfos);
+                        }
+                    }
+                });
+                if(AppContainer.getInstance().isLogIn()){
+                    offerHandler.connectForResponse(CommonUtils.createHttpPOSTRequestMessageWithToken(offerJson, CommonConstants.makeNewOffer));
+                    progressDialog = CommonUtils.createProgressDialog(getContext(), "Loading...");
+                    progressDialog.show();
+                }
+            }
+        });
+
         return view;
+    }
+
+
+    public void onMakeOfferSuccess(){
+        AlertDialog alertDialog = new AlertDialog.Builder(getContext()).create();
+        alertDialog.setTitle("Success");
+        alertDialog.setMessage("Your reservation has been booked");
+        alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                        Intent i = new Intent(getContext(), MainActivity.class);
+                        getActivity().startActivity(i);
+                    }
+                });
+        alertDialog.show();
+    }
+
+    public void onFailed(String error){
+        Toast.makeText(getContext(), error, Toast.LENGTH_LONG).show();
     }
 
     @Override
