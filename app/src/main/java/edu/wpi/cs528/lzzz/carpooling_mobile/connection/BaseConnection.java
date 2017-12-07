@@ -41,6 +41,10 @@ public class BaseConnection{
             conn.setRequestProperty("Content-Type", "application/json");
             conn.setRequestProperty("Accept", "application/json");
 
+            if (httpRequest.getToken() != null && !httpRequest.getToken().equals("")){
+                conn.setRequestProperty("Authorization", "Bearer " + httpRequest.getToken());
+            }
+
             // add params for post method
             if (httpRequest.getMethod().equals("POST")){
                 conn.setDoInput(true);
@@ -56,7 +60,7 @@ public class BaseConnection{
 
             // receive response from server
             int responseCode = conn.getResponseCode();
-            Log.i(TAG, "responseCode" + responseCode);
+            Log.i(TAG, "responseCode: " + responseCode);
             httpResponse.setStatus(responseCode);
             StringBuilder responseContent = new StringBuilder();
             String line;

@@ -10,13 +10,24 @@ import java.util.List;
 
 public class CarPool {
 
+    private int oid;
     private Offerer offerer;
     private List<Reserver> reserverList = new ArrayList<>();
     private Location startLocation;
     private Location targetLocation;
     private Car car;
     private Date date;
-    private long time;
+    private String time;
+    private int available;
+
+
+    public int getOid() {
+        return oid;
+    }
+
+    public void setOid(int oid) {
+        this.oid = oid;
+    }
 
     public Offerer getOfferer() {
         return offerer;
@@ -32,10 +43,6 @@ public class CarPool {
 
     public void setReserverList(List<Reserver> reserverList) {
         this.reserverList = reserverList;
-    }
-
-    public void addToReserverList(Reserver reserver){
-        this.reserverList.add(reserver);
     }
 
     public Location getStartLocation() {
@@ -70,11 +77,19 @@ public class CarPool {
         this.date = date;
     }
 
-    public long getTime() {
+    public String getTime() {
         return time;
     }
 
-    public void setTime(long time) {
+    public void setTime(String time) {
         this.time = time;
+    }
+
+    public int getAvailable() {
+        return available;
+    }
+
+    public void setAvailable(int available) {
+        this.available = available;
     }
 }

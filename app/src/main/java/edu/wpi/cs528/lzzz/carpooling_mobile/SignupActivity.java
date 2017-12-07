@@ -2,9 +2,6 @@ package edu.wpi.cs528.lzzz.carpooling_mobile;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -18,15 +15,18 @@ import com.google.gson.Gson;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import edu.wpi.cs528.lzzz.carpooling_mobile.connection.HttpRequestMessage;
-import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.ConnectionHandler;
+import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.IConnectionStatus;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.SignUpHandler;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.User;
 import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonConstants;
-import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonExceptionMessages;
+import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonUtils;
 
 public class SignupActivity extends AppCompatActivity {
     private static final String TAG = "SignupActivity";
+
+    private SignUpHandler signUpHandler;
+    private Gson gson = new Gson();
+    private ProgressDialog progressDialog;
 
     @Bind(R.id.input_name)
     EditText _nameText;
@@ -46,13 +46,11 @@ public class SignupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
         ButterKnife.bind(this);
-        final SignUpHandler signUpHandler = new SignUpHandler(this);
-
 
         _signupButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                signup(signUpHandler);
+                signUp();
             }
         });
 
@@ -68,59 +66,49 @@ public class SignupActivity extends AppCompatActivity {
         });
     }
 
-    public void signup(SignUpHandler signUpHandler) {
+    public void signUp() {
         Log.d(TAG, "Signup");
-
-        if (!validate()) {
-            onSignupFailed();
-            return;
-        }
-
-        _signupButton.setEnabled(false);
-
-        final ProgressDialog progressDialog = new ProgressDialog(SignupActivity.this,
-                R.style.AppTheme_Dark_Dialog);
-        progressDialog.setIndeterminate(true);
-        progressDialog.setMessage("Creating Account...");
-        progressDialog.show();
 
         String name = _nameText.getText().toString();
         String email = _emailText.getText().toString();
         String mobile = _mobileText.getText().toString();
         String password = _passwordText.getText().toString();
+
+        name = "qqqq";
+        email = "qqqq@test.com";
+        mobile = "1111111111";
+        password = "qqqq";
+
+        if (!validate(name, email, mobile, password)) {
+            return;
+        }
+
+        _signupButton.setEnabled(false);
+
+        progressDialog = CommonUtils.createProgressDialog(this, "Creating Account...");
+        progressDialog.show();
 //        Bitmap defaultPhoto = BitmapFactory.decodeResource(this.getResources(),R.drawable.wpi);
 
-
         User user = new User();
-             user.setUsername(name);
-             user.setEmail(email);
-             user.setPhone(mobile);
-             user.setPassword(password);
-             user.setPhoto("null");
-
-        Gson gson = new Gson();
+        user.setUsername(name);
+        user.setEmail(email);
+        user.setPhone(mobile);
+        user.setPassword(password);
+        user.setPhoto("null");
         String userJson = gson.toJson(user);
 
-        HttpRequestMessage request = new HttpRequestMessage();
-                request.setMethod("POST");
-                request.setBody(userJson);
-                request.setUrl(CommonConstants.BASE_URL + "reg");
-                signUpHandler.connectForResponse(request);
-        Log.i(CommonConstants.LogPrefix, userJson);
-
-
-        new android.os.Handler().postDelayed(
-                new Runnable() {
-                    public void run() {
-                        // On complete call either onSignupSuccess or onSignupFailed
-                        // depending on success
-                        if (CommonConstants.isSignUp)
-                            onSignupSuccess();
-                        else
-                            onSignupFailed();
-                        progressDialog.dismiss();
-                    }
-                }, 2000);
+        signUpHandler = new SignUpHandler(new IConnectionStatus() {
+            @Override
+            public void onComplete(Boolean isSuccess, String additionalInfos) {
+                progressDialog.dismiss();
+                if (isSuccess){
+                    onSignupSuccess();
+                }else{
+                    onSignupFailed(additionalInfos);
+                }
+            }
+        });
+        signUpHandler.connectForResponse(CommonUtils.createHttpPOSTRequestMessage(userJson, CommonConstants.registration));
     }
 
 
@@ -130,13 +118,12 @@ public class SignupActivity extends AppCompatActivity {
         finish();
     }
 
-    public void onSignupFailed() {
-        Toast.makeText(getBaseContext(), CommonExceptionMessages.REGISTER_FAILURE, Toast.LENGTH_LONG).show();
-
+    public void onSignupFailed(String reason) {
+        Toast.makeText(getBaseContext(), reason, Toast.LENGTH_LONG).show();
         _signupButton.setEnabled(true);
     }
 
-    public boolean validate() {
+    public boolean validate(String name, String email, String mobile, String password) {
         boolean valid = true;
 
 //        String name = _nameText.getText().toString();

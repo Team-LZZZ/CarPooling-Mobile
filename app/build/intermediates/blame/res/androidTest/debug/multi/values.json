@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\Documents\\WPI\\Courses\\2017_Fall\\MobileComputing\\Final_Project\\CarPooling-Mobile\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "outputFile": "C:\\Users\\Qingquan Zhao\\Desktop\\MobileProject\\CarPooling-Mobile\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -11,55 +11,7 @@
                     "endOffset": 96
                 },
                 "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\7690013a4188a595410fa5604f35d9ef883f1ed6\\output\\res\\values\\values.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 229,
-                        "endColumn": 45,
-                        "endOffset": 270
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 45,
-                    "endOffset": 96
-                },
-                "from": {
-                    "file": "/Users/liweihao/.android/build-cache/824d90ffb6bca0b4510db0ebf1632d3f844b250f/output/res/values/values.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 229,
-                        "endColumn": 45,
-                        "endOffset": 270
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\Documents\\ComputerScience_WPI\\2017_Fall\\CS528_Mobile\\Final_Project\\Mobile\\CarPooling-Mobile\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 45,
-                    "endOffset": 96
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\f447756b2993e7e9c7aadb15ea5d5db36299068f\\output\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\06619bd93a2d9544fbfe2fa9ecfe0fd95285b594\\output\\res\\values\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

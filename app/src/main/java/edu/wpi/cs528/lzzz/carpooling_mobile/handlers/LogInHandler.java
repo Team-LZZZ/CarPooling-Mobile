@@ -1,25 +1,27 @@
 package edu.wpi.cs528.lzzz.carpooling_mobile.handlers;
 
-import android.app.Activity;
 import android.util.Log;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import edu.wpi.cs528.lzzz.carpooling_mobile.connection.ConnectionAsyncTask;
 import edu.wpi.cs528.lzzz.carpooling_mobile.connection.HttpRequestMessage;
 import edu.wpi.cs528.lzzz.carpooling_mobile.connection.HttpResponseMessage;
 import edu.wpi.cs528.lzzz.carpooling_mobile.connection.IConnectionAsyncTaskDelegate;
+import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
+import edu.wpi.cs528.lzzz.carpooling_mobile.model.User;
 import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonConstants;
 import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonExceptionMessages;
+import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonUtils;
 
 
 public class LogInHandler implements IConnectionAsyncTaskDelegate {
+    private final String TAG = "LogInHandler";
+    private IConnectionStatus ConnectionStatus;
 
-    private Activity activity;
-
-
-    public LogInHandler(Activity activity){
-        this.activity = activity;
+    public LogInHandler(IConnectionStatus connectionStatus){
+        this.ConnectionStatus = connectionStatus;
     }
 
     public void connectForResponse(HttpRequestMessage requestMessage){
@@ -28,17 +30,24 @@ public class LogInHandler implements IConnectionAsyncTaskDelegate {
 
     @Override
     public void processResult(HttpResponseMessage response) {
-        // handle response message code here
-        // update GUI
-        // update model
-        Gson gson = new Gson();
+        Gson gson = new GsonBuilder().create();
+        boolean isSuccessful = false;
+        String additionalInfos = "";
         try {
-            ResponseMessage responseMessage = gson.fromJson(response.getContent(),ResponseMessage.class);
-            CommonConstants.isLogIn = responseMessage.isStatus();
-            CommonExceptionMessages.LOGIN_FAILURE = responseMessage.getMessage()[0];
+            ResponseMessage responseMessage = gson.fromJson(response.getContent(), ResponseMessage.class);
+            isSuccessful = responseMessage.isStatus();
+            if(!isSuccessful){
+                if(responseMessage.getMessage().size() > 0){
+                    additionalInfos = responseMessage.getMessage().get(0);
+                }
+            }else{
+                AppContainer.getInstance().setToken(responseMessage.getToken());
+            }
         }catch (Exception ex){
-            CommonExceptionMessages.LOGIN_FAILURE = "Can not connect to server";
+            isSuccessful = false;
+            additionalInfos = CommonExceptionMessages.CONNECTION_FAILURE;
         }
-
+        AppContainer.getInstance().setLogIn(isSuccessful);
+        this.ConnectionStatus.onComplete(isSuccessful, additionalInfos);
     }
 }

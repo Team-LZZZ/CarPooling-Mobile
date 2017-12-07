@@ -66,6 +66,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
             @Override
             public void onClick(View v){
                 Intent i = new Intent(mContext, ReservationActivity.class);
+                i.putExtra("carPoolId", 1);
                 mContext.startActivity(i);
             }
         });

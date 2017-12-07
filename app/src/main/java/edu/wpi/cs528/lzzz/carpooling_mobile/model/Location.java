@@ -10,7 +10,7 @@ public class Location {
 
     private String streetNumber;
     private String street;
-    private String City;
+    private String city;
     private String state;
     private String zip;
 
@@ -38,11 +38,11 @@ public class Location {
     }
 
     public String getCity() {
-        return City;
+        return city;
     }
 
     public void setCity(String city) {
-        City = city;
+        this.city = city;
     }
 
     public String getState() {

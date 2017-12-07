@@ -17,6 +17,7 @@ import android.widget.TextView;
 import edu.wpi.cs528.lzzz.carpooling_mobile.connection.HttpRequestMessage;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.ConnectionHandler;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.SignUpHandler;
+import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
 import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonConstants;
 
 public class MainActivity extends AppCompatActivity{
@@ -30,32 +31,15 @@ public class MainActivity extends AppCompatActivity{
             R.drawable.chat,
             R.drawable.notification};
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(intent);
-
-//        final ConnectionHandler connectionHandler = new ConnectionHandler(this);
-//
-//        testButton = (Button) findViewById(R.id.testConnectionBtn);
-//
-//        testButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                HttpRequestMessage request = new HttpRequestMessage();
-//                request.setMethod("POST");
-//                request.addParam("name", "morpheus");
-//                request.addParam("job", "worker");
-//                request.setUrl("https://reqres.in/api/users");
-////                request.setMethod("GET");
-////                request.setUrl("https://reqres.in/api/users/2");
-//                connectionHandler.connectForResponse(request);
-//            }
-//        });
+        if(!AppContainer.getInstance().isLogIn()){
+            Intent intent = new Intent(this, LoginActivity.class);
+            startActivity(intent);
+        }
 
         ViewPager viewPager = (ViewPager) findViewById(R.id.view_pager);
         MyPagerAdapter pagerAdapter = new MyPagerAdapter(getSupportFragmentManager());
@@ -65,13 +49,11 @@ public class MainActivity extends AppCompatActivity{
         mTabLayout = (TabLayout) findViewById(R.id.tab_layout);
         if (mTabLayout != null) {
             mTabLayout.setupWithViewPager(viewPager);
-
             for (int i = 0; i < mTabLayout.getTabCount(); i++) {
                 TabLayout.Tab tab = mTabLayout.getTabAt(i);
                 if (tab != null)
                     tab.setCustomView(pagerAdapter.getTabView(i));
             }
-
             mTabLayout.getTabAt(0).getCustomView().setSelected(true);
         }
     }
@@ -96,10 +78,8 @@ public class MainActivity extends AppCompatActivity{
         @Override
         public Fragment getItem(int pos) {
             switch (pos) {
-
                 case 0:
                     return SearchFragment.newInstance(1);
-
                 case 1:
                     return OfferFragment.newInstance(2);
                 case 2:

@@ -18,6 +18,15 @@ public class User {
     private String password;
     private String photo;
 
+    public User(){
+
+    }
+
+    public User(String name, String password){
+        this.name = name;
+        this.password = password;
+    }
+
     public String getPhoto() {
         return photo;
     }

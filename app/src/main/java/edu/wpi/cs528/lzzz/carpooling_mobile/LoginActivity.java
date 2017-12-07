@@ -15,16 +15,20 @@ import com.google.gson.Gson;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import edu.wpi.cs528.lzzz.carpooling_mobile.connection.HttpRequestMessage;
+import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.IConnectionStatus;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.LogInHandler;
-import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.SignUpHandler;
+import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.User;
 import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonConstants;
-import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonExceptionMessages;
+import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonUtils;
 
-public class LoginActivity extends AppCompatActivity {
-    private static final String TAG = "LoginActivity";
+public class LoginActivity extends AppCompatActivity{
+    private final String TAG = "LoginActivity";
     private static final int REQUEST_SIGNUP = 0;
+    private LogInHandler logInHandler;
+    private ProgressDialog progressDialog;
+    private Gson gson = new Gson();
+    private User user;
 
     @Bind(R.id.input_username)
     EditText _usernameText;
@@ -40,7 +44,6 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
-        
         _loginButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -48,7 +51,6 @@ public class LoginActivity extends AppCompatActivity {
                 login();
             }
         });
-
         _signupLink.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -65,68 +67,36 @@ public class LoginActivity extends AppCompatActivity {
     public void login() {
         Log.d(TAG, "Login");
 
-        if (!validate()) {
-            onLoginFailed();
-            return;
-        }
-
-        _loginButton.setEnabled(false);
-
-        final ProgressDialog progressDialog = new ProgressDialog(LoginActivity.this,
-                R.style.AppTheme_Dark_Dialog);
-        progressDialog.setIndeterminate(true);
-        progressDialog.setMessage("Authenticating...");
-        progressDialog.show();
-
         String username = _usernameText.getText().toString();
         String password = _passwordText.getText().toString();
 
-
-        final LogInHandler logInHandler = new LogInHandler(this);
-        User user = new User();
-//        user.setEmail(email);
-        user.setUsername(username);
-        user.setPassword(password);
-
-        Gson gson = new Gson();
-        String userJson = gson.toJson(user);
-
-        HttpRequestMessage request = new HttpRequestMessage();
-        request.setMethod("POST");
-        request.setBody(userJson);
-        request.addParam("name",username);
-        request.addParam("password", password);
-        request.setUrl(CommonConstants.BASE_URL + "login");
-        logInHandler.connectForResponse(request);
-
-
-
-        new android.os.Handler().postDelayed(
-                new Runnable() {
-                    public void run() {
-                        // On complete call either onLoginSuccess or onLoginFailed
-                        if (CommonConstants.isLogIn)
-                            onLoginSuccess();
-                        else
-                             onLoginFailed();
-                        progressDialog.dismiss();
-                    }
-                }, 3000);
-    }
-
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == REQUEST_SIGNUP) {
-            if (resultCode == RESULT_OK) {
-
-
-
-                // TODO: Implement successful signup logic here
-                // By default we just finish the Activity and log them in automatically
-                this.finish();
-            }
+        if (!validate(username, password)) {
+            return;
         }
+        _loginButton.setEnabled(false);
+
+        progressDialog = CommonUtils.createProgressDialog(this, "Authenticating...");
+        progressDialog.show();
+
+
+        username = "qqqq";
+        password = "qqqq";
+        user = new User(username, password);
+
+        logInHandler = new LogInHandler(new IConnectionStatus() {
+            @Override
+            public void onComplete(Boolean isSuccess, String additionalInfos) {
+                progressDialog.dismiss();
+                if (isSuccess){
+                    onLoginSuccess();
+                }else{
+                    onLoginFailed(additionalInfos);
+                }
+            }
+        });
+
+        String userJson = gson.toJson(user);
+        logInHandler.connectForResponse(CommonUtils.createHttpPOSTRequestMessage(userJson, CommonConstants.login));
     }
 
     @Override
@@ -137,21 +107,17 @@ public class LoginActivity extends AppCompatActivity {
 
     public void onLoginSuccess() {
         _loginButton.setEnabled(true);
+        AppContainer.getInstance().setActiveUser(this.user);
         finish();
     }
 
-    public void onLoginFailed() {
-        Toast.makeText(getBaseContext(), CommonExceptionMessages.LOGIN_FAILURE, Toast.LENGTH_LONG).show();
-
+    public void onLoginFailed(String reason) {
+        Toast.makeText(getBaseContext(), reason, Toast.LENGTH_LONG).show();
         _loginButton.setEnabled(true);
     }
 
-    public boolean validate() {
+    public boolean validate(String username, String password) {
         boolean valid = true;
-
-        String username = _usernameText.getText().toString();
-        String password = _passwordText.getText().toString();
-
         if (username.isEmpty()) {
             _usernameText.setError("username can not be null");
             valid = false;

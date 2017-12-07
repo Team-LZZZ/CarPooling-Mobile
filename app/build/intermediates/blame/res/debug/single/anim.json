@@ -1,154 +1,74 @@
 [
     {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\Documents\\WPI\\Courses\\2017_Fall\\MobileComputing\\Final_Project\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
-        "source": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\anim\\abc_fade_out.xml"
+        "merged": "C:\\Users\\Qingquan Zhao\\Desktop\\MobileProject\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_in.xml",
+        "source": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\efd2a1df99e5ff5fadda503717e69daa1839a738\\output\\res\\anim\\design_bottom_sheet_slide_in.xml"
     },
     {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
-        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/anim/abc_popup_exit.xml"
+        "merged": "C:\\Users\\Qingquan Zhao\\Desktop\\MobileProject\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\anim\\abc_slide_in_top.xml"
     },
     {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
-        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/anim/abc_slide_in_top.xml"
+        "merged": "C:\\Users\\Qingquan Zhao\\Desktop\\MobileProject\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_out.xml",
+        "source": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\efd2a1df99e5ff5fadda503717e69daa1839a738\\output\\res\\anim\\design_fab_out.xml"
     },
     {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_out.xml",
-        "source": "/Users/liweihao/.android/build-cache/a6df1fc70315b9d5823a8fb79caecebf88271715/output/res/anim/design_bottom_sheet_slide_out.xml"
+        "merged": "C:\\Users\\Qingquan Zhao\\Desktop\\MobileProject\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\anim\\abc_fade_out.xml"
     },
     {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/anim/design_fab_out.xml",
-        "source": "/Users/liweihao/.android/build-cache/a6df1fc70315b9d5823a8fb79caecebf88271715/output/res/anim/design_fab_out.xml"
+        "merged": "C:\\Users\\Qingquan Zhao\\Desktop\\MobileProject\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_in.xml",
+        "source": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\efd2a1df99e5ff5fadda503717e69daa1839a738\\output\\res\\anim\\design_fab_in.xml"
     },
     {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\Documents\\ComputerScience_WPI\\2017_Fall\\CS528_Mobile\\Final_Project\\Mobile\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
-        "source": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\anim\\abc_slide_in_top.xml"
+        "merged": "C:\\Users\\Qingquan Zhao\\Desktop\\MobileProject\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_left_in.xml",
+        "source": "C:\\Users\\Qingquan Zhao\\Desktop\\MobileProject\\CarPooling-Mobile\\app\\src\\main\\res\\anim\\push_left_in.xml"
     },
     {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
-        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/anim/abc_slide_in_bottom.xml"
+        "merged": "C:\\Users\\Qingquan Zhao\\Desktop\\MobileProject\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
     },
     {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\Documents\\WPI\\Courses\\2017_Fall\\MobileComputing\\Final_Project\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
-        "source": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\anim\\abc_slide_out_bottom.xml"
+        "merged": "C:\\Users\\Qingquan Zhao\\Desktop\\MobileProject\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
+        "source": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\efd2a1df99e5ff5fadda503717e69daa1839a738\\output\\res\\anim\\design_snackbar_in.xml"
     },
     {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/anim/design_snackbar_in.xml",
-        "source": "/Users/liweihao/.android/build-cache/a6df1fc70315b9d5823a8fb79caecebf88271715/output/res/anim/design_snackbar_in.xml"
+        "merged": "C:\\Users\\Qingquan Zhao\\Desktop\\MobileProject\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\anim\\abc_popup_exit.xml"
     },
     {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\Documents\\WPI\\Courses\\2017_Fall\\MobileComputing\\Final_Project\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
-        "source": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\anim\\abc_fade_in.xml"
+        "merged": "C:\\Users\\Qingquan Zhao\\Desktop\\MobileProject\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
+        "source": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\efd2a1df99e5ff5fadda503717e69daa1839a738\\output\\res\\anim\\design_snackbar_out.xml"
     },
     {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/anim/push_left_in.xml",
-        "source": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/res/anim/push_left_in.xml"
+        "merged": "C:\\Users\\Qingquan Zhao\\Desktop\\MobileProject\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\anim\\abc_slide_out_top.xml"
     },
     {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\Documents\\WPI\\Courses\\2017_Fall\\MobileComputing\\Final_Project\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
-        "source": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\anim\\abc_slide_in_top.xml"
+        "merged": "C:\\Users\\Qingquan Zhao\\Desktop\\MobileProject\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\anim\\abc_fade_in.xml"
     },
     {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\Documents\\WPI\\Courses\\2017_Fall\\MobileComputing\\Final_Project\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
-        "source": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\anim\\abc_popup_exit.xml"
+        "merged": "C:\\Users\\Qingquan Zhao\\Desktop\\MobileProject\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\anim\\abc_popup_enter.xml"
     },
     {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\Documents\\ComputerScience_WPI\\2017_Fall\\CS528_Mobile\\Final_Project\\Mobile\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
-        "source": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+        "merged": "C:\\Users\\Qingquan Zhao\\Desktop\\MobileProject\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\anim\\abc_slide_out_bottom.xml"
     },
     {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\Documents\\ComputerScience_WPI\\2017_Fall\\CS528_Mobile\\Final_Project\\Mobile\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
-        "source": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\anim\\abc_fade_in.xml"
+        "merged": "C:\\Users\\Qingquan Zhao\\Desktop\\MobileProject\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
     },
     {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
-        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/anim/abc_slide_out_top.xml"
+        "merged": "C:\\Users\\Qingquan Zhao\\Desktop\\MobileProject\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_out.xml",
+        "source": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\efd2a1df99e5ff5fadda503717e69daa1839a738\\output\\res\\anim\\design_bottom_sheet_slide_out.xml"
     },
     {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\Documents\\WPI\\Courses\\2017_Fall\\MobileComputing\\Final_Project\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
-        "source": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\anim\\abc_slide_out_top.xml"
+        "merged": "C:\\Users\\Qingquan Zhao\\Desktop\\MobileProject\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\anim\\abc_slide_in_bottom.xml"
     },
     {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/anim/design_snackbar_out.xml",
-        "source": "/Users/liweihao/.android/build-cache/a6df1fc70315b9d5823a8fb79caecebf88271715/output/res/anim/design_snackbar_out.xml"
-    },
-    {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/anim/design_fab_in.xml",
-        "source": "/Users/liweihao/.android/build-cache/a6df1fc70315b9d5823a8fb79caecebf88271715/output/res/anim/design_fab_in.xml"
-    },
-    {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/anim/push_left_out.xml",
-        "source": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/res/anim/push_left_out.xml"
-    },
-    {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\Documents\\ComputerScience_WPI\\2017_Fall\\CS528_Mobile\\Final_Project\\Mobile\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
-        "source": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\anim\\abc_slide_in_bottom.xml"
-    },
-    {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_in.xml",
-        "source": "/Users/liweihao/.android/build-cache/a6df1fc70315b9d5823a8fb79caecebf88271715/output/res/anim/design_bottom_sheet_slide_in.xml"
-    },
-    {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
-        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/anim/abc_slide_out_bottom.xml"
-    },
-    {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
-        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/anim/abc_fade_out.xml"
-    },
-    {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
-        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/anim/abc_grow_fade_in_from_bottom.xml"
-    },
-    {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\Documents\\WPI\\Courses\\2017_Fall\\MobileComputing\\Final_Project\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
-        "source": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\anim\\abc_slide_in_bottom.xml"
-    },
-    {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
-        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
-    },
-    {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\Documents\\ComputerScience_WPI\\2017_Fall\\CS528_Mobile\\Final_Project\\Mobile\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
-        "source": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\anim\\abc_fade_out.xml"
-    },
-    {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
-        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/anim/abc_fade_in.xml"
-    },
-    {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\Documents\\ComputerScience_WPI\\2017_Fall\\CS528_Mobile\\Final_Project\\Mobile\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
-        "source": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\anim\\abc_slide_out_top.xml"
-    },
-    {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\Documents\\WPI\\Courses\\2017_Fall\\MobileComputing\\Final_Project\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
-        "source": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
-    },
-    {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
-        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/anim/abc_popup_enter.xml"
-    },
-    {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\Documents\\WPI\\Courses\\2017_Fall\\MobileComputing\\Final_Project\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
-        "source": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
-    },
-    {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\Documents\\ComputerScience_WPI\\2017_Fall\\CS528_Mobile\\Final_Project\\Mobile\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
-        "source": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\anim\\abc_popup_exit.xml"
-    },
-    {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\Documents\\ComputerScience_WPI\\2017_Fall\\CS528_Mobile\\Final_Project\\Mobile\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
-        "source": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\anim\\abc_slide_out_bottom.xml"
-    },
-    {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\Documents\\ComputerScience_WPI\\2017_Fall\\CS528_Mobile\\Final_Project\\Mobile\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
-        "source": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
-    },
-    {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\Documents\\ComputerScience_WPI\\2017_Fall\\CS528_Mobile\\Final_Project\\Mobile\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
-        "source": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\anim\\abc_popup_enter.xml"
-    },
-    {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\Documents\\WPI\\Courses\\2017_Fall\\MobileComputing\\Final_Project\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
-        "source": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\anim\\abc_popup_enter.xml"
+        "merged": "C:\\Users\\Qingquan Zhao\\Desktop\\MobileProject\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_left_out.xml",
+        "source": "C:\\Users\\Qingquan Zhao\\Desktop\\MobileProject\\CarPooling-Mobile\\app\\src\\main\\res\\anim\\push_left_out.xml"
     }
 ]

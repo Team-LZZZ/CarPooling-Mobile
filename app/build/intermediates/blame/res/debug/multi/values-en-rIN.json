@@ -1,410 +1,6 @@
 [
     {
-        "outputFile": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\Documents\\ComputerScience_WPI\\2017_Fall\\CS528_Mobile\\Final_Project\\Mobile\\CarPooling-Mobile\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rIN\\values-en-rIN.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 103,
-                    "endOffset": 154
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 103,
-                        "endOffset": 154
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 159,
-                    "endColumn": 107,
-                    "endOffset": 262
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 159,
-                        "endColumn": 107,
-                        "endOffset": 262
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 4,
-                    "startColumn": 4,
-                    "startOffset": 267,
-                    "endColumn": 122,
-                    "endOffset": 385
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 267,
-                        "endColumn": 122,
-                        "endOffset": 385
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 5,
-                    "startColumn": 4,
-                    "startOffset": 390,
-                    "endColumn": 99,
-                    "endOffset": 485
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 390,
-                        "endColumn": 99,
-                        "endOffset": 485
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 6,
-                    "startColumn": 4,
-                    "startOffset": 490,
-                    "endColumn": 107,
-                    "endOffset": 593
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 490,
-                        "endColumn": 107,
-                        "endOffset": 593
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 7,
-                    "startColumn": 4,
-                    "startOffset": 598,
-                    "endColumn": 83,
-                    "endOffset": 677
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 598,
-                        "endColumn": 83,
-                        "endOffset": 677
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 8,
-                    "startColumn": 4,
-                    "startOffset": 682,
-                    "endColumn": 99,
-                    "endOffset": 777
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 682,
-                        "endColumn": 99,
-                        "endOffset": 777
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 9,
-                    "startColumn": 4,
-                    "startOffset": 782,
-                    "endColumn": 114,
-                    "endOffset": 892
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 782,
-                        "endColumn": 114,
-                        "endOffset": 892
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 10,
-                    "startColumn": 4,
-                    "startOffset": 897,
-                    "endColumn": 76,
-                    "endOffset": 969
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 897,
-                        "endColumn": 76,
-                        "endOffset": 969
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 11,
-                    "startColumn": 4,
-                    "startOffset": 974,
-                    "endColumn": 75,
-                    "endOffset": 1045
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 974,
-                        "endColumn": 75,
-                        "endOffset": 1045
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 12,
-                    "startColumn": 4,
-                    "startOffset": 1050,
-                    "endColumn": 81,
-                    "endOffset": 1127
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 1050,
-                        "endColumn": 81,
-                        "endOffset": 1127
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 13,
-                    "startColumn": 4,
-                    "startOffset": 1132,
-                    "endColumn": 102,
-                    "endOffset": 1230
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 1132,
-                        "endColumn": 102,
-                        "endOffset": 1230
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 14,
-                    "startColumn": 4,
-                    "startOffset": 1235,
-                    "endColumn": 103,
-                    "endOffset": 1334
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 1235,
-                        "endColumn": 103,
-                        "endOffset": 1334
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 15,
-                    "startColumn": 4,
-                    "startOffset": 1339,
-                    "endColumn": 98,
-                    "endOffset": 1433
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 1339,
-                        "endColumn": 98,
-                        "endOffset": 1433
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 16,
-                    "startColumn": 4,
-                    "startOffset": 1438,
-                    "endColumn": 104,
-                    "endOffset": 1538
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 1438,
-                        "endColumn": 104,
-                        "endOffset": 1538
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 17,
-                    "startColumn": 4,
-                    "startOffset": 1543,
-                    "endColumn": 102,
-                    "endOffset": 1641
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 1543,
-                        "endColumn": 102,
-                        "endOffset": 1641
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 18,
-                    "startColumn": 4,
-                    "startOffset": 1646,
-                    "endColumn": 103,
-                    "endOffset": 1745
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 1646,
-                        "endColumn": 103,
-                        "endOffset": 1745
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 19,
-                    "startColumn": 4,
-                    "startOffset": 1750,
-                    "endColumn": 118,
-                    "endOffset": 1864
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 1750,
-                        "endColumn": 118,
-                        "endOffset": 1864
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 20,
-                    "startColumn": 4,
-                    "startOffset": 1869,
-                    "endColumn": 99,
-                    "endOffset": 1964
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 20,
-                        "startColumn": 4,
-                        "startOffset": 1869,
-                        "endColumn": 99,
-                        "endOffset": 1964
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 21,
-                    "startColumn": 4,
-                    "startOffset": 1969,
-                    "endColumn": 81,
-                    "endOffset": 2046
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 21,
-                        "startColumn": 4,
-                        "startOffset": 1969,
-                        "endColumn": 81,
-                        "endOffset": 2046
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 22,
-                    "startColumn": 4,
-                    "startOffset": 2051,
-                    "endColumn": 100,
-                    "endOffset": 2147
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\Qingquan Zhao\\.android\\build-cache\\26221c3e58e87c69a95ce41acf8bf86346d0bd52\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 22,
-                        "startColumn": 4,
-                        "startOffset": 2051,
-                        "endColumn": 100,
-                        "endOffset": 2147
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml",
+        "outputFile": "C:\\Users\\Qingquan Zhao\\Desktop\\MobileProject\\CarPooling-Mobile\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rIN\\values-en-rIN.xml",
         "map": [
             {
                 "to": {
@@ -415,7 +11,7 @@
                     "endOffset": 204
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -434,7 +30,7 @@
                     "endOffset": 312
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -453,7 +49,7 @@
                     "endOffset": 435
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -472,7 +68,7 @@
                     "endOffset": 535
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -491,7 +87,7 @@
                     "endOffset": 643
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -510,7 +106,7 @@
                     "endOffset": 727
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -529,7 +125,7 @@
                     "endOffset": 827
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -548,7 +144,7 @@
                     "endOffset": 942
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -567,7 +163,7 @@
                     "endOffset": 1019
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -586,7 +182,7 @@
                     "endOffset": 1095
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -605,7 +201,7 @@
                     "endOffset": 1177
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -624,7 +220,7 @@
                     "endOffset": 1280
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -643,7 +239,7 @@
                     "endOffset": 1384
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -662,7 +258,7 @@
                     "endOffset": 1483
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -681,7 +277,7 @@
                     "endOffset": 1588
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -700,7 +296,7 @@
                     "endOffset": 1691
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -719,7 +315,7 @@
                     "endOffset": 1795
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -738,7 +334,7 @@
                     "endOffset": 1914
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -757,7 +353,7 @@
                     "endOffset": 2014
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -776,7 +372,7 @@
                     "endOffset": 2276
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/values-en-rIN/base_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\63e5eab7038ccd0c9ba00e32ccd7343a025322a6\\output\\res\\values-en-rIN\\base_strings.xml",
                     "position": {
                         "startLine": 24,
                         "startColumn": 4,
@@ -795,7 +391,7 @@
                     "endOffset": 2404
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/values-en-rIN/base_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\63e5eab7038ccd0c9ba00e32ccd7343a025322a6\\output\\res\\values-en-rIN\\base_strings.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -814,7 +410,7 @@
                     "endOffset": 2588
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/values-en-rIN/base_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\63e5eab7038ccd0c9ba00e32ccd7343a025322a6\\output\\res\\values-en-rIN\\base_strings.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -833,7 +429,7 @@
                     "endOffset": 2715
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/values-en-rIN/base_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\63e5eab7038ccd0c9ba00e32ccd7343a025322a6\\output\\res\\values-en-rIN\\base_strings.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -852,7 +448,7 @@
                     "endOffset": 2841
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/values-en-rIN/base_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\63e5eab7038ccd0c9ba00e32ccd7343a025322a6\\output\\res\\values-en-rIN\\base_strings.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -871,7 +467,7 @@
                     "endOffset": 3056
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/values-en-rIN/base_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\63e5eab7038ccd0c9ba00e32ccd7343a025322a6\\output\\res\\values-en-rIN\\base_strings.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -890,7 +486,7 @@
                     "endOffset": 3273
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/values-en-rIN/base_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\63e5eab7038ccd0c9ba00e32ccd7343a025322a6\\output\\res\\values-en-rIN\\base_strings.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -909,7 +505,7 @@
                     "endOffset": 3398
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/values-en-rIN/base_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\63e5eab7038ccd0c9ba00e32ccd7343a025322a6\\output\\res\\values-en-rIN\\base_strings.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -928,7 +524,7 @@
                     "endOffset": 3593
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/values-en-rIN/base_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\63e5eab7038ccd0c9ba00e32ccd7343a025322a6\\output\\res\\values-en-rIN\\base_strings.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -947,7 +543,7 @@
                     "endOffset": 3714
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/values-en-rIN/base_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\63e5eab7038ccd0c9ba00e32ccd7343a025322a6\\output\\res\\values-en-rIN\\base_strings.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -966,7 +562,7 @@
                     "endOffset": 3885
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/values-en-rIN/base_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\63e5eab7038ccd0c9ba00e32ccd7343a025322a6\\output\\res\\values-en-rIN\\base_strings.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -985,7 +581,7 @@
                     "endOffset": 4005
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/values-en-rIN/base_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\63e5eab7038ccd0c9ba00e32ccd7343a025322a6\\output\\res\\values-en-rIN\\base_strings.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -1004,7 +600,7 @@
                     "endOffset": 4138
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/values-en-rIN/base_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\63e5eab7038ccd0c9ba00e32ccd7343a025322a6\\output\\res\\values-en-rIN\\base_strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -1023,7 +619,7 @@
                     "endOffset": 4311
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/values-en-rIN/base_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\63e5eab7038ccd0c9ba00e32ccd7343a025322a6\\output\\res\\values-en-rIN\\base_strings.xml",
                     "position": {
                         "startLine": 28,
                         "startColumn": 4,
@@ -1042,7 +638,7 @@
                     "endOffset": 4441
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/values-en-rIN/base_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\63e5eab7038ccd0c9ba00e32ccd7343a025322a6\\output\\res\\values-en-rIN\\base_strings.xml",
                     "position": {
                         "startLine": 27,
                         "startColumn": 4,
@@ -1061,7 +657,7 @@
                     "endOffset": 4623
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/values-en-rIN/base_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\63e5eab7038ccd0c9ba00e32ccd7343a025322a6\\output\\res\\values-en-rIN\\base_strings.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
@@ -1080,7 +676,7 @@
                     "endOffset": 4745
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/values-en-rIN/base_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\63e5eab7038ccd0c9ba00e32ccd7343a025322a6\\output\\res\\values-en-rIN\\base_strings.xml",
                     "position": {
                         "startLine": 25,
                         "startColumn": 4,
@@ -1099,7 +695,7 @@
                     "endOffset": 4994
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/f3f5f358df9c393efb599372585e120abc378965/output/res/values-en-rIN/common_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\cfd703cd6e92695cac063bba005ed2ad47f0d845\\output\\res\\values-en-rIN\\common_strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -1118,7 +714,7 @@
                     "endOffset": 5243
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/values-en-rIN/base_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\63e5eab7038ccd0c9ba00e32ccd7343a025322a6\\output\\res\\values-en-rIN\\base_strings.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -1137,7 +733,7 @@
                     "endOffset": 5367
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/values-en-rIN/base_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\63e5eab7038ccd0c9ba00e32ccd7343a025322a6\\output\\res\\values-en-rIN\\base_strings.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -1156,7 +752,7 @@
                     "endOffset": 5474
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/values-en-rIN/base_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\63e5eab7038ccd0c9ba00e32ccd7343a025322a6\\output\\res\\values-en-rIN\\base_strings.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -1175,7 +771,7 @@
                     "endOffset": 5657
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/values-en-rIN/base_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\63e5eab7038ccd0c9ba00e32ccd7343a025322a6\\output\\res\\values-en-rIN\\base_strings.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -1194,7 +790,7 @@
                     "endOffset": 5784
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/values-en-rIN/base_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\63e5eab7038ccd0c9ba00e32ccd7343a025322a6\\output\\res\\values-en-rIN\\base_strings.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -1213,7 +809,7 @@
                     "endOffset": 5989
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/values-en-rIN/base_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\63e5eab7038ccd0c9ba00e32ccd7343a025322a6\\output\\res\\values-en-rIN\\base_strings.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -1232,7 +828,7 @@
                     "endOffset": 6124
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/values-en-rIN/base_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\63e5eab7038ccd0c9ba00e32ccd7343a025322a6\\output\\res\\values-en-rIN\\base_strings.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -1251,7 +847,7 @@
                     "endOffset": 6302
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/values-en-rIN/base_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\63e5eab7038ccd0c9ba00e32ccd7343a025322a6\\output\\res\\values-en-rIN\\base_strings.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -1270,7 +866,7 @@
                     "endOffset": 6394
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/values-en-rIN/base_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\63e5eab7038ccd0c9ba00e32ccd7343a025322a6\\output\\res\\values-en-rIN\\base_strings.xml",
                     "position": {
                         "startLine": 23,
                         "startColumn": 4,
@@ -1289,7 +885,7 @@
                     "endOffset": 6486
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/values-en-rIN/base_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\63e5eab7038ccd0c9ba00e32ccd7343a025322a6\\output\\res\\values-en-rIN\\base_strings.xml",
                     "position": {
                         "startLine": 29,
                         "startColumn": 4,
@@ -1308,7 +904,7 @@
                     "endOffset": 6595
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/9abd4d93a99878891ca20a463b01678f79d73bfa/output/res/values-en-rIN/base_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\63e5eab7038ccd0c9ba00e32ccd7343a025322a6\\output\\res\\values-en-rIN\\base_strings.xml",
                     "position": {
                         "startLine": 30,
                         "startColumn": 4,
@@ -1327,7 +923,7 @@
                     "endOffset": 6700
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/2fad433d6b8822340929699402998279eb86b5ad/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\b60fdff3cdbcfec452e83ef14165da355e230206\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -1346,7 +942,7 @@
                     "endOffset": 6814
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/2fad433d6b8822340929699402998279eb86b5ad/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\b60fdff3cdbcfec452e83ef14165da355e230206\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -1365,7 +961,7 @@
                     "endOffset": 6919
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/2fad433d6b8822340929699402998279eb86b5ad/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\b60fdff3cdbcfec452e83ef14165da355e230206\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -1384,7 +980,7 @@
                     "endOffset": 7024
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/2fad433d6b8822340929699402998279eb86b5ad/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\b60fdff3cdbcfec452e83ef14165da355e230206\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -1403,7 +999,7 @@
                     "endOffset": 7144
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/2fad433d6b8822340929699402998279eb86b5ad/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\b60fdff3cdbcfec452e83ef14165da355e230206\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -1422,7 +1018,7 @@
                     "endOffset": 7240
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/2fad433d6b8822340929699402998279eb86b5ad/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\b60fdff3cdbcfec452e83ef14165da355e230206\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -1441,7 +1037,7 @@
                     "endOffset": 7334
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/2fad433d6b8822340929699402998279eb86b5ad/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\b60fdff3cdbcfec452e83ef14165da355e230206\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -1460,7 +1056,7 @@
                     "endOffset": 7453
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/2fad433d6b8822340929699402998279eb86b5ad/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\b60fdff3cdbcfec452e83ef14165da355e230206\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -1479,7 +1075,7 @@
                     "endOffset": 7555
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/2fad433d6b8822340929699402998279eb86b5ad/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\b60fdff3cdbcfec452e83ef14165da355e230206\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -1498,7 +1094,7 @@
                     "endOffset": 7641
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/2fad433d6b8822340929699402998279eb86b5ad/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\b60fdff3cdbcfec452e83ef14165da355e230206\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -1517,7 +1113,7 @@
                     "endOffset": 7735
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/2fad433d6b8822340929699402998279eb86b5ad/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\b60fdff3cdbcfec452e83ef14165da355e230206\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -1536,7 +1132,7 @@
                     "endOffset": 7838
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/afbc028358c6648278447d3e29d277ac7376b6be/output/res/values-en-rIN/location_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\f945e4f5931d77d91cfcced73fcf8d32b5010009\\output\\res\\values-en-rIN\\location_strings.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -1555,7 +1151,7 @@
                     "endOffset": 7934
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/afbc028358c6648278447d3e29d277ac7376b6be/output/res/values-en-rIN/location_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\f945e4f5931d77d91cfcced73fcf8d32b5010009\\output\\res\\values-en-rIN\\location_strings.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -1574,7 +1170,7 @@
                     "endOffset": 8016
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -1593,7 +1189,7 @@
                     "endOffset": 8117
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/values-en-rIN/values-en-rIN.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\values-en-rIN\\values-en-rIN.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -1612,417 +1208,13 @@
                     "endOffset": 8222
                 },
                 "from": {
-                    "file": "/Users/liweihao/.android/build-cache/2304a69e66c80c87743e99836d3050bee033282b/output/res/values-en-rIN/wallet_strings.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\f84219f234374e8e2e356e7549f611d0f0635bc5\\output\\res\\values-en-rIN\\wallet_strings.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
                         "startOffset": 230,
                         "endColumn": 104,
                         "endOffset": 330
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\Documents\\WPI\\Courses\\2017_Fall\\MobileComputing\\Final_Project\\CarPooling-Mobile\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rIN\\values-en-rIN.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 103,
-                    "endOffset": 154
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 103,
-                        "endOffset": 154
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 159,
-                    "endColumn": 107,
-                    "endOffset": 262
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 159,
-                        "endColumn": 107,
-                        "endOffset": 262
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 4,
-                    "startColumn": 4,
-                    "startOffset": 267,
-                    "endColumn": 122,
-                    "endOffset": 385
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 267,
-                        "endColumn": 122,
-                        "endOffset": 385
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 5,
-                    "startColumn": 4,
-                    "startOffset": 390,
-                    "endColumn": 99,
-                    "endOffset": 485
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 390,
-                        "endColumn": 99,
-                        "endOffset": 485
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 6,
-                    "startColumn": 4,
-                    "startOffset": 490,
-                    "endColumn": 107,
-                    "endOffset": 593
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 490,
-                        "endColumn": 107,
-                        "endOffset": 593
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 7,
-                    "startColumn": 4,
-                    "startOffset": 598,
-                    "endColumn": 83,
-                    "endOffset": 677
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 598,
-                        "endColumn": 83,
-                        "endOffset": 677
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 8,
-                    "startColumn": 4,
-                    "startOffset": 682,
-                    "endColumn": 99,
-                    "endOffset": 777
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 682,
-                        "endColumn": 99,
-                        "endOffset": 777
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 9,
-                    "startColumn": 4,
-                    "startOffset": 782,
-                    "endColumn": 114,
-                    "endOffset": 892
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 782,
-                        "endColumn": 114,
-                        "endOffset": 892
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 10,
-                    "startColumn": 4,
-                    "startOffset": 897,
-                    "endColumn": 76,
-                    "endOffset": 969
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 897,
-                        "endColumn": 76,
-                        "endOffset": 969
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 11,
-                    "startColumn": 4,
-                    "startOffset": 974,
-                    "endColumn": 75,
-                    "endOffset": 1045
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 974,
-                        "endColumn": 75,
-                        "endOffset": 1045
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 12,
-                    "startColumn": 4,
-                    "startOffset": 1050,
-                    "endColumn": 81,
-                    "endOffset": 1127
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 1050,
-                        "endColumn": 81,
-                        "endOffset": 1127
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 13,
-                    "startColumn": 4,
-                    "startOffset": 1132,
-                    "endColumn": 102,
-                    "endOffset": 1230
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 1132,
-                        "endColumn": 102,
-                        "endOffset": 1230
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 14,
-                    "startColumn": 4,
-                    "startOffset": 1235,
-                    "endColumn": 103,
-                    "endOffset": 1334
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 1235,
-                        "endColumn": 103,
-                        "endOffset": 1334
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 15,
-                    "startColumn": 4,
-                    "startOffset": 1339,
-                    "endColumn": 98,
-                    "endOffset": 1433
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 1339,
-                        "endColumn": 98,
-                        "endOffset": 1433
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 16,
-                    "startColumn": 4,
-                    "startOffset": 1438,
-                    "endColumn": 104,
-                    "endOffset": 1538
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 1438,
-                        "endColumn": 104,
-                        "endOffset": 1538
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 17,
-                    "startColumn": 4,
-                    "startOffset": 1543,
-                    "endColumn": 102,
-                    "endOffset": 1641
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 1543,
-                        "endColumn": 102,
-                        "endOffset": 1641
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 18,
-                    "startColumn": 4,
-                    "startOffset": 1646,
-                    "endColumn": 103,
-                    "endOffset": 1745
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 1646,
-                        "endColumn": 103,
-                        "endOffset": 1745
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 19,
-                    "startColumn": 4,
-                    "startOffset": 1750,
-                    "endColumn": 118,
-                    "endOffset": 1864
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 1750,
-                        "endColumn": 118,
-                        "endOffset": 1864
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 20,
-                    "startColumn": 4,
-                    "startOffset": 1869,
-                    "endColumn": 99,
-                    "endOffset": 1964
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 20,
-                        "startColumn": 4,
-                        "startOffset": 1869,
-                        "endColumn": 99,
-                        "endOffset": 1964
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 21,
-                    "startColumn": 4,
-                    "startOffset": 1969,
-                    "endColumn": 81,
-                    "endOffset": 2046
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 21,
-                        "startColumn": 4,
-                        "startOffset": 1969,
-                        "endColumn": 81,
-                        "endOffset": 2046
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 22,
-                    "startColumn": 4,
-                    "startOffset": 2051,
-                    "endColumn": 100,
-                    "endOffset": 2147
-                },
-                "from": {
-                    "file": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/C:\\Users\\QQZhao\\.android\\build-cache\\447b696df8d0da76c8bd27b9f835db706f74a51a\\output\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "position": {
-                        "startLine": 22,
-                        "startColumn": 4,
-                        "startOffset": 2051,
-                        "endColumn": 100,
-                        "endOffset": 2147
                     }
                 }
             }

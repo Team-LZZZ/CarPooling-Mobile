@@ -2,21 +2,30 @@ package edu.wpi.cs528.lzzz.carpooling_mobile.handlers;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.util.List;
+
 /**
  * Created by liweihao on 12/4/17.
  */
 
 public class ResponseMessage {
-    public String[] message;
-    @SerializedName(value = "register_status", alternate = {"login_status"})
+    public List<String> message;
     public boolean status;
+    public String token;
 
+    public String getToken() {
+        return token;
+    }
 
-    public String[] getMessage() {
+    public void setToken(String token) {
+        this.token = token;
+    }
+
+    public List<String> getMessage() {
         return message;
     }
 
-    public void setMessage(String[] message) {
+    public void setMessage(List<String> message) {
         this.message = message;
     }
 

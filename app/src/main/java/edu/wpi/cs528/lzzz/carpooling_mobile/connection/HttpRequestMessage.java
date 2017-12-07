@@ -15,6 +15,15 @@ public class HttpRequestMessage {
     private String method;
     private Map<String, String> params = new HashMap<>();
     private String body;
+    private String token = "";
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
 
     public String getUrl() {
         return url;
