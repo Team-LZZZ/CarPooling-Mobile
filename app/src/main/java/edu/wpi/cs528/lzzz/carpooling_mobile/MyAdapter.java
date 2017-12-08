@@ -58,6 +58,16 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
     public void onBindViewHolder(final ViewHolder viewHolder, int i )
     {
         CarPool c = carPools.get(i);
+        c.getStartLocation().setName(c.getStartLocation().getStreetNumber() + ", " +
+                                        c.getStartLocation().getStreet() + ", " +
+                                        c.getStartLocation().getCity() + ", " +
+                                        c.getStartLocation().getState() + ", " +
+                                        c.getStartLocation().getZip());
+        c.getTargetLocation().setName(c.getTargetLocation().getStreetNumber() + ", " +
+                                        c.getTargetLocation().getStreet() + ", " +
+                                        c.getTargetLocation().getCity() + ", " +
+                                        c.getTargetLocation().getState() + ", " +
+                                        c.getTargetLocation().getZip());
         viewHolder.mOfferTextView.setText(c.getOfferer().getUsername());
         viewHolder.mAddressTextView.setText("From     " + c.getStartLocation().getName() + "       To     "+ c.getTargetLocation().getName());
         viewHolder.mCarInfoTextView.setText(c.getCar().getMake()  + "     "  + c.getCar().getModel() + "     " + c.getCar().getPlate());

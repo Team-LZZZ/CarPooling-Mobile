@@ -17,4 +17,7 @@ public class CommonConstants {
    //    public static String BASE_URL = "http://127.0.0.1:5000/api/";
     public static String LogPrefix = "CS528Final";
 
+    // GoogleMap
+    public static int MAP_CAMERA = 17;
+
 }

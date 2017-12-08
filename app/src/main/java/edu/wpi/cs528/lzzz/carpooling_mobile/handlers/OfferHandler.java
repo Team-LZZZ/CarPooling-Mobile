@@ -1,5 +1,7 @@
 package edu.wpi.cs528.lzzz.carpooling_mobile.handlers;
 
+import android.util.Log;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -32,7 +34,7 @@ public class OfferHandler implements IConnectionAsyncTaskDelegate {
         boolean isSuccessful = false;
         String additionalInfos = "";
         try {
-
+            Log.i("=============", response.getContent());
             ResponseMessage responseMessage = gson.fromJson(response.getContent(), ResponseMessage.class);
 
             isSuccessful = responseMessage.isStatus();
@@ -41,12 +43,7 @@ public class OfferHandler implements IConnectionAsyncTaskDelegate {
                     additionalInfos = responseMessage.getMessage().get(0);
                 }
             }else{
-                List<String> carPoolJsonArray = responseMessage.getMessage();
-                AppContainer.getInstance().getCarPools().clear();
-                for (String carPoolJson : carPoolJsonArray){
-                    CarPool carPool = gson.fromJson(carPoolJson, CarPool.class);
-                    AppContainer.getInstance().getCarPools().add(carPool);
-                }
+
             }
 
         }catch (Exception ex){

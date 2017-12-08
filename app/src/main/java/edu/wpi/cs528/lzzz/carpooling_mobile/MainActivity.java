@@ -8,11 +8,14 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.google.android.gms.maps.MapFragment;
 
 import edu.wpi.cs528.lzzz.carpooling_mobile.connection.HttpRequestMessage;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.ConnectionHandler;
@@ -28,6 +31,7 @@ public class MainActivity extends AppCompatActivity{
 
     private int[] mTabsIcons = {
             R.drawable.message,
+            R.drawable.address,
             R.drawable.chat,
             R.drawable.notification};
 
@@ -59,10 +63,8 @@ public class MainActivity extends AppCompatActivity{
     }
 
     private class MyPagerAdapter extends FragmentPagerAdapter {
-
-        public final int PAGE_COUNT = 3;
-
-        private final String[] mTabsTitle = {"Pending", "Messages", "Notifications"};
+        private final String[] mTabsTitle = {"CarpoolList", "CarpoolMap", "CarpoolOffer", "Myself"};
+        public final int PAGE_COUNT = mTabsTitle.length;
 
         public MyPagerAdapter(FragmentManager fm) {
             super(fm);
@@ -77,13 +79,16 @@ public class MainActivity extends AppCompatActivity{
 
         @Override
         public Fragment getItem(int pos) {
+            Bundle args = new Bundle();
             switch (pos) {
                 case 0:
                     return SearchFragment.newInstance(1);
                 case 1:
-                    return OfferFragment.newInstance(2);
+                    return CarpoolMapFragment.newInstance(2);
                 case 2:
-                    return MeFragment.newInstance(3);
+                    return OfferFragment.newInstance(3);
+                case 3:
+                    return MeFragment.newInstance(4);
             }
             return null;
         }

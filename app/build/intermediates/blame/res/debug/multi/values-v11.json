@@ -503,13 +503,13 @@
                     "endOffset": 14190
                 },
                 "from": {
-                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\f2940d75737ae35b41248607343dab0ce934dddb\\output\\res\\values-v11\\appinvite_styles.xml",
+                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\b6af743ab655a1a6c12ec3554840f07817df1b28\\output\\res\\values-v11\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 101,
+                        "startOffset": 219,
                         "endColumn": 117,
-                        "endOffset": 214
+                        "endOffset": 332
                     }
                 }
             }

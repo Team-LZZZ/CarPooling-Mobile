@@ -15,6 +15,7 @@ import com.google.gson.Gson;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.CarpoolsHandler;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.IConnectionStatus;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.LogInHandler;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
@@ -108,12 +109,36 @@ public class LoginActivity extends AppCompatActivity{
     public void onLoginSuccess() {
         _loginButton.setEnabled(true);
         AppContainer.getInstance().setActiveUser(this.user);
+        CarpoolsHandler carpoolsHandler = new CarpoolsHandler(new IConnectionStatus() {
+            @Override
+            public void onComplete(Boolean isSuccess, String additionalInfos) {
+                progressDialog.dismiss();
+                if (isSuccess){
+                    onGetAllCarpoolsSuccess();
+                }else{
+                    onGetAllCarpoolFailed(additionalInfos);
+                }
+            }
+        });
+        if(AppContainer.getInstance().isLogIn()){
+            carpoolsHandler.connectForResponse(CommonUtils.createHttpGETRequestMessageWithToken(CommonConstants.getAllCarpools));
+            progressDialog = CommonUtils.createProgressDialog(this, "Loading...");
+            progressDialog.show();
+        }
+
+    }
+
+    private void onGetAllCarpoolsSuccess(){
         finish();
     }
 
     public void onLoginFailed(String reason) {
         Toast.makeText(getBaseContext(), reason, Toast.LENGTH_LONG).show();
         _loginButton.setEnabled(true);
+    }
+
+    private void onGetAllCarpoolFailed(String error){
+        Toast.makeText(this, error, Toast.LENGTH_LONG).show();
     }
 
     public boolean validate(String username, String password) {

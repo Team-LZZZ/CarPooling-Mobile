@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.text.Html;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,6 +23,8 @@ import com.google.android.gms.common.GooglePlayServicesRepairableException;
 import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.ui.PlacePicker;
 import com.google.gson.Gson;
+
+import java.time.LocalDateTime;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -69,7 +72,6 @@ public class OfferFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
         View view = inflater.inflate(R.layout.fragment_second, container, false);
         ButterKnife.bind(this,view);
         View.OnClickListener selectAddressListener = new View.OnClickListener() {
@@ -111,8 +113,15 @@ public class OfferFragment extends Fragment {
             public void onClick(View v) {
 
                 Gson gson = new Gson();
-
-                String offerJson = "";
+                OfferInput offer = new OfferInput();
+                offer.setStart_latitude(42.2625);
+                offer.setStart_longitude(-71.8027778);
+                offer.setTarget_latitude(42.3583333);
+                offer.setTarget_longitude(-71.0602778);
+                offer.setCar_plate("TestPlate");
+                offer.setMilliseconds(System.currentTimeMillis());
+                offer.setSeats_available(4);
+                String offerJson = gson.toJson(offer);
 
                 offerHandler = new OfferHandler(new IConnectionStatus() {
 
@@ -199,4 +208,70 @@ public class OfferFragment extends Fragment {
 
     }
 
+}
+
+class OfferInput{
+    private double start_longitude;
+    private double start_latitude;
+    private double target_longitude;
+    private double target_latitude;
+    private int seats_available;
+    private String car_plate;
+    private long milliseconds;
+
+    public double getStart_longitude() {
+        return start_longitude;
+    }
+
+    public void setStart_longitude(double start_longitude) {
+        this.start_longitude = start_longitude;
+    }
+
+    public double getStart_latitude() {
+        return start_latitude;
+    }
+
+    public void setStart_latitude(double start_latitude) {
+        this.start_latitude = start_latitude;
+    }
+
+    public double getTarget_longitude() {
+        return target_longitude;
+    }
+
+    public void setTarget_longitude(double target_longitude) {
+        this.target_longitude = target_longitude;
+    }
+
+    public double getTarget_latitude() {
+        return target_latitude;
+    }
+
+    public void setTarget_latitude(double target_latitude) {
+        this.target_latitude = target_latitude;
+    }
+
+    public int getSeats_available() {
+        return seats_available;
+    }
+
+    public void setSeats_available(int seats_available) {
+        this.seats_available = seats_available;
+    }
+
+    public String getCar_plate() {
+        return car_plate;
+    }
+
+    public void setCar_plate(String car_plate) {
+        this.car_plate = car_plate;
+    }
+
+    public long getMilliseconds() {
+        return milliseconds;
+    }
+
+    public void setMilliseconds(long milliseconds) {
+        this.milliseconds = milliseconds;
+    }
 }
