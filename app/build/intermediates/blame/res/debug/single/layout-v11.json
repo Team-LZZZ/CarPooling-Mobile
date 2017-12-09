@@ -1,26 +1,26 @@
 [
     {
-        "merged": "C:\\Users\\Qingquan Zhao\\Desktop\\MobileProject\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
-        "source": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
+        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_narrow.xml",
+        "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/layout-v11/notification_template_big_media_narrow.xml"
     },
     {
-        "merged": "C:\\Users\\Qingquan Zhao\\Desktop\\MobileProject\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
-        "source": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
+        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/layout-v11/notification_media_action.xml",
+        "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/layout-v11/notification_media_action.xml"
     },
     {
-        "merged": "C:\\Users\\Qingquan Zhao\\Desktop\\MobileProject\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_cancel_action.xml",
-        "source": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
+        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_narrow_custom.xml",
+        "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/layout-v11/notification_template_big_media_narrow_custom.xml"
     },
     {
-        "merged": "C:\\Users\\Qingquan Zhao\\Desktop\\MobileProject\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media.xml",
-        "source": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\layout-v11\\notification_template_big_media.xml"
+        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media.xml",
+        "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/layout-v11/notification_template_big_media.xml"
     },
     {
-        "merged": "C:\\Users\\Qingquan Zhao\\Desktop\\MobileProject\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_custom.xml",
-        "source": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
+        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/layout-v11/notification_media_cancel_action.xml",
+        "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/layout-v11/notification_media_cancel_action.xml"
     },
     {
-        "merged": "C:\\Users\\Qingquan Zhao\\Desktop\\MobileProject\\CarPooling-Mobile\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_action.xml",
-        "source": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\13bc76f026f04e078df957cdac2ce98b9980b8d1\\output\\res\\layout-v11\\notification_media_action.xml"
+        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_custom.xml",
+        "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/layout-v11/notification_template_big_media_custom.xml"
     }
 ]

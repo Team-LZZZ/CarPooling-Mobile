@@ -80,8 +80,8 @@ public class LoginActivity extends AppCompatActivity{
         progressDialog.show();
 
 
-        username = "qqqqq";
-        password = "qqqqq";
+        username = "TestUser1";
+        password = "TestUser1";
         user = new User(username, password);
 
         logInHandler = new LogInHandler(new IConnectionStatus() {

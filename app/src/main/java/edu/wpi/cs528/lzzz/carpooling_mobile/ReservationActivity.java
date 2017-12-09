@@ -5,8 +5,6 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -15,8 +13,7 @@ import android.widget.Toast;
 
 import com.google.gson.Gson;
 
-import org.w3c.dom.Text;
-
+import butterknife.internal.ListenerClass;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.IConnectionStatus;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.ReservationHandler;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
@@ -31,9 +28,12 @@ import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonUtils;
 public class ReservationActivity extends AppCompatActivity {
 
     private Button reserveBtn;
+    private Button cancelReservationBtn;
+    private Button goBackBtn;
     private TextView reserverNameTextView;
     private TextView reserveNumberTextView;
     private long carPoolId;
+    private boolean reserveMode;
     private int reserveSeats;
     private ProgressDialog progressDialog;
     private ReservationHandler reservationHandler;
@@ -44,12 +44,15 @@ public class ReservationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reservation);
         carPoolId = getIntent().getIntExtra("carPoolId", 0);
-        reserveBtn = (Button) findViewById(R.id.ReserveBtn);
+        reserveMode = getIntent().getBooleanExtra("reserveMode", false);
+
         reserverNameTextView = (TextView) findViewById(R.id.ReserverName);
         reserverNameTextView.setText(AppContainer.getInstance().getActiveUser().getUsername());
         reserverNameTextView.setEnabled(false);
         reserveNumberTextView = (TextView) findViewById(R.id.ReserveSeatNumber);
+        this.progressDialog = CommonUtils.createProgressDialog(this, "loading..");
 
+        reserveBtn = (Button) findViewById(R.id.ReserveBtn);
         reserveBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,7 +71,7 @@ public class ReservationActivity extends AppCompatActivity {
                     public void onComplete(Boolean success, String additionalInfos) {
                         progressDialog.dismiss();
                         if (success){
-                            onReservationSucceed();
+                            onMakeReservationSucceed();
                         }else{
                             onReservationFailed(additionalInfos);
                         }
@@ -78,7 +81,32 @@ public class ReservationActivity extends AppCompatActivity {
 
             }
         });
-        this.progressDialog = CommonUtils.createProgressDialog(this, "loading..");
+
+        cancelReservationBtn = (Button) findViewById(R.id.cancelReserveBtn);
+        cancelReservationBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onCancelReservationSucceed();
+            }
+        });
+
+        goBackBtn = (Button) findViewById(R.id.goBackBtn);
+        goBackBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ReservationActivity.this, MainActivity.class);
+                ReservationActivity.this.startActivity(intent);
+            }
+        });
+
+//        if(reserveMode){
+        if(false){
+            reserveBtn.setEnabled(true);
+            cancelReservationBtn.setEnabled(false);
+        }else{
+            reserveBtn.setEnabled(false);
+            cancelReservationBtn.setEnabled(true);
+        }
     }
 
     private boolean isInputValid(){
@@ -95,7 +123,7 @@ public class ReservationActivity extends AppCompatActivity {
         return true;
     }
 
-    private void onReservationSucceed(){
+    private void onMakeReservationSucceed(){
         AlertDialog alertDialog = new AlertDialog.Builder(ReservationActivity.this).create();
         alertDialog.setTitle("Success");
         alertDialog.setMessage("Your reservation has been booked");
@@ -110,9 +138,21 @@ public class ReservationActivity extends AppCompatActivity {
         alertDialog.show();
     }
 
+    private void onCancelReservationSucceed(){
+        AlertDialog alertDialog = new AlertDialog.Builder(ReservationActivity.this).create();
+        alertDialog.setTitle("Success");
+        alertDialog.setMessage("Your reservation has been canceled.");
+        alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+        alertDialog.show();
+    }
+
     private void onReservationFailed(String error){
         Toast.makeText(getBaseContext(), error, Toast.LENGTH_LONG).show();
     }
-
 
 }

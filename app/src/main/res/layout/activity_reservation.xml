@@ -6,7 +6,7 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="237dp"
+        android:layout_height="183dp"
         android:text="This is the reservation detail"
         android:textSize="30sp" />
 
@@ -64,5 +64,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Reserve" />
+
+    <Button
+        android:id="@+id/cancelReserveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel Reservation" />
+
+    <Button
+        android:id="@+id/goBackBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back" />
 
 </LinearLayout>

@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\Qingquan Zhao\\Desktop\\MobileProject\\CarPooling-Mobile\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "outputFile": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 96
                 },
                 "from": {
-                    "file": "C:\\Users\\Qingquan Zhao\\.android\\build-cache\\06619bd93a2d9544fbfe2fa9ecfe0fd95285b594\\output\\res\\values\\values.xml",
+                    "file": "/Users/QQZhao/.android/build-cache/7690013a4188a595410fa5604f35d9ef883f1ed6/output/res/values/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

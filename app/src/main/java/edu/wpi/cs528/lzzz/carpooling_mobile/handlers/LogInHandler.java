@@ -17,7 +17,7 @@ import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonUtils;
 
 
 public class LogInHandler implements IConnectionAsyncTaskDelegate {
-    private final String TAG = "LogInHandler";
+    private final String LoginTAG = "LogInHandler";
     private IConnectionStatus ConnectionStatus;
 
     public LogInHandler(IConnectionStatus connectionStatus){
@@ -41,6 +41,7 @@ public class LogInHandler implements IConnectionAsyncTaskDelegate {
                     additionalInfos = responseMessage.getMessage().get(0);
                 }
             }else{
+                Log.i(LoginTAG + " token: ", responseMessage.getToken());
                 AppContainer.getInstance().setToken(responseMessage.getToken());
             }
         }catch (Exception ex){

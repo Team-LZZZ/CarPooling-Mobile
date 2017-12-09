@@ -1,491 +1,491 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:2:1-42:12
+ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:2:1-42:12
 	package
-		ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:3:5-51
-		INJECTED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml
+		ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:3:5-51
+		INJECTED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:5:5-67
-MERGED from [com.google.android.gms:play-services-ads-lite:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\82433cac5fc3b26035161ae4ddda24be8821f04e\output\AndroidManifest.xml:20:5-66
-MERGED from [com.google.android.gms:play-services-analytics:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a48773d2e4ef58677228fc7201ff8ae2bf6b4cd0\output\AndroidManifest.xml:21:5-67
-MERGED from [com.google.android.gms:play-services-appinvite:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\b6af743ab655a1a6c12ec3554840f07817df1b28\output\AndroidManifest.xml:19:5-67
-MERGED from [com.google.firebase:firebase-crash:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a37d2ccdc681506e3a019bfbcb0a3aacb5be99ca\output\AndroidManifest.xml:20:5-66
-MERGED from [com.google.android.gms:play-services-gcm:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\6f019f1e53a3cacc7d391efe8be5b7a88365a0dd\output\AndroidManifest.xml:22:5-67
-MERGED from [com.google.android.gms:play-services-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\742999828080ee0d9a3a996f6f82f0170053d0d3\output\AndroidManifest.xml:22:5-67
-MERGED from [com.google.android.gms:play-services-analytics-impl:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\9b884067bde91291f8f8c9eeb8e413fc850cd56f\output\AndroidManifest.xml:21:5-67
-MERGED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\cb31f33eadeb4c2e30db13dad96d99e0156e9697\output\AndroidManifest.xml:21:5-67
-MERGED from [com.google.firebase:firebase-analytics:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\975853edcf45dd1883c61cd43b2925c424b9b2cd\output\AndroidManifest.xml:21:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\05f61d01674031efde4940285b2dbce239b2d6b8\output\AndroidManifest.xml:21:5-67
-MERGED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:21:5-67
-MERGED from [com.google.android.gms:play-services-maps:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\ae5796e9d2f9b462f270030e5ddd4f84f8d20909\output\AndroidManifest.xml:21:5-66
+ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:5:5-67
+MERGED from [com.google.android.gms:play-services-ads-lite:9.4.0] /Users/QQZhao/.android/build-cache/0bd10b421ee4b5bd4fece0759ffa85e4cb2edc39/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics:9.4.0] /Users/QQZhao/.android/build-cache/b7ec3db60b88664a38edc44ccaae4585b6d1434c/output/AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-appinvite:9.4.0] /Users/QQZhao/.android/build-cache/db8fdc6458fc8d98b9b6141f8cb9f569e0daa334/output/AndroidManifest.xml:19:5-67
+MERGED from [com.google.firebase:firebase-crash:9.4.0] /Users/QQZhao/.android/build-cache/c56144b019a80745aa14935a9c0dc4ef835b414d/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-gcm:9.4.0] /Users/QQZhao/.android/build-cache/00f49a503cf8b63bb97d0109452b39a79c34b069/output/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-iid:9.4.0] /Users/QQZhao/.android/build-cache/04d7d4240d1168ab00c8bc797bd62d0ade349e8c/output/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.4.0] /Users/QQZhao/.android/build-cache/88dbaf6c1b22de50056b07fec57eca0c2ad7e684/output/AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] /Users/QQZhao/.android/build-cache/c2b3c3e95ec6477ab59e14c4483f5fd4bacb2d5e/output/AndroidManifest.xml:21:5-67
+MERGED from [com.google.firebase:firebase-analytics:9.4.0] /Users/QQZhao/.android/build-cache/381c8e22f018e8d76b609eba78d307a1aae329e6/output/AndroidManifest.xml:21:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] /Users/QQZhao/.android/build-cache/26a84cc54b1048c8c61ebb867ff9c65728e47926/output/AndroidManifest.xml:21:5-67
+MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-maps:9.4.0] /Users/QQZhao/.android/build-cache/bb15fc620968b12c35222d4f63abe7023886ac9a/output/AndroidManifest.xml:21:5-66
 	android:name
-		ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:6:5-79
-MERGED from [com.google.android.gms:play-services-ads-lite:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\82433cac5fc3b26035161ae4ddda24be8821f04e\output\AndroidManifest.xml:21:5-78
-MERGED from [com.google.android.gms:play-services-analytics:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a48773d2e4ef58677228fc7201ff8ae2bf6b4cd0\output\AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.gms:play-services-nearby:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\ca77afbffd008a5297b609d148cac53758794b9f\output\AndroidManifest.xml:5:5-79
-MERGED from [com.google.android.gms:play-services-analytics-impl:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\9b884067bde91291f8f8c9eeb8e413fc850cd56f\output\AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\cb31f33eadeb4c2e30db13dad96d99e0156e9697\output\AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-analytics:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\975853edcf45dd1883c61cd43b2925c424b9b2cd\output\AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\05f61d01674031efde4940285b2dbce239b2d6b8\output\AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:20:5-79
-MERGED from [com.google.android.gms:play-services-maps:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\ae5796e9d2f9b462f270030e5ddd4f84f8d20909\output\AndroidManifest.xml:20:5-78
+ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:6:5-79
+MERGED from [com.google.android.gms:play-services-ads-lite:9.4.0] /Users/QQZhao/.android/build-cache/0bd10b421ee4b5bd4fece0759ffa85e4cb2edc39/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics:9.4.0] /Users/QQZhao/.android/build-cache/b7ec3db60b88664a38edc44ccaae4585b6d1434c/output/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-nearby:9.4.0] /Users/QQZhao/.android/build-cache/0783eb50e3208200b558630cf8ee25836d8bf1e1/output/AndroidManifest.xml:5:5-79
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.4.0] /Users/QQZhao/.android/build-cache/88dbaf6c1b22de50056b07fec57eca0c2ad7e684/output/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] /Users/QQZhao/.android/build-cache/c2b3c3e95ec6477ab59e14c4483f5fd4bacb2d5e/output/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-analytics:9.4.0] /Users/QQZhao/.android/build-cache/381c8e22f018e8d76b609eba78d307a1aae329e6/output/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] /Users/QQZhao/.android/build-cache/26a84cc54b1048c8c61ebb867ff9c65728e47926/output/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:20:5-79
+MERGED from [com.google.android.gms:play-services-maps:9.4.0] /Users/QQZhao/.android/build-cache/bb15fc620968b12c35222d4f63abe7023886ac9a/output/AndroidManifest.xml:20:5-78
 	android:name
-		ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:6:22-76
+		ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:6:22-76
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:7:5-79
+ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:7:5-79
 	android:name
-		ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:7:22-76
+		ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:7:22-76
 uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
-ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:8:5-97
+ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:8:5-97
 	android:name
-		ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:8:22-95
+		ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:8:22-95
 permission#com.example.permission.MAPS_RECEIVE
-ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:9:5-11:46
+ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:9:5-11:46
 	android:protectionLevel
-		ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:11:9-44
+		ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:11:9-44
 	android:name
-		ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:10:9-59
+		ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:10:9-59
 uses-permission#com.example.permission.MAPS_RECEIVE
-ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:12:5-74
+ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:12:5-74
 	android:name
-		ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:12:22-72
+		ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:12:22-72
 uses-feature#0x00020000
-ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:14:5-16:35
-MERGED from [com.google.android.gms:play-services-maps:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\ae5796e9d2f9b462f270030e5ddd4f84f8d20909\output\AndroidManifest.xml:22:5-24:33
+ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:14:5-16:35
+MERGED from [com.google.android.gms:play-services-maps:9.4.0] /Users/QQZhao/.android/build-cache/bb15fc620968b12c35222d4f63abe7023886ac9a/output/AndroidManifest.xml:22:5-24:33
 	android:glEsVersion
-		ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:15:9-41
+		ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:15:9-41
 	android:required
-		ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:16:9-32
+		ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:16:9-32
 application
-ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:18:5-40:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha3] C:\Users\Qingquan Zhao\.android\build-cache\1fad32dcf0c1ffaa65505a23a1886adfffb6bb11\output\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:cardview-v7:25.1.0] C:\Users\Qingquan Zhao\.android\build-cache\534004fd90c86fd226fc2e582118647ea9bcca79\output\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:25.1.0] C:\Users\Qingquan Zhao\.android\build-cache\efd2a1df99e5ff5fadda503717e69daa1839a738\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:transition:25.1.0] C:\Users\Qingquan Zhao\.android\build-cache\581a0bb8e77d22a5bbdf7f209dd3d995ee5fc709\output\AndroidManifest.xml:22:5-20
-MERGED from [com.mikhaellopez:circularimageview:3.0.2] C:\Users\Qingquan Zhao\.android\build-cache\4421615fb323f2bc46b0a65de84709b5d9b001a3\output\AndroidManifest.xml:11:5-13:38
-MERGED from [com.google.android.gms:play-services:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\e2471b17e71bfd12203a2e2bd367c0ba5a8cbd51\output\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-ads-lite:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\82433cac5fc3b26035161ae4ddda24be8821f04e\output\AndroidManifest.xml:24:5-32:19
-MERGED from [com.google.android.gms:play-services-analytics:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a48773d2e4ef58677228fc7201ff8ae2bf6b4cd0\output\AndroidManifest.xml:27:5-20
-MERGED from [com.google.android.gms:play-services-appinvite:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\b6af743ab655a1a6c12ec3554840f07817df1b28\output\AndroidManifest.xml:20:5-30:19
-MERGED from [com.google.android.gms:play-services-auth:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a946111ef065935098e8bc8a33501a58901497c8\output\AndroidManifest.xml:20:5-32:19
-MERGED from [com.google.android.gms:play-services-cast-framework:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\93387d9ace5dca1686727dd2c4e7e425df9a6562\output\AndroidManifest.xml:5:5-9:19
-MERGED from [com.google.android.gms:play-services-cast:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\39afc17ff0d8252552b00bc71dd925446e903377\output\AndroidManifest.xml:19:5-20
-MERGED from [com.android.support:mediarouter-v7:23.0.0] C:\Users\Qingquan Zhao\.android\build-cache\b60fdff3cdbcfec452e83ef14165da355e230206\output\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\13bc76f026f04e078df957cdac2ce98b9980b8d1\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\b80ac780895357ca56eeafa8ada3c3de9d51e694\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\0c76f30ced80267d163bfbaf741e0671b5f4a320\output\AndroidManifest.xml:26:5-20
-MERGED from [com.google.android.gms:play-services-clearcut:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\cd7cd6856dee5e2eb2bafb1af6eb170bf5a17691\output\AndroidManifest.xml:19:5-20
-MERGED from [com.google.firebase:firebase-config:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\fa744efceb61a3c1f774f2c00c750f2ec2098946\output\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-contextmanager:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\d4718d1f03dceceda1c514e45c62acbddaaddb32\output\AndroidManifest.xml:19:5-20
-MERGED from [com.google.firebase:firebase-crash:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a37d2ccdc681506e3a019bfbcb0a3aacb5be99ca\output\AndroidManifest.xml:24:5-32:19
-MERGED from [com.google.firebase:firebase-auth:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\75fa8df6791b57e9f8e2eb714527dc5dff4dcd77\output\AndroidManifest.xml:20:5-21:19
-MERGED from [com.google.firebase:firebase-auth-common:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\f5bb74bd1753efcfaeefd0d7affefc57640842b1\output\AndroidManifest.xml:20:5-21:19
-MERGED from [com.google.firebase:firebase-messaging:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\3bd8e5535fff42cfdde475468327c9b83b48638e\output\AndroidManifest.xml:20:5-32:19
-MERGED from [com.google.android.gms:play-services-fitness:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\920939271b64731ca0658941fe38ccf5f0649169\output\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-games:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\51d694fcb427d423126cd7072496116c9865debb\output\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-drive:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\e94d6167bc464fd3395d77b41d3bc9d6ea183556\output\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-gass:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\2b99bb49ce46a685b89551cae2f8c747e9ec4e59\output\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-gcm:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\6f019f1e53a3cacc7d391efe8be5b7a88365a0dd\output\AndroidManifest.xml:24:5-20
-MERGED from [com.google.android.gms:play-services-appindexing:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\9ba92fe43b9d1f9427240fd99cb0c6d42e40753c\output\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\742999828080ee0d9a3a996f6f82f0170053d0d3\output\AndroidManifest.xml:24:5-20
-MERGED from [com.google.android.gms:play-services-location:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\2c02b08f88ce34481e553547e46c5cf822ed3fed\output\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-nearby:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\ca77afbffd008a5297b609d148cac53758794b9f\output\AndroidManifest.xml:6:5-20
-MERGED from [com.google.android.gms:play-services-panorama:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\9e66f83db926d32b770cdc33c6b63862355540f6\output\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-places:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\51d6bf5c0c0076e31c9d4f0b3f5efe66fd54a6b0\output\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-plus:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\ff3b577914a72379c55d0225b868e77a01ed170f\output\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-safetynet:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\0b606c8bab0db9a653a0284d6be0e6a11a217233\output\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-analytics-impl:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\9b884067bde91291f8f8c9eeb8e413fc850cd56f\output\AndroidManifest.xml:27:5-20
-MERGED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\cb31f33eadeb4c2e30db13dad96d99e0156e9697\output\AndroidManifest.xml:24:5-38:19
-MERGED from [com.google.firebase:firebase-analytics:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\975853edcf45dd1883c61cd43b2925c424b9b2cd\output\AndroidManifest.xml:26:5-41:19
-MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\05f61d01674031efde4940285b2dbce239b2d6b8\output\AndroidManifest.xml:26:5-41:19
-MERGED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:30:5-59:19
-MERGED from [com.google.firebase:firebase-common:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a644640bdce7b76dbd17bc00cbf6e175aa199909\output\AndroidManifest.xml:5:5-12:19
-MERGED from [com.google.android.gms:play-services-vision:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\15a4ff099530b6bf617aa14e0bf45bb49a8375ba\output\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-identity:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\643ab4cafc62e3c8477f499fc468e662bbda6016\output\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-maps:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\ae5796e9d2f9b462f270030e5ddd4f84f8d20909\output\AndroidManifest.xml:27:5-20
-MERGED from [com.google.android.gms:play-services-wearable:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\9298ec7df98a21ed62b603af8f9da41a6cb08f6a\output\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a86369fe2303c90acc28068dc4a4da162ecea570\output\AndroidManifest.xml:19:5-23:19
-MERGED from [com.google.android.gms:play-services-tasks:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\f9414a46ee3576ba48768db1268d193e31fd9990\output\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\fcf641b389608d1ecb4ade7694be4e21f85d1ff4\output\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\4a82c68240bb433372f14b6d6198a8ccc377f879\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\4725c4001e0f88e855d2f677b12e70214e59d25c\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\4776635d97b13db2b27cfe7c4255f3a646f5929d\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\6e15632f9e9a28fdc0a340cd66e3c8b6da66bacc\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\f1c88830bdfee926aa17771a9d1ffea2b64f7d90\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\99a65f3401a18468cb3e2426479a66c6f1a36cd1\output\AndroidManifest.xml:29:5-20
+ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:18:5-40:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha3] /Users/QQZhao/.android/build-cache/baca57c39b56e2d0c5d161dd62e192648536caa3/output/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:cardview-v7:25.1.0] /Users/QQZhao/.android/build-cache/1730e9ec8b132b41ee88a84515fe5e1c56c34209/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:25.1.0] /Users/QQZhao/.android/build-cache/3c868aa1a1dd8e9f8aa11b8cf7ce743a4260f99e/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:transition:25.1.0] /Users/QQZhao/.android/build-cache/090224326db0e9630c4620ebd5c780ca6e0106b9/output/AndroidManifest.xml:22:5-20
+MERGED from [com.mikhaellopez:circularimageview:3.0.2] /Users/QQZhao/.android/build-cache/b8ec0bf0fad63944bbc8c393c51006cb58972eba/output/AndroidManifest.xml:11:5-13:38
+MERGED from [com.google.android.gms:play-services:9.4.0] /Users/QQZhao/.android/build-cache/7f641121868329f698d99930c6ff1760aff06d41/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-ads-lite:9.4.0] /Users/QQZhao/.android/build-cache/0bd10b421ee4b5bd4fece0759ffa85e4cb2edc39/output/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.android.gms:play-services-analytics:9.4.0] /Users/QQZhao/.android/build-cache/b7ec3db60b88664a38edc44ccaae4585b6d1434c/output/AndroidManifest.xml:27:5-20
+MERGED from [com.google.android.gms:play-services-appinvite:9.4.0] /Users/QQZhao/.android/build-cache/db8fdc6458fc8d98b9b6141f8cb9f569e0daa334/output/AndroidManifest.xml:20:5-30:19
+MERGED from [com.google.android.gms:play-services-auth:9.4.0] /Users/QQZhao/.android/build-cache/b2b392147b400e033702db77d1fdb8c2fc7892fc/output/AndroidManifest.xml:20:5-32:19
+MERGED from [com.google.android.gms:play-services-cast-framework:9.4.0] /Users/QQZhao/.android/build-cache/76766f661f27ebeada1b6c41249333a7f815e32d/output/AndroidManifest.xml:5:5-9:19
+MERGED from [com.google.android.gms:play-services-cast:9.4.0] /Users/QQZhao/.android/build-cache/d2b371bdfbfadc188546fe63da65b1707554686c/output/AndroidManifest.xml:19:5-20
+MERGED from [com.android.support:mediarouter-v7:23.0.0] /Users/QQZhao/.android/build-cache/5958ca067ac2ea03874c3410efc4b1591e3c1b16/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/QQZhao/.android/build-cache/ac003f202a678ad63b7ee1b2e48570dc3f51efcb/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/QQZhao/.android/build-cache/8a9edb24ef0cfbc84c3675fb7572cf5afe13cbf9/output/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:9.4.0] /Users/QQZhao/.android/build-cache/de5b3f94c7092275f4172ce42299609d0f6c77fe/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.firebase:firebase-config:9.4.0] /Users/QQZhao/.android/build-cache/91d2f4ec81d02fc70466f9f090ddc1fde1e51266/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-contextmanager:9.4.0] /Users/QQZhao/.android/build-cache/66a7fbdd3c0a23bf39921c4c556948b6f9b4099b/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.firebase:firebase-crash:9.4.0] /Users/QQZhao/.android/build-cache/c56144b019a80745aa14935a9c0dc4ef835b414d/output/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.firebase:firebase-auth:9.4.0] /Users/QQZhao/.android/build-cache/b08c8d3c50541dfe99a9bf1ea60bd5a37eab063d/output/AndroidManifest.xml:20:5-21:19
+MERGED from [com.google.firebase:firebase-auth-common:9.4.0] /Users/QQZhao/.android/build-cache/dd935c0ddcec972aafef946484e5750d50b2ba1a/output/AndroidManifest.xml:20:5-21:19
+MERGED from [com.google.firebase:firebase-messaging:9.4.0] /Users/QQZhao/.android/build-cache/13e15630cc81ad546ff1e754ae3a0c8f8e05818b/output/AndroidManifest.xml:20:5-32:19
+MERGED from [com.google.android.gms:play-services-fitness:9.4.0] /Users/QQZhao/.android/build-cache/855a086c5663e94f5d69181552774a82d0700b9c/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-games:9.4.0] /Users/QQZhao/.android/build-cache/54ff3c35ed70b4f7f4c8fec36c027a074cba434d/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-drive:9.4.0] /Users/QQZhao/.android/build-cache/be47da164c36ed0e3ecbbb2dc20f00d9109caaf8/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-gass:9.4.0] /Users/QQZhao/.android/build-cache/a2c7b0bc44e3dfa5c44955e0063191e360925944/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-gcm:9.4.0] /Users/QQZhao/.android/build-cache/00f49a503cf8b63bb97d0109452b39a79c34b069/output/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:9.4.0] /Users/QQZhao/.android/build-cache/3614b35053946d1da54b460d87e22b5359b6df7e/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-iid:9.4.0] /Users/QQZhao/.android/build-cache/04d7d4240d1168ab00c8bc797bd62d0ade349e8c/output/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-location:9.4.0] /Users/QQZhao/.android/build-cache/aab4d235bcc67741092be9ca3fdb1ad95f320a39/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-nearby:9.4.0] /Users/QQZhao/.android/build-cache/0783eb50e3208200b558630cf8ee25836d8bf1e1/output/AndroidManifest.xml:6:5-20
+MERGED from [com.google.android.gms:play-services-panorama:9.4.0] /Users/QQZhao/.android/build-cache/5bac3416670b4f94be7971859bfeff3fe885a73f/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-places:9.4.0] /Users/QQZhao/.android/build-cache/a89c94fa22d3ef6456b9700eae4faa6eef1671a1/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-plus:9.4.0] /Users/QQZhao/.android/build-cache/4047bba4c3c49ef925128816299defa153f1921c/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:9.4.0] /Users/QQZhao/.android/build-cache/4b783c79108ce30d40a51e0d333191d19936796f/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.4.0] /Users/QQZhao/.android/build-cache/88dbaf6c1b22de50056b07fec57eca0c2ad7e684/output/AndroidManifest.xml:27:5-20
+MERGED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] /Users/QQZhao/.android/build-cache/c2b3c3e95ec6477ab59e14c4483f5fd4bacb2d5e/output/AndroidManifest.xml:24:5-38:19
+MERGED from [com.google.firebase:firebase-analytics:9.4.0] /Users/QQZhao/.android/build-cache/381c8e22f018e8d76b609eba78d307a1aae329e6/output/AndroidManifest.xml:26:5-41:19
+MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] /Users/QQZhao/.android/build-cache/26a84cc54b1048c8c61ebb867ff9c65728e47926/output/AndroidManifest.xml:26:5-41:19
+MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:30:5-59:19
+MERGED from [com.google.firebase:firebase-common:9.4.0] /Users/QQZhao/.android/build-cache/c26a7db39a8067f47f4d7e243601dfe6d7cdc6cb/output/AndroidManifest.xml:5:5-12:19
+MERGED from [com.google.android.gms:play-services-vision:9.4.0] /Users/QQZhao/.android/build-cache/a62c4515dd0c6cbbd28825ed5a5f09a06ecf221c/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-identity:9.4.0] /Users/QQZhao/.android/build-cache/cc088998929d201b6f9681e5c98994d0457fe6fd/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-maps:9.4.0] /Users/QQZhao/.android/build-cache/bb15fc620968b12c35222d4f63abe7023886ac9a/output/AndroidManifest.xml:27:5-20
+MERGED from [com.google.android.gms:play-services-wearable:9.4.0] /Users/QQZhao/.android/build-cache/f7179da1d8d3f121f35e6e176f7e30b384c1298b/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-base:9.4.0] /Users/QQZhao/.android/build-cache/37ad6d383be171b9383368f52b3a46133d76d7d0/output/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:9.4.0] /Users/QQZhao/.android/build-cache/4fa99f786ac0d98aee78dd402526012dc7d993ab/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/QQZhao/.android/build-cache/19a5f48815d033dc1bf5ffd0e994829bb7b79312/output/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/QQZhao/.android/build-cache/020d488da7477242e590875e10eb973fe4ae1ed7/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/QQZhao/.android/build-cache/9499b933deca2e033bf7e968673ea4a7d875a0d8/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/QQZhao/.android/build-cache/35f2a1856ae4ba0e24958188860e251e10c9e959/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/QQZhao/.android/build-cache/47f98fbf76611f445e2eb9065ef5289fe65f05e5/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/QQZhao/.android/build-cache/acf3d875667f7314854129ad71daae7376eecfeb/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/QQZhao/.android/build-cache/53c902332a8708dea51ec665725611126bf99516/output/AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:21:9-41
+		ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:21:9-41
 	android:supportsRtl
-		ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:23:9-35
+		ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:23:9-35
 	android:roundIcon
-		ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:22:9-54
+		ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:22:9-54
 	android:allowBackup
-		ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:19:9-35
+		ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:19:9-35
 	android:icon
-		ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:20:9-43
+		ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:20:9-43
 	android:theme
-		ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:24:9-40
+		ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:24:9-40
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:26:9-28:71
+ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:26:9-28:71
 	android:value
-		ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:28:13-68
+		ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:28:13-68
 	android:name
-		ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:27:13-58
+		ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:27:13-58
 activity#edu.wpi.cs528.lzzz.carpooling_mobile.MainActivity
-ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:30:9-36:20
+ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:30:9-36:20
 	android:name
-		ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:30:19-47
+		ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:30:19-47
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:31:13-35:29
+ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:31:13-35:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:32:17-69
+ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:32:17-69
 	android:name
-		ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:32:25-66
+		ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:32:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:34:17-77
+ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:34:17-77
 	android:name
-		ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:34:27-74
+		ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:34:27-74
 activity#edu.wpi.cs528.lzzz.carpooling_mobile.LoginActivity
-ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:37:9-124
+ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:37:9-124
 	android:theme
-		ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:37:85-121
+		ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:37:85-121
 	android:name
-		ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:37:19-84
+		ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:37:19-84
 activity#edu.wpi.cs528.lzzz.carpooling_mobile.SignupActivity
-ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:38:9-125
+ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:38:9-125
 	android:theme
-		ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:38:86-122
+		ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:38:86-122
 	android:name
-		ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:38:19-85
+		ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:38:19-85
 activity#edu.wpi.cs528.lzzz.carpooling_mobile.ReservationActivity
-ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:39:9-93
+ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:39:9-93
 	android:name
-		ADDED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml:39:19-90
+		ADDED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml:39:19-90
 uses-sdk
-INJECTED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha3] C:\Users\Qingquan Zhao\.android\build-cache\1fad32dcf0c1ffaa65505a23a1886adfffb6bb11\output\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:cardview-v7:25.1.0] C:\Users\Qingquan Zhao\.android\build-cache\534004fd90c86fd226fc2e582118647ea9bcca79\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:design:25.1.0] C:\Users\Qingquan Zhao\.android\build-cache\efd2a1df99e5ff5fadda503717e69daa1839a738\output\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:recyclerview-v7:25.1.0] C:\Users\Qingquan Zhao\.android\build-cache\f9a4360c13e5581bd5fbf2b66a988c3b1a080748\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:transition:25.1.0] C:\Users\Qingquan Zhao\.android\build-cache\581a0bb8e77d22a5bbdf7f209dd3d995ee5fc709\output\AndroidManifest.xml:20:5-44
-MERGED from [com.mikhaellopez:circularimageview:3.0.2] C:\Users\Qingquan Zhao\.android\build-cache\4421615fb323f2bc46b0a65de84709b5d9b001a3\output\AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.android.gms:play-services:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\e2471b17e71bfd12203a2e2bd367c0ba5a8cbd51\output\AndroidManifest.xml:4:5-42
-MERGED from [com.google.android.gms:play-services-ads:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\7c9b825bb72f469b8b9cd16cf718432a25c473b9\output\AndroidManifest.xml:19:5-42
-MERGED from [com.google.android.gms:play-services-ads-lite:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\82433cac5fc3b26035161ae4ddda24be8821f04e\output\AndroidManifest.xml:23:5-42
-MERGED from [com.google.android.gms:play-services-analytics:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a48773d2e4ef58677228fc7201ff8ae2bf6b4cd0\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-appinvite:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\b6af743ab655a1a6c12ec3554840f07817df1b28\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-auth:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a946111ef065935098e8bc8a33501a58901497c8\output\AndroidManifest.xml:18:5-43
-MERGED from [com.google.android.gms:play-services-auth-base:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\e98e2c5fe277e2480859c43cb3fff3a4c22d3c78\output\AndroidManifest.xml:5:5-43
-MERGED from [com.google.android.gms:play-services-cast-framework:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\93387d9ace5dca1686727dd2c4e7e425df9a6562\output\AndroidManifest.xml:4:5-42
-MERGED from [com.google.android.gms:play-services-cast:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\39afc17ff0d8252552b00bc71dd925446e903377\output\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:mediarouter-v7:23.0.0] C:\Users\Qingquan Zhao\.android\build-cache\b60fdff3cdbcfec452e83ef14165da355e230206\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\13bc76f026f04e078df957cdac2ce98b9980b8d1\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\b80ac780895357ca56eeafa8ada3c3de9d51e694\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\0c76f30ced80267d163bfbaf741e0671b5f4a320\output\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-clearcut:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\cd7cd6856dee5e2eb2bafb1af6eb170bf5a17691\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-config:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\fa744efceb61a3c1f774f2c00c750f2ec2098946\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-contextmanager:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\d4718d1f03dceceda1c514e45c62acbddaaddb32\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-crash:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a37d2ccdc681506e3a019bfbcb0a3aacb5be99ca\output\AndroidManifest.xml:22:5-42
-MERGED from [com.google.firebase:firebase-auth:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\75fa8df6791b57e9f8e2eb714527dc5dff4dcd77\output\AndroidManifest.xml:18:5-43
-MERGED from [com.google.firebase:firebase-auth-common:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\f5bb74bd1753efcfaeefd0d7affefc57640842b1\output\AndroidManifest.xml:18:5-43
-MERGED from [com.google.firebase:firebase-auth-module:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\66f54f8184db4498705f7b2015e1278087faa690\output\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-database:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\06473259e3b741b5118133dedd779e0df200f953\output\AndroidManifest.xml:5:5-43
-MERGED from [com.google.firebase:firebase-database-connection:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\d2d108ef6d72b9da05fde14e602a7f40b30a9559\output\AndroidManifest.xml:5:5-43
-MERGED from [com.google.firebase:firebase-messaging:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\3bd8e5535fff42cfdde475468327c9b83b48638e\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-storage:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\aeb34e044adfc699d55c0980718699a857ae7bec\output\AndroidManifest.xml:5:5-43
-MERGED from [com.google.firebase:firebase-storage-common:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\2ce4dc58e59e48ed4a4ecd2f4135aa5a3a6e09bd\output\AndroidManifest.xml:5:5-43
-MERGED from [com.google.android.gms:play-services-fitness:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\920939271b64731ca0658941fe38ccf5f0649169\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-games:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\51d694fcb427d423126cd7072496116c9865debb\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-drive:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\e94d6167bc464fd3395d77b41d3bc9d6ea183556\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-gass:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\2b99bb49ce46a685b89551cae2f8c747e9ec4e59\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-gcm:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\6f019f1e53a3cacc7d391efe8be5b7a88365a0dd\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-appindexing:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\9ba92fe43b9d1f9427240fd99cb0c6d42e40753c\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\742999828080ee0d9a3a996f6f82f0170053d0d3\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-location:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\2c02b08f88ce34481e553547e46c5cf822ed3fed\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-nearby:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\ca77afbffd008a5297b609d148cac53758794b9f\output\AndroidManifest.xml:4:5-42
-MERGED from [com.google.android.gms:play-services-panorama:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\9e66f83db926d32b770cdc33c6b63862355540f6\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-places:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\51d6bf5c0c0076e31c9d4f0b3f5efe66fd54a6b0\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-plus:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\ff3b577914a72379c55d0225b868e77a01ed170f\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-safetynet:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\0b606c8bab0db9a653a0284d6be0e6a11a217233\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-tagmanager:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\c127d426e79cc5ea31b4b62cab62806e9f4cf0b7\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-analytics-impl:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\9b884067bde91291f8f8c9eeb8e413fc850cd56f\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\cb31f33eadeb4c2e30db13dad96d99e0156e9697\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-analytics:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\975853edcf45dd1883c61cd43b2925c424b9b2cd\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\05f61d01674031efde4940285b2dbce239b2d6b8\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-common:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a644640bdce7b76dbd17bc00cbf6e175aa199909\output\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-vision:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\15a4ff099530b6bf617aa14e0bf45bb49a8375ba\output\AndroidManifest.xml:4:5-42
-MERGED from [com.google.android.gms:play-services-wallet:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\6fe7457a74f4ce3b4c2aa115c7c1ff947a90be11\output\AndroidManifest.xml:19:5-42
-MERGED from [com.google.android.gms:play-services-identity:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\643ab4cafc62e3c8477f499fc468e662bbda6016\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-maps:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\ae5796e9d2f9b462f270030e5ddd4f84f8d20909\output\AndroidManifest.xml:26:5-42
-MERGED from [com.google.android.gms:play-services-wearable:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\9298ec7df98a21ed62b603af8f9da41a6cb08f6a\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a86369fe2303c90acc28068dc4a4da162ecea570\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-tasks:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\f9414a46ee3576ba48768db1268d193e31fd9990\output\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\fcf641b389608d1ecb4ade7694be4e21f85d1ff4\output\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\4a82c68240bb433372f14b6d6198a8ccc377f879\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\4725c4001e0f88e855d2f677b12e70214e59d25c\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\4776635d97b13db2b27cfe7c4255f3a646f5929d\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\6e15632f9e9a28fdc0a340cd66e3c8b6da66bacc\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\f1c88830bdfee926aa17771a9d1ffea2b64f7d90\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\99a65f3401a18468cb3e2426479a66c6f1a36cd1\output\AndroidManifest.xml:21:5-23:58
+INJECTED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha3] /Users/QQZhao/.android/build-cache/baca57c39b56e2d0c5d161dd62e192648536caa3/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:cardview-v7:25.1.0] /Users/QQZhao/.android/build-cache/1730e9ec8b132b41ee88a84515fe5e1c56c34209/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:25.1.0] /Users/QQZhao/.android/build-cache/3c868aa1a1dd8e9f8aa11b8cf7ce743a4260f99e/output/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:recyclerview-v7:25.1.0] /Users/QQZhao/.android/build-cache/92a3e3bec438498fb2904a18871d520cc30cc56a/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.1.0] /Users/QQZhao/.android/build-cache/090224326db0e9630c4620ebd5c780ca6e0106b9/output/AndroidManifest.xml:20:5-44
+MERGED from [com.mikhaellopez:circularimageview:3.0.2] /Users/QQZhao/.android/build-cache/b8ec0bf0fad63944bbc8c393c51006cb58972eba/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services:9.4.0] /Users/QQZhao/.android/build-cache/7f641121868329f698d99930c6ff1760aff06d41/output/AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-ads:9.4.0] /Users/QQZhao/.android/build-cache/98b6aed7e889800b2f3dd65e6705beee78fffce4/output/AndroidManifest.xml:19:5-42
+MERGED from [com.google.android.gms:play-services-ads-lite:9.4.0] /Users/QQZhao/.android/build-cache/0bd10b421ee4b5bd4fece0759ffa85e4cb2edc39/output/AndroidManifest.xml:23:5-42
+MERGED from [com.google.android.gms:play-services-analytics:9.4.0] /Users/QQZhao/.android/build-cache/b7ec3db60b88664a38edc44ccaae4585b6d1434c/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appinvite:9.4.0] /Users/QQZhao/.android/build-cache/db8fdc6458fc8d98b9b6141f8cb9f569e0daa334/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-auth:9.4.0] /Users/QQZhao/.android/build-cache/b2b392147b400e033702db77d1fdb8c2fc7892fc/output/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:9.4.0] /Users/QQZhao/.android/build-cache/ce8f08e4c37b409c3af89f581599ed8740308c66/output/AndroidManifest.xml:5:5-43
+MERGED from [com.google.android.gms:play-services-cast-framework:9.4.0] /Users/QQZhao/.android/build-cache/76766f661f27ebeada1b6c41249333a7f815e32d/output/AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-cast:9.4.0] /Users/QQZhao/.android/build-cache/d2b371bdfbfadc188546fe63da65b1707554686c/output/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:mediarouter-v7:23.0.0] /Users/QQZhao/.android/build-cache/5958ca067ac2ea03874c3410efc4b1591e3c1b16/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/QQZhao/.android/build-cache/ac003f202a678ad63b7ee1b2e48570dc3f51efcb/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/QQZhao/.android/build-cache/8a9edb24ef0cfbc84c3675fb7572cf5afe13cbf9/output/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:9.4.0] /Users/QQZhao/.android/build-cache/de5b3f94c7092275f4172ce42299609d0f6c77fe/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-config:9.4.0] /Users/QQZhao/.android/build-cache/91d2f4ec81d02fc70466f9f090ddc1fde1e51266/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-contextmanager:9.4.0] /Users/QQZhao/.android/build-cache/66a7fbdd3c0a23bf39921c4c556948b6f9b4099b/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-crash:9.4.0] /Users/QQZhao/.android/build-cache/c56144b019a80745aa14935a9c0dc4ef835b414d/output/AndroidManifest.xml:22:5-42
+MERGED from [com.google.firebase:firebase-auth:9.4.0] /Users/QQZhao/.android/build-cache/b08c8d3c50541dfe99a9bf1ea60bd5a37eab063d/output/AndroidManifest.xml:18:5-43
+MERGED from [com.google.firebase:firebase-auth-common:9.4.0] /Users/QQZhao/.android/build-cache/dd935c0ddcec972aafef946484e5750d50b2ba1a/output/AndroidManifest.xml:18:5-43
+MERGED from [com.google.firebase:firebase-auth-module:9.4.0] /Users/QQZhao/.android/build-cache/3e37f08ebcec2cc104d8887777a0667427cdfd4c/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-database:9.4.0] /Users/QQZhao/.android/build-cache/e2fc217ce7fcb9ee5227831acd22ad135a1af2db/output/AndroidManifest.xml:5:5-43
+MERGED from [com.google.firebase:firebase-database-connection:9.4.0] /Users/QQZhao/.android/build-cache/ab17b3f272eeaa1a11148cefad7d4b5770c581f5/output/AndroidManifest.xml:5:5-43
+MERGED from [com.google.firebase:firebase-messaging:9.4.0] /Users/QQZhao/.android/build-cache/13e15630cc81ad546ff1e754ae3a0c8f8e05818b/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-storage:9.4.0] /Users/QQZhao/.android/build-cache/2accf61b4560bdff1312cd3b6142c390de76ae02/output/AndroidManifest.xml:5:5-43
+MERGED from [com.google.firebase:firebase-storage-common:9.4.0] /Users/QQZhao/.android/build-cache/56cedd63e59279fbc14ac418a61e4ced01ec9bc8/output/AndroidManifest.xml:5:5-43
+MERGED from [com.google.android.gms:play-services-fitness:9.4.0] /Users/QQZhao/.android/build-cache/855a086c5663e94f5d69181552774a82d0700b9c/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-games:9.4.0] /Users/QQZhao/.android/build-cache/54ff3c35ed70b4f7f4c8fec36c027a074cba434d/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-drive:9.4.0] /Users/QQZhao/.android/build-cache/be47da164c36ed0e3ecbbb2dc20f00d9109caaf8/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-gass:9.4.0] /Users/QQZhao/.android/build-cache/a2c7b0bc44e3dfa5c44955e0063191e360925944/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-gcm:9.4.0] /Users/QQZhao/.android/build-cache/00f49a503cf8b63bb97d0109452b39a79c34b069/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appindexing:9.4.0] /Users/QQZhao/.android/build-cache/3614b35053946d1da54b460d87e22b5359b6df7e/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-iid:9.4.0] /Users/QQZhao/.android/build-cache/04d7d4240d1168ab00c8bc797bd62d0ade349e8c/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-location:9.4.0] /Users/QQZhao/.android/build-cache/aab4d235bcc67741092be9ca3fdb1ad95f320a39/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-nearby:9.4.0] /Users/QQZhao/.android/build-cache/0783eb50e3208200b558630cf8ee25836d8bf1e1/output/AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-panorama:9.4.0] /Users/QQZhao/.android/build-cache/5bac3416670b4f94be7971859bfeff3fe885a73f/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-places:9.4.0] /Users/QQZhao/.android/build-cache/a89c94fa22d3ef6456b9700eae4faa6eef1671a1/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-plus:9.4.0] /Users/QQZhao/.android/build-cache/4047bba4c3c49ef925128816299defa153f1921c/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-safetynet:9.4.0] /Users/QQZhao/.android/build-cache/4b783c79108ce30d40a51e0d333191d19936796f/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-tagmanager:9.4.0] /Users/QQZhao/.android/build-cache/45d24658ac75fcba4e7ee2591dc186ea92d6568a/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.4.0] /Users/QQZhao/.android/build-cache/88dbaf6c1b22de50056b07fec57eca0c2ad7e684/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] /Users/QQZhao/.android/build-cache/c2b3c3e95ec6477ab59e14c4483f5fd4bacb2d5e/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-analytics:9.4.0] /Users/QQZhao/.android/build-cache/381c8e22f018e8d76b609eba78d307a1aae329e6/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] /Users/QQZhao/.android/build-cache/26a84cc54b1048c8c61ebb867ff9c65728e47926/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-common:9.4.0] /Users/QQZhao/.android/build-cache/c26a7db39a8067f47f4d7e243601dfe6d7cdc6cb/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-vision:9.4.0] /Users/QQZhao/.android/build-cache/a62c4515dd0c6cbbd28825ed5a5f09a06ecf221c/output/AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-wallet:9.4.0] /Users/QQZhao/.android/build-cache/54abe1e155b4074bf560453073a53cc95cbe684f/output/AndroidManifest.xml:19:5-42
+MERGED from [com.google.android.gms:play-services-identity:9.4.0] /Users/QQZhao/.android/build-cache/cc088998929d201b6f9681e5c98994d0457fe6fd/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-maps:9.4.0] /Users/QQZhao/.android/build-cache/bb15fc620968b12c35222d4f63abe7023886ac9a/output/AndroidManifest.xml:26:5-42
+MERGED from [com.google.android.gms:play-services-wearable:9.4.0] /Users/QQZhao/.android/build-cache/f7179da1d8d3f121f35e6e176f7e30b384c1298b/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:9.4.0] /Users/QQZhao/.android/build-cache/37ad6d383be171b9383368f52b3a46133d76d7d0/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-tasks:9.4.0] /Users/QQZhao/.android/build-cache/4fa99f786ac0d98aee78dd402526012dc7d993ab/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/QQZhao/.android/build-cache/19a5f48815d033dc1bf5ffd0e994829bb7b79312/output/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/QQZhao/.android/build-cache/020d488da7477242e590875e10eb973fe4ae1ed7/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/QQZhao/.android/build-cache/9499b933deca2e033bf7e968673ea4a7d875a0d8/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/QQZhao/.android/build-cache/35f2a1856ae4ba0e24958188860e251e10c9e959/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/QQZhao/.android/build-cache/47f98fbf76611f445e2eb9065ef5289fe65f05e5/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/QQZhao/.android/build-cache/acf3d875667f7314854129ad71daae7376eecfeb/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/QQZhao/.android/build-cache/53c902332a8708dea51ec665725611126bf99516/output/AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:25.1.0] C:\Users\Qingquan Zhao\.android\build-cache\efd2a1df99e5ff5fadda503717e69daa1839a738\output\AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:25.1.0] /Users/QQZhao/.android/build-cache/3c868aa1a1dd8e9f8aa11b8cf7ce743a4260f99e/output/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Qingquan Zhao\Desktop\MobileProject\CarPooling-Mobile\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/AndroidManifest.xml
 activity#com.google.android.gms.ads.AdActivity
-ADDED from [com.google.android.gms:play-services-ads-lite:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\82433cac5fc3b26035161ae4ddda24be8821f04e\output\AndroidManifest.xml:26:9-29:64
+ADDED from [com.google.android.gms:play-services-ads-lite:9.4.0] /Users/QQZhao/.android/build-cache/0bd10b421ee4b5bd4fece0759ffa85e4cb2edc39/output/AndroidManifest.xml:26:9-29:64
 	android:configChanges
-		ADDED from [com.google.android.gms:play-services-ads-lite:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\82433cac5fc3b26035161ae4ddda24be8821f04e\output\AndroidManifest.xml:28:13-122
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.4.0] /Users/QQZhao/.android/build-cache/0bd10b421ee4b5bd4fece0759ffa85e4cb2edc39/output/AndroidManifest.xml:28:13-122
 	android:theme
-		ADDED from [com.google.android.gms:play-services-ads-lite:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\82433cac5fc3b26035161ae4ddda24be8821f04e\output\AndroidManifest.xml:29:13-61
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.4.0] /Users/QQZhao/.android/build-cache/0bd10b421ee4b5bd4fece0759ffa85e4cb2edc39/output/AndroidManifest.xml:29:13-61
 	android:name
-		ADDED from [com.google.android.gms:play-services-ads-lite:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\82433cac5fc3b26035161ae4ddda24be8821f04e\output\AndroidManifest.xml:27:13-65
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.4.0] /Users/QQZhao/.android/build-cache/0bd10b421ee4b5bd4fece0759ffa85e4cb2edc39/output/AndroidManifest.xml:27:13-65
 activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
-ADDED from [com.google.android.gms:play-services-ads-lite:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\82433cac5fc3b26035161ae4ddda24be8821f04e\output\AndroidManifest.xml:30:9-31:52
+ADDED from [com.google.android.gms:play-services-ads-lite:9.4.0] /Users/QQZhao/.android/build-cache/0bd10b421ee4b5bd4fece0759ffa85e4cb2edc39/output/AndroidManifest.xml:30:9-31:52
 	android:theme
-		ADDED from [com.google.android.gms:play-services-ads-lite:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\82433cac5fc3b26035161ae4ddda24be8821f04e\output\AndroidManifest.xml:31:13-50
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.4.0] /Users/QQZhao/.android/build-cache/0bd10b421ee4b5bd4fece0759ffa85e4cb2edc39/output/AndroidManifest.xml:31:13-50
 	android:name
-		ADDED from [com.google.android.gms:play-services-ads-lite:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\82433cac5fc3b26035161ae4ddda24be8821f04e\output\AndroidManifest.xml:30:19-91
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.4.0] /Users/QQZhao/.android/build-cache/0bd10b421ee4b5bd4fece0759ffa85e4cb2edc39/output/AndroidManifest.xml:30:19-91
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.android.gms:play-services-analytics:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a48773d2e4ef58677228fc7201ff8ae2bf6b4cd0\output\AndroidManifest.xml:25:5-67
-MERGED from [com.google.android.gms:play-services-analytics-impl:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\9b884067bde91291f8f8c9eeb8e413fc850cd56f\output\AndroidManifest.xml:25:5-67
-MERGED from [com.google.firebase:firebase-analytics:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\975853edcf45dd1883c61cd43b2925c424b9b2cd\output\AndroidManifest.xml:24:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\05f61d01674031efde4940285b2dbce239b2d6b8\output\AndroidManifest.xml:24:5-67
-MERGED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:22:5-68
+ADDED from [com.google.android.gms:play-services-analytics:9.4.0] /Users/QQZhao/.android/build-cache/b7ec3db60b88664a38edc44ccaae4585b6d1434c/output/AndroidManifest.xml:25:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.4.0] /Users/QQZhao/.android/build-cache/88dbaf6c1b22de50056b07fec57eca0c2ad7e684/output/AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-analytics:9.4.0] /Users/QQZhao/.android/build-cache/381c8e22f018e8d76b609eba78d307a1aae329e6/output/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] /Users/QQZhao/.android/build-cache/26a84cc54b1048c8c61ebb867ff9c65728e47926/output/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:22:5-68
 	android:name
-		ADDED from [com.google.android.gms:play-services-analytics:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a48773d2e4ef58677228fc7201ff8ae2bf6b4cd0\output\AndroidManifest.xml:25:22-65
+		ADDED from [com.google.android.gms:play-services-analytics:9.4.0] /Users/QQZhao/.android/build-cache/b7ec3db60b88664a38edc44ccaae4585b6d1434c/output/AndroidManifest.xml:25:22-65
 activity#com.google.android.gms.appinvite.PreviewActivity
-ADDED from [com.google.android.gms:play-services-appinvite:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\b6af743ab655a1a6c12ec3554840f07817df1b28\output\AndroidManifest.xml:21:9-29:20
+ADDED from [com.google.android.gms:play-services-appinvite:9.4.0] /Users/QQZhao/.android/build-cache/db8fdc6458fc8d98b9b6141f8cb9f569e0daa334/output/AndroidManifest.xml:21:9-29:20
 	android:exported
-		ADDED from [com.google.android.gms:play-services-appinvite:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\b6af743ab655a1a6c12ec3554840f07817df1b28\output\AndroidManifest.xml:23:17-40
+		ADDED from [com.google.android.gms:play-services-appinvite:9.4.0] /Users/QQZhao/.android/build-cache/db8fdc6458fc8d98b9b6141f8cb9f569e0daa334/output/AndroidManifest.xml:23:17-40
 	android:theme
-		ADDED from [com.google.android.gms:play-services-appinvite:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\b6af743ab655a1a6c12ec3554840f07817df1b28\output\AndroidManifest.xml:24:17-63
+		ADDED from [com.google.android.gms:play-services-appinvite:9.4.0] /Users/QQZhao/.android/build-cache/db8fdc6458fc8d98b9b6141f8cb9f569e0daa334/output/AndroidManifest.xml:24:17-63
 	android:name
-		ADDED from [com.google.android.gms:play-services-appinvite:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\b6af743ab655a1a6c12ec3554840f07817df1b28\output\AndroidManifest.xml:22:17-48
+		ADDED from [com.google.android.gms:play-services-appinvite:9.4.0] /Users/QQZhao/.android/build-cache/db8fdc6458fc8d98b9b6141f8cb9f569e0daa334/output/AndroidManifest.xml:22:17-48
 intent-filter#android.intent.category.DEFAULT+com.google.android.gms.appinvite.ACTION_PREVIEW
-ADDED from [com.google.android.gms:play-services-appinvite:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\b6af743ab655a1a6c12ec3554840f07817df1b28\output\AndroidManifest.xml:25:13-28:29
+ADDED from [com.google.android.gms:play-services-appinvite:9.4.0] /Users/QQZhao/.android/build-cache/db8fdc6458fc8d98b9b6141f8cb9f569e0daa334/output/AndroidManifest.xml:25:13-28:29
 action#com.google.android.gms.appinvite.ACTION_PREVIEW
-ADDED from [com.google.android.gms:play-services-appinvite:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\b6af743ab655a1a6c12ec3554840f07817df1b28\output\AndroidManifest.xml:26:17-89
+ADDED from [com.google.android.gms:play-services-appinvite:9.4.0] /Users/QQZhao/.android/build-cache/db8fdc6458fc8d98b9b6141f8cb9f569e0daa334/output/AndroidManifest.xml:26:17-89
 	android:name
-		ADDED from [com.google.android.gms:play-services-appinvite:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\b6af743ab655a1a6c12ec3554840f07817df1b28\output\AndroidManifest.xml:26:25-87
+		ADDED from [com.google.android.gms:play-services-appinvite:9.4.0] /Users/QQZhao/.android/build-cache/db8fdc6458fc8d98b9b6141f8cb9f569e0daa334/output/AndroidManifest.xml:26:25-87
 category#android.intent.category.DEFAULT
-ADDED from [com.google.android.gms:play-services-appinvite:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\b6af743ab655a1a6c12ec3554840f07817df1b28\output\AndroidManifest.xml:27:17-75
+ADDED from [com.google.android.gms:play-services-appinvite:9.4.0] /Users/QQZhao/.android/build-cache/db8fdc6458fc8d98b9b6141f8cb9f569e0daa334/output/AndroidManifest.xml:27:17-75
 	android:name
-		ADDED from [com.google.android.gms:play-services-appinvite:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\b6af743ab655a1a6c12ec3554840f07817df1b28\output\AndroidManifest.xml:27:27-73
+		ADDED from [com.google.android.gms:play-services-appinvite:9.4.0] /Users/QQZhao/.android/build-cache/db8fdc6458fc8d98b9b6141f8cb9f569e0daa334/output/AndroidManifest.xml:27:27-73
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a946111ef065935098e8bc8a33501a58901497c8\output\AndroidManifest.xml:21:9-24:46
+ADDED from [com.google.android.gms:play-services-auth:9.4.0] /Users/QQZhao/.android/build-cache/b2b392147b400e033702db77d1fdb8c2fc7892fc/output/AndroidManifest.xml:21:9-24:46
 	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a946111ef065935098e8bc8a33501a58901497c8\output\AndroidManifest.xml:23:19-52
+		ADDED from [com.google.android.gms:play-services-auth:9.4.0] /Users/QQZhao/.android/build-cache/b2b392147b400e033702db77d1fdb8c2fc7892fc/output/AndroidManifest.xml:23:19-52
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a946111ef065935098e8bc8a33501a58901497c8\output\AndroidManifest.xml:24:19-43
+		ADDED from [com.google.android.gms:play-services-auth:9.4.0] /Users/QQZhao/.android/build-cache/b2b392147b400e033702db77d1fdb8c2fc7892fc/output/AndroidManifest.xml:24:19-43
 	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a946111ef065935098e8bc8a33501a58901497c8\output\AndroidManifest.xml:22:19-78
+		ADDED from [com.google.android.gms:play-services-auth:9.4.0] /Users/QQZhao/.android/build-cache/b2b392147b400e033702db77d1fdb8c2fc7892fc/output/AndroidManifest.xml:22:19-78
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a946111ef065935098e8bc8a33501a58901497c8\output\AndroidManifest.xml:21:19-68
+		ADDED from [com.google.android.gms:play-services-auth:9.4.0] /Users/QQZhao/.android/build-cache/b2b392147b400e033702db77d1fdb8c2fc7892fc/output/AndroidManifest.xml:21:19-68
 service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a946111ef065935098e8bc8a33501a58901497c8\output\AndroidManifest.xml:28:9-31:110
+ADDED from [com.google.android.gms:play-services-auth:9.4.0] /Users/QQZhao/.android/build-cache/b2b392147b400e033702db77d1fdb8c2fc7892fc/output/AndroidManifest.xml:28:9-31:110
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a946111ef065935098e8bc8a33501a58901497c8\output\AndroidManifest.xml:30:13-36
+		ADDED from [com.google.android.gms:play-services-auth:9.4.0] /Users/QQZhao/.android/build-cache/b2b392147b400e033702db77d1fdb8c2fc7892fc/output/AndroidManifest.xml:30:13-36
 	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a946111ef065935098e8bc8a33501a58901497c8\output\AndroidManifest.xml:31:13-107
+		ADDED from [com.google.android.gms:play-services-auth:9.4.0] /Users/QQZhao/.android/build-cache/b2b392147b400e033702db77d1fdb8c2fc7892fc/output/AndroidManifest.xml:31:13-107
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a946111ef065935098e8bc8a33501a58901497c8\output\AndroidManifest.xml:29:13-58
+		ADDED from [com.google.android.gms:play-services-auth:9.4.0] /Users/QQZhao/.android/build-cache/b2b392147b400e033702db77d1fdb8c2fc7892fc/output/AndroidManifest.xml:29:13-58
 receiver#com.google.android.gms.cast.framework.media.MediaIntentReceiver
-ADDED from [com.google.android.gms:play-services-cast-framework:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\93387d9ace5dca1686727dd2c4e7e425df9a6562\output\AndroidManifest.xml:6:9-100
+ADDED from [com.google.android.gms:play-services-cast-framework:9.4.0] /Users/QQZhao/.android/build-cache/76766f661f27ebeada1b6c41249333a7f815e32d/output/AndroidManifest.xml:6:9-100
 	android:name
-		ADDED from [com.google.android.gms:play-services-cast-framework:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\93387d9ace5dca1686727dd2c4e7e425df9a6562\output\AndroidManifest.xml:6:19-97
+		ADDED from [com.google.android.gms:play-services-cast-framework:9.4.0] /Users/QQZhao/.android/build-cache/76766f661f27ebeada1b6c41249333a7f815e32d/output/AndroidManifest.xml:6:19-97
 service#com.google.android.gms.cast.framework.media.MediaNotificationService
-ADDED from [com.google.android.gms:play-services-cast-framework:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\93387d9ace5dca1686727dd2c4e7e425df9a6562\output\AndroidManifest.xml:7:9-104
+ADDED from [com.google.android.gms:play-services-cast-framework:9.4.0] /Users/QQZhao/.android/build-cache/76766f661f27ebeada1b6c41249333a7f815e32d/output/AndroidManifest.xml:7:9-104
 	android:name
-		ADDED from [com.google.android.gms:play-services-cast-framework:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\93387d9ace5dca1686727dd2c4e7e425df9a6562\output\AndroidManifest.xml:7:18-101
+		ADDED from [com.google.android.gms:play-services-cast-framework:9.4.0] /Users/QQZhao/.android/build-cache/76766f661f27ebeada1b6c41249333a7f815e32d/output/AndroidManifest.xml:7:18-101
 service#com.google.android.gms.cast.framework.ReconnectionService
-ADDED from [com.google.android.gms:play-services-cast-framework:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\93387d9ace5dca1686727dd2c4e7e425df9a6562\output\AndroidManifest.xml:8:9-92
+ADDED from [com.google.android.gms:play-services-cast-framework:9.4.0] /Users/QQZhao/.android/build-cache/76766f661f27ebeada1b6c41249333a7f815e32d/output/AndroidManifest.xml:8:9-92
 	android:name
-		ADDED from [com.google.android.gms:play-services-cast-framework:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\93387d9ace5dca1686727dd2c4e7e425df9a6562\output\AndroidManifest.xml:8:18-90
+		ADDED from [com.google.android.gms:play-services-cast-framework:9.4.0] /Users/QQZhao/.android/build-cache/76766f661f27ebeada1b6c41249333a7f815e32d/output/AndroidManifest.xml:8:18-90
 meta-data#android.support.VERSION
-ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\13bc76f026f04e078df957cdac2ce98b9980b8d1\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\b80ac780895357ca56eeafa8ada3c3de9d51e694\output\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\0c76f30ced80267d163bfbaf741e0671b5f4a320\output\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\4a82c68240bb433372f14b6d6198a8ccc377f879\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\4725c4001e0f88e855d2f677b12e70214e59d25c\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\4776635d97b13db2b27cfe7c4255f3a646f5929d\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\6e15632f9e9a28fdc0a340cd66e3c8b6da66bacc\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\f1c88830bdfee926aa17771a9d1ffea2b64f7d90\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\99a65f3401a18468cb3e2426479a66c6f1a36cd1\output\AndroidManifest.xml:25:5-27:41
+ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/QQZhao/.android/build-cache/ac003f202a678ad63b7ee1b2e48570dc3f51efcb/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/QQZhao/.android/build-cache/8a9edb24ef0cfbc84c3675fb7572cf5afe13cbf9/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/QQZhao/.android/build-cache/020d488da7477242e590875e10eb973fe4ae1ed7/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/QQZhao/.android/build-cache/9499b933deca2e033bf7e968673ea4a7d875a0d8/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/QQZhao/.android/build-cache/35f2a1856ae4ba0e24958188860e251e10c9e959/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/QQZhao/.android/build-cache/47f98fbf76611f445e2eb9065ef5289fe65f05e5/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/QQZhao/.android/build-cache/acf3d875667f7314854129ad71daae7376eecfeb/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/QQZhao/.android/build-cache/53c902332a8708dea51ec665725611126bf99516/output/AndroidManifest.xml:25:5-27:41
 	android:value
-		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\13bc76f026f04e078df957cdac2ce98b9980b8d1\output\AndroidManifest.xml:27:9-38
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/AndroidManifest.xml:27:9-38
 	android:name
-		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Qingquan Zhao\.android\build-cache\13bc76f026f04e078df957cdac2ce98b9980b8d1\output\AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/AndroidManifest.xml:26:9-47
 service#com.google.firebase.crash.internal.service.FirebaseCrashReceiverService
-ADDED from [com.google.firebase:firebase-crash:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a37d2ccdc681506e3a019bfbcb0a3aacb5be99ca\output\AndroidManifest.xml:26:9-27:50
+ADDED from [com.google.firebase:firebase-crash:9.4.0] /Users/QQZhao/.android/build-cache/c56144b019a80745aa14935a9c0dc4ef835b414d/output/AndroidManifest.xml:26:9-27:50
 	android:process
-		ADDED from [com.google.firebase:firebase-crash:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a37d2ccdc681506e3a019bfbcb0a3aacb5be99ca\output\AndroidManifest.xml:27:13-48
+		ADDED from [com.google.firebase:firebase-crash:9.4.0] /Users/QQZhao/.android/build-cache/c56144b019a80745aa14935a9c0dc4ef835b414d/output/AndroidManifest.xml:27:13-48
 	android:name
-		ADDED from [com.google.firebase:firebase-crash:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a37d2ccdc681506e3a019bfbcb0a3aacb5be99ca\output\AndroidManifest.xml:26:18-79
+		ADDED from [com.google.firebase:firebase-crash:9.4.0] /Users/QQZhao/.android/build-cache/c56144b019a80745aa14935a9c0dc4ef835b414d/output/AndroidManifest.xml:26:18-79
 service#com.google.firebase.crash.internal.service.FirebaseCrashSenderService
-ADDED from [com.google.firebase:firebase-crash:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a37d2ccdc681506e3a019bfbcb0a3aacb5be99ca\output\AndroidManifest.xml:29:9-30:50
+ADDED from [com.google.firebase:firebase-crash:9.4.0] /Users/QQZhao/.android/build-cache/c56144b019a80745aa14935a9c0dc4ef835b414d/output/AndroidManifest.xml:29:9-30:50
 	android:process
-		ADDED from [com.google.firebase:firebase-crash:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a37d2ccdc681506e3a019bfbcb0a3aacb5be99ca\output\AndroidManifest.xml:30:13-48
+		ADDED from [com.google.firebase:firebase-crash:9.4.0] /Users/QQZhao/.android/build-cache/c56144b019a80745aa14935a9c0dc4ef835b414d/output/AndroidManifest.xml:30:13-48
 	android:name
-		ADDED from [com.google.firebase:firebase-crash:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a37d2ccdc681506e3a019bfbcb0a3aacb5be99ca\output\AndroidManifest.xml:29:18-77
+		ADDED from [com.google.firebase:firebase-crash:9.4.0] /Users/QQZhao/.android/build-cache/c56144b019a80745aa14935a9c0dc4ef835b414d/output/AndroidManifest.xml:29:18-77
 service#com.google.firebase.messaging.FirebaseMessagingService
-ADDED from [com.google.firebase:firebase-messaging:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\3bd8e5535fff42cfdde475468327c9b83b48638e\output\AndroidManifest.xml:24:9-30:19
+ADDED from [com.google.firebase:firebase-messaging:9.4.0] /Users/QQZhao/.android/build-cache/13e15630cc81ad546ff1e754ae3a0c8f8e05818b/output/AndroidManifest.xml:24:9-30:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-messaging:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\3bd8e5535fff42cfdde475468327c9b83b48638e\output\AndroidManifest.xml:26:13-36
+		ADDED from [com.google.firebase:firebase-messaging:9.4.0] /Users/QQZhao/.android/build-cache/13e15630cc81ad546ff1e754ae3a0c8f8e05818b/output/AndroidManifest.xml:26:13-36
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\3bd8e5535fff42cfdde475468327c9b83b48638e\output\AndroidManifest.xml:25:13-82
+		ADDED from [com.google.firebase:firebase-messaging:9.4.0] /Users/QQZhao/.android/build-cache/13e15630cc81ad546ff1e754ae3a0c8f8e05818b/output/AndroidManifest.xml:25:13-82
 intent-filter#com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\3bd8e5535fff42cfdde475468327c9b83b48638e\output\AndroidManifest.xml:27:13-29:29
+ADDED from [com.google.firebase:firebase-messaging:9.4.0] /Users/QQZhao/.android/build-cache/13e15630cc81ad546ff1e754ae3a0c8f8e05818b/output/AndroidManifest.xml:27:13-29:29
 	android:priority
-		ADDED from [com.google.firebase:firebase-messaging:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\3bd8e5535fff42cfdde475468327c9b83b48638e\output\AndroidManifest.xml:27:28-51
+		ADDED from [com.google.firebase:firebase-messaging:9.4.0] /Users/QQZhao/.android/build-cache/13e15630cc81ad546ff1e754ae3a0c8f8e05818b/output/AndroidManifest.xml:27:28-51
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\3bd8e5535fff42cfdde475468327c9b83b48638e\output\AndroidManifest.xml:28:17-78
+ADDED from [com.google.firebase:firebase-messaging:9.4.0] /Users/QQZhao/.android/build-cache/13e15630cc81ad546ff1e754ae3a0c8f8e05818b/output/AndroidManifest.xml:28:17-78
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\3bd8e5535fff42cfdde475468327c9b83b48638e\output\AndroidManifest.xml:28:25-75
+		ADDED from [com.google.firebase:firebase-messaging:9.4.0] /Users/QQZhao/.android/build-cache/13e15630cc81ad546ff1e754ae3a0c8f8e05818b/output/AndroidManifest.xml:28:25-75
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.android.gms:play-services-gcm:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\6f019f1e53a3cacc7d391efe8be5b7a88365a0dd\output\AndroidManifest.xml:21:5-82
-MERGED from [com.google.android.gms:play-services-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\742999828080ee0d9a3a996f6f82f0170053d0d3\output\AndroidManifest.xml:21:5-82
-MERGED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:23:5-82
+ADDED from [com.google.android.gms:play-services-gcm:9.4.0] /Users/QQZhao/.android/build-cache/00f49a503cf8b63bb97d0109452b39a79c34b069/output/AndroidManifest.xml:21:5-82
+MERGED from [com.google.android.gms:play-services-iid:9.4.0] /Users/QQZhao/.android/build-cache/04d7d4240d1168ab00c8bc797bd62d0ade349e8c/output/AndroidManifest.xml:21:5-82
+MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:23:5-82
 	android:name
-		ADDED from [com.google.android.gms:play-services-gcm:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\6f019f1e53a3cacc7d391efe8be5b7a88365a0dd\output\AndroidManifest.xml:21:22-79
+		ADDED from [com.google.android.gms:play-services-gcm:9.4.0] /Users/QQZhao/.android/build-cache/00f49a503cf8b63bb97d0109452b39a79c34b069/output/AndroidManifest.xml:21:22-79
 service#com.google.android.gms.tagmanager.TagManagerService
-ADDED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\cb31f33eadeb4c2e30db13dad96d99e0156e9697\output\AndroidManifest.xml:25:9-27:42
+ADDED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] /Users/QQZhao/.android/build-cache/c2b3c3e95ec6477ab59e14c4483f5fd4bacb2d5e/output/AndroidManifest.xml:25:9-27:42
 	android:enabled
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\cb31f33eadeb4c2e30db13dad96d99e0156e9697\output\AndroidManifest.xml:27:17-39
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] /Users/QQZhao/.android/build-cache/c2b3c3e95ec6477ab59e14c4483f5fd4bacb2d5e/output/AndroidManifest.xml:27:17-39
 	android:exported
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\cb31f33eadeb4c2e30db13dad96d99e0156e9697\output\AndroidManifest.xml:26:17-41
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] /Users/QQZhao/.android/build-cache/c2b3c3e95ec6477ab59e14c4483f5fd4bacb2d5e/output/AndroidManifest.xml:26:17-41
 	android:name
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\cb31f33eadeb4c2e30db13dad96d99e0156e9697\output\AndroidManifest.xml:25:18-84
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] /Users/QQZhao/.android/build-cache/c2b3c3e95ec6477ab59e14c4483f5fd4bacb2d5e/output/AndroidManifest.xml:25:18-84
 activity#com.google.android.gms.tagmanager.TagManagerPreviewActivity
-ADDED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\cb31f33eadeb4c2e30db13dad96d99e0156e9697\output\AndroidManifest.xml:28:9-37:20
+ADDED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] /Users/QQZhao/.android/build-cache/c2b3c3e95ec6477ab59e14c4483f5fd4bacb2d5e/output/AndroidManifest.xml:28:9-37:20
 	android:noHistory
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\cb31f33eadeb4c2e30db13dad96d99e0156e9697\output\AndroidManifest.xml:30:13-37
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] /Users/QQZhao/.android/build-cache/c2b3c3e95ec6477ab59e14c4483f5fd4bacb2d5e/output/AndroidManifest.xml:30:13-37
 	android:name
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\cb31f33eadeb4c2e30db13dad96d99e0156e9697\output\AndroidManifest.xml:29:13-87
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] /Users/QQZhao/.android/build-cache/c2b3c3e95ec6477ab59e14c4483f5fd4bacb2d5e/output/AndroidManifest.xml:29:13-87
 intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\cb31f33eadeb4c2e30db13dad96d99e0156e9697\output\AndroidManifest.xml:31:13-36:29
+ADDED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] /Users/QQZhao/.android/build-cache/c2b3c3e95ec6477ab59e14c4483f5fd4bacb2d5e/output/AndroidManifest.xml:31:13-36:29
 data
-ADDED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\cb31f33eadeb4c2e30db13dad96d99e0156e9697\output\AndroidManifest.xml:32:17-72
+ADDED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] /Users/QQZhao/.android/build-cache/c2b3c3e95ec6477ab59e14c4483f5fd4bacb2d5e/output/AndroidManifest.xml:32:17-72
 	android:scheme
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\cb31f33eadeb4c2e30db13dad96d99e0156e9697\output\AndroidManifest.xml:32:23-69
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] /Users/QQZhao/.android/build-cache/c2b3c3e95ec6477ab59e14c4483f5fd4bacb2d5e/output/AndroidManifest.xml:32:23-69
 action#android.intent.action.VIEW
-ADDED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\cb31f33eadeb4c2e30db13dad96d99e0156e9697\output\AndroidManifest.xml:33:17-69
+ADDED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] /Users/QQZhao/.android/build-cache/c2b3c3e95ec6477ab59e14c4483f5fd4bacb2d5e/output/AndroidManifest.xml:33:17-69
 	android:name
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\cb31f33eadeb4c2e30db13dad96d99e0156e9697\output\AndroidManifest.xml:33:25-66
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] /Users/QQZhao/.android/build-cache/c2b3c3e95ec6477ab59e14c4483f5fd4bacb2d5e/output/AndroidManifest.xml:33:25-66
 category#android.intent.category.BROWSABLE
-ADDED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\cb31f33eadeb4c2e30db13dad96d99e0156e9697\output\AndroidManifest.xml:35:17-77
+ADDED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] /Users/QQZhao/.android/build-cache/c2b3c3e95ec6477ab59e14c4483f5fd4bacb2d5e/output/AndroidManifest.xml:35:17-77
 	android:name
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\cb31f33eadeb4c2e30db13dad96d99e0156e9697\output\AndroidManifest.xml:35:27-75
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.4.0] /Users/QQZhao/.android/build-cache/c2b3c3e95ec6477ab59e14c4483f5fd4bacb2d5e/output/AndroidManifest.xml:35:27-75
 receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.firebase:firebase-analytics:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\975853edcf45dd1883c61cd43b2925c424b9b2cd\output\AndroidManifest.xml:28:7-34:18
-MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\05f61d01674031efde4940285b2dbce239b2d6b8\output\AndroidManifest.xml:28:7-34:18
+ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/QQZhao/.android/build-cache/381c8e22f018e8d76b609eba78d307a1aae329e6/output/AndroidManifest.xml:28:7-34:18
+MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] /Users/QQZhao/.android/build-cache/26a84cc54b1048c8c61ebb867ff9c65728e47926/output/AndroidManifest.xml:28:7-34:18
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\975853edcf45dd1883c61cd43b2925c424b9b2cd\output\AndroidManifest.xml:30:11-33
+		ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/QQZhao/.android/build-cache/381c8e22f018e8d76b609eba78d307a1aae329e6/output/AndroidManifest.xml:30:11-33
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\975853edcf45dd1883c61cd43b2925c424b9b2cd\output\AndroidManifest.xml:29:11-83
+		ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/QQZhao/.android/build-cache/381c8e22f018e8d76b609eba78d307a1aae329e6/output/AndroidManifest.xml:29:11-83
 intent-filter#com.google.android.gms.measurement.UPLOAD
-ADDED from [com.google.firebase:firebase-analytics:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\975853edcf45dd1883c61cd43b2925c424b9b2cd\output\AndroidManifest.xml:31:9-33:25
+ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/QQZhao/.android/build-cache/381c8e22f018e8d76b609eba78d307a1aae329e6/output/AndroidManifest.xml:31:9-33:25
 action#com.google.android.gms.measurement.UPLOAD
-ADDED from [com.google.firebase:firebase-analytics:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\975853edcf45dd1883c61cd43b2925c424b9b2cd\output\AndroidManifest.xml:32:11-77
+ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/QQZhao/.android/build-cache/381c8e22f018e8d76b609eba78d307a1aae329e6/output/AndroidManifest.xml:32:11-77
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\975853edcf45dd1883c61cd43b2925c424b9b2cd\output\AndroidManifest.xml:32:19-75
+		ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/QQZhao/.android/build-cache/381c8e22f018e8d76b609eba78d307a1aae329e6/output/AndroidManifest.xml:32:19-75
 service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.firebase:firebase-analytics:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\975853edcf45dd1883c61cd43b2925c424b9b2cd\output\AndroidManifest.xml:36:7-39:37
-MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\05f61d01674031efde4940285b2dbce239b2d6b8\output\AndroidManifest.xml:36:7-39:37
+ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/QQZhao/.android/build-cache/381c8e22f018e8d76b609eba78d307a1aae329e6/output/AndroidManifest.xml:36:7-39:37
+MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] /Users/QQZhao/.android/build-cache/26a84cc54b1048c8c61ebb867ff9c65728e47926/output/AndroidManifest.xml:36:7-39:37
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\975853edcf45dd1883c61cd43b2925c424b9b2cd\output\AndroidManifest.xml:38:11-33
+		ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/QQZhao/.android/build-cache/381c8e22f018e8d76b609eba78d307a1aae329e6/output/AndroidManifest.xml:38:11-33
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\975853edcf45dd1883c61cd43b2925c424b9b2cd\output\AndroidManifest.xml:39:11-35
+		ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/QQZhao/.android/build-cache/381c8e22f018e8d76b609eba78d307a1aae329e6/output/AndroidManifest.xml:39:11-35
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\975853edcf45dd1883c61cd43b2925c424b9b2cd\output\AndroidManifest.xml:37:11-82
+		ADDED from [com.google.firebase:firebase-analytics:9.4.0] /Users/QQZhao/.android/build-cache/381c8e22f018e8d76b609eba78d307a1aae329e6/output/AndroidManifest.xml:37:11-82
 permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:25:5-26:47
+ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:25:5-26:47
 	android:protectionLevel
-		ADDED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:26:9-44
+		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:26:9-44
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:25:17-71
+		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:25:17-71
 uses-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:28:5-79
+ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:28:5-79
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:28:22-76
+		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:28:22-76
 receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:32:9-41:20
+ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:32:9-41:20
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:34:13-36
+		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:34:13-36
 	android:permission
-		ADDED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:35:13-73
+		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:35:13-73
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:33:13-78
+		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:33:13-78
 intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
-ADDED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:36:13-40:29
+ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:36:13-40:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:37:17-81
+ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:37:17-81
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:37:25-78
+		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:37:25-78
 action#com.google.android.c2dm.intent.REGISTRATION
-ADDED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:38:17-86
+ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:38:17-86
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:38:25-83
+		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:38:25-83
 category#${applicationId}
-ADDED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:39:17-61
+ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:39:17-61
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:39:27-58
+		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:39:27-58
 receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
-ADDED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:45:9-47:40
+ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:45:9-47:40
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:47:13-37
+		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:47:13-37
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:46:13-86
+		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:46:13-86
 service#com.google.firebase.iid.FirebaseInstanceIdService
-ADDED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:51:9-57:19
+ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:51:9-57:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:53:13-36
+		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:53:13-36
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:52:13-77
+		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:52:13-77
 intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:54:13-56:29
+ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:54:13-56:29
 	android:priority
-		ADDED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:54:28-51
+		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:54:28-51
 action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:55:17-80
+ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:55:17-80
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\533f7d74d7809cc5f44f4627355f9ed7f3e45f86\output\AndroidManifest.xml:55:25-77
+		ADDED from [com.google.firebase:firebase-iid:9.4.0] /Users/QQZhao/.android/build-cache/079497b1e7e903e4e383085c139574e69fcac1eb/output/AndroidManifest.xml:55:25-77
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a644640bdce7b76dbd17bc00cbf6e175aa199909\output\AndroidManifest.xml:7:9-11:39
+ADDED from [com.google.firebase:firebase-common:9.4.0] /Users/QQZhao/.android/build-cache/c26a7db39a8067f47f4d7e243601dfe6d7cdc6cb/output/AndroidManifest.xml:7:9-11:39
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a644640bdce7b76dbd17bc00cbf6e175aa199909\output\AndroidManifest.xml:8:13-72
+		ADDED from [com.google.firebase:firebase-common:9.4.0] /Users/QQZhao/.android/build-cache/c26a7db39a8067f47f4d7e243601dfe6d7cdc6cb/output/AndroidManifest.xml:8:13-72
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a644640bdce7b76dbd17bc00cbf6e175aa199909\output\AndroidManifest.xml:10:13-37
+		ADDED from [com.google.firebase:firebase-common:9.4.0] /Users/QQZhao/.android/build-cache/c26a7db39a8067f47f4d7e243601dfe6d7cdc6cb/output/AndroidManifest.xml:10:13-37
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a644640bdce7b76dbd17bc00cbf6e175aa199909\output\AndroidManifest.xml:11:13-36
+		ADDED from [com.google.firebase:firebase-common:9.4.0] /Users/QQZhao/.android/build-cache/c26a7db39a8067f47f4d7e243601dfe6d7cdc6cb/output/AndroidManifest.xml:11:13-36
 	android:name
-		ADDED from [com.google.firebase:firebase-common:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a644640bdce7b76dbd17bc00cbf6e175aa199909\output\AndroidManifest.xml:9:13-58
+		ADDED from [com.google.firebase:firebase-common:9.4.0] /Users/QQZhao/.android/build-cache/c26a7db39a8067f47f4d7e243601dfe6d7cdc6cb/output/AndroidManifest.xml:9:13-58
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a86369fe2303c90acc28068dc4a4da162ecea570\output\AndroidManifest.xml:20:9-22:45
+ADDED from [com.google.android.gms:play-services-base:9.4.0] /Users/QQZhao/.android/build-cache/37ad6d383be171b9383368f52b3a46133d76d7d0/output/AndroidManifest.xml:20:9-22:45
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a86369fe2303c90acc28068dc4a4da162ecea570\output\AndroidManifest.xml:22:19-43
+		ADDED from [com.google.android.gms:play-services-base:9.4.0] /Users/QQZhao/.android/build-cache/37ad6d383be171b9383368f52b3a46133d76d7d0/output/AndroidManifest.xml:22:19-43
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a86369fe2303c90acc28068dc4a4da162ecea570\output\AndroidManifest.xml:21:19-78
+		ADDED from [com.google.android.gms:play-services-base:9.4.0] /Users/QQZhao/.android/build-cache/37ad6d383be171b9383368f52b3a46133d76d7d0/output/AndroidManifest.xml:21:19-78
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\a86369fe2303c90acc28068dc4a4da162ecea570\output\AndroidManifest.xml:20:19-85
+		ADDED from [com.google.android.gms:play-services-base:9.4.0] /Users/QQZhao/.android/build-cache/37ad6d383be171b9383368f52b3a46133d76d7d0/output/AndroidManifest.xml:20:19-85
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\fcf641b389608d1ecb4ade7694be4e21f85d1ff4\output\AndroidManifest.xml:21:9-23:69
+ADDED from [com.google.android.gms:play-services-basement:9.4.0] /Users/QQZhao/.android/build-cache/19a5f48815d033dc1bf5ffd0e994829bb7b79312/output/AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\fcf641b389608d1ecb4ade7694be4e21f85d1ff4\output\AndroidManifest.xml:23:13-66
+		ADDED from [com.google.android.gms:play-services-basement:9.4.0] /Users/QQZhao/.android/build-cache/19a5f48815d033dc1bf5ffd0e994829bb7b79312/output/AndroidManifest.xml:23:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:9.4.0] C:\Users\Qingquan Zhao\.android\build-cache\fcf641b389608d1ecb4ade7694be4e21f85d1ff4\output\AndroidManifest.xml:22:13-58
+		ADDED from [com.google.android.gms:play-services-basement:9.4.0] /Users/QQZhao/.android/build-cache/19a5f48815d033dc1bf5ffd0e994829bb7b79312/output/AndroidManifest.xml:22:13-58

@@ -119,7 +119,7 @@ public class OfferFragment extends Fragment {
                 offer.setTarget_latitude(42.3583333);
                 offer.setTarget_longitude(-71.0602778);
                 offer.setCar_plate("TestPlate");
-                offer.setMilliseconds(System.currentTimeMillis());
+                offer.setTime(System.currentTimeMillis());
                 offer.setSeats_available(4);
                 String offerJson = gson.toJson(offer);
 
@@ -150,7 +150,7 @@ public class OfferFragment extends Fragment {
     public void onMakeOfferSuccess(){
         AlertDialog alertDialog = new AlertDialog.Builder(getContext()).create();
         alertDialog.setTitle("Success");
-        alertDialog.setMessage("Your reservation has been booked");
+        alertDialog.setMessage("Offer has been created.");
         alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
@@ -217,7 +217,7 @@ class OfferInput{
     private double target_latitude;
     private int seats_available;
     private String car_plate;
-    private long milliseconds;
+    private long time;
 
     public double getStart_longitude() {
         return start_longitude;
@@ -267,11 +267,11 @@ class OfferInput{
         this.car_plate = car_plate;
     }
 
-    public long getMilliseconds() {
-        return milliseconds;
+    public long getTime() {
+        return time;
     }
 
-    public void setMilliseconds(long milliseconds) {
-        this.milliseconds = milliseconds;
+    public void setTime(long time) {
+        this.time = time;
     }
 }
