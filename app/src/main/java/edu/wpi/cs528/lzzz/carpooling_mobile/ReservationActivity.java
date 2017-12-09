@@ -99,8 +99,7 @@ public class ReservationActivity extends AppCompatActivity {
             }
         });
 
-//        if(reserveMode){
-        if(false){
+        if(reserveMode){
             reserveBtn.setEnabled(true);
             cancelReservationBtn.setEnabled(false);
         }else{
