@@ -47,6 +47,11 @@ public class SignupActivity extends AppCompatActivity {
         setContentView(R.layout.activity_signup);
         ButterKnife.bind(this);
 
+        _nameText.setText("qqqqqq");
+        _emailText.setText("qqqqqq@test.com");
+        _mobileText.setText("1111111111");
+        _passwordText.setText("qqqqqq");
+
         _signupButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -73,11 +78,6 @@ public class SignupActivity extends AppCompatActivity {
         String email = _emailText.getText().toString();
         String mobile = _mobileText.getText().toString();
         String password = _passwordText.getText().toString();
-
-        name = "qqqq";
-        email = "qqqq@test.com";
-        mobile = "1111111111";
-        password = "qqqq";
 
         if (!validate(name, email, mobile, password)) {
             return;
@@ -114,7 +114,13 @@ public class SignupActivity extends AppCompatActivity {
 
     public void onSignupSuccess() {
         _signupButton.setEnabled(true);
-        setResult(RESULT_OK, null);
+
+        String name = _nameText.getText().toString();
+        String password = _passwordText.getText().toString();
+        Intent returnIntent = new Intent();
+        returnIntent.putExtra("name", name);
+        returnIntent.putExtra("password", password);
+        setResult(RESULT_OK, returnIntent);
         finish();
     }
 

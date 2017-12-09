@@ -59,7 +59,7 @@ public class LoginActivity extends AppCompatActivity{
                 // Start the Signup activity
                 Intent intent = new Intent(getApplicationContext(), SignupActivity.class);
                 startActivityForResult(intent, REQUEST_SIGNUP);
-                finish();
+//                finish();
                 overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
             }
         });
@@ -80,8 +80,8 @@ public class LoginActivity extends AppCompatActivity{
         progressDialog.show();
 
 
-        username = "qqqq";
-        password = "qqqq";
+        username = "qqqqq";
+        password = "qqqqq";
         user = new User(username, password);
 
         logInHandler = new LogInHandler(new IConnectionStatus() {
@@ -126,6 +126,16 @@ public class LoginActivity extends AppCompatActivity{
             progressDialog.show();
         }
 
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == REQUEST_SIGNUP) {
+            if (resultCode == RESULT_OK) {
+                _usernameText.setText(data.getStringExtra("name"));
+                _passwordText.setText(data.getStringExtra("password"));
+            }
+        }
     }
 
     private void onGetAllCarpoolsSuccess(){
