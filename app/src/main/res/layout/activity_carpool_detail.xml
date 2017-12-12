@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.tonggezhu.carpooling_v2.ProfileActivity"
+    tools:context="edu.wpi.cs528.lzzz.carpooling_mobile.ProfileActivity"
     android:layout_margin="@dimen/horizontal_margin">
 
 
@@ -136,18 +136,19 @@
             android:id="@+id/departure"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Departure time"
+            android:text="Departure day"
             android:textAlignment="center"
             android:textSize="@dimen/title_size"
             android:textStyle="bold" />
+
 
         <TextView
             android:id="@+id/departure_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Departure time"
             android:layout_below="@id/departure"
             android:textSize="@dimen/normal_text_size"
-            android:text="Toyota Tacuma black"
             android:textAlignment="center" />
 
     </RelativeLayout>
