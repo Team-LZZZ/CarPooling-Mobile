@@ -1,14 +1,12 @@
 package edu.wpi.cs528.lzzz.carpooling_mobile;
 
+import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.GravityCompat;
-import android.support.v4.view.ViewPager;
+
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -17,26 +15,23 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.AttributeSet;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.google.android.gms.maps.MapFragment;
-
-import edu.wpi.cs528.lzzz.carpooling_mobile.connection.HttpRequestMessage;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.CarpoolsHandler;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.ConnectionHandler;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.SignUpHandler;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
+import edu.wpi.cs528.lzzz.carpooling_mobile.model.User;
 import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonConstants;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, Toolbar.OnMenuItemClickListener {
 
 
     private RecyclerView mRecycleView;
@@ -44,11 +39,18 @@ public class MainActivity extends AppCompatActivity
     private CarpoolsHandler carpoolsHandler;
     private RecyclerView.LayoutManager layoutManager;
 
+    TextView name;
+    TextView phone;
+    TextView email;
+
+    public User mUser;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        if(!AppContainer.getInstance().isLogIn()){
+
+        if (!AppContainer.getInstance().isLogIn()) {
             Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
         }
@@ -65,6 +67,7 @@ public class MainActivity extends AppCompatActivity
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        toolbar.setOnMenuItemClickListener(this);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -83,8 +86,34 @@ public class MainActivity extends AppCompatActivity
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+
+        View header = navigationView.getHeaderView(0);
+//        mUser = AppContainer.getInstance().getActiveUser();
+
+        Log.i("User", "======================");
+        ImageView photo = (ImageView) header.findViewById(R.id.imageView);
+        name = (TextView) header.findViewById(R.id.name);
+        phone = (TextView) header.findViewById(R.id.phone);
+        email = (TextView) header.findViewById(R.id.email);
+        //photo.setImageURI(Uri.parse(AppContainer.getInstance().getActiveUser().getPhoto()));
+
+
         navigationView.setNavigationItemSelectedListener(this);
     }
+
+    @Override
+    protected void onStart() {
+        Log.i("start", "========");
+        super.onStart();
+        this.updateUserDisplay();
+    }
+
+//    @Override
+//    protected void onResume() {
+//        Log.i("Resume", "-----------");
+//        super.onResume();
+//        this.updateUserDisplay();
+//    }
 
     @Override
     public void onBackPressed() {
@@ -148,6 +177,23 @@ public class MainActivity extends AppCompatActivity
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
+        return true;
+    }
+
+    public void updateUserDisplay() {
+        mUser = AppContainer.getInstance().getActiveUser();
+        name.setText(mUser.getUsername());
+        phone.setText(mUser.getPhone());
+        email.setText(mUser.getEmail());
+    }
+
+    @Override
+    public boolean onMenuItemClick(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.action_map) {
+            Intent intent = new Intent(MainActivity.this, MapActivity.class);
+            startActivity(intent);
+        }
         return true;
     }
 }

@@ -5,11 +5,13 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
     <permission
         android:name="com.example.permission.MAPS_RECEIVE"
-        android:protectionLevel="signature"/>
-    <uses-permission android:name="com.example.permission.MAPS_RECEIVE"/>
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.permission.MAPS_RECEIVE" />
     <!-- PlacePicker also requires OpenGL ES version 2 -->
     <uses-feature
         android:glEsVersion="0x00020000"
@@ -22,7 +24,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDaF4winZylkI-UQodYznCPhB-LkFikRu0" />
@@ -37,6 +38,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SignupActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".SearchActivity" />
         <activity
             android:name=".ReservationActivity"
@@ -59,13 +66,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="edu.wpi.cs528.lzzz.carpooling_mobile.MainActivity" />
         </activity>
-        <activity
-            android:name=".LoginActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".SignupActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".OfferCarpoolActivity" />
-        <activity android:name=".CarpoolDetailActivity"></activity>
+        <activity android:name=".CarpoolDetailActivity" />
+        <activity android:name=".MapActivity"></activity>
     </application>
 
 </manifest>

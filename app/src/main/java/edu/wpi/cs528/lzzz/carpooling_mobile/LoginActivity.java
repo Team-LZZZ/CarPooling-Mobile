@@ -11,7 +11,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import edu.wpi.cs528.lzzz.carpooling_mobile.R;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.CarpoolsHandler;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.IConnectionStatus;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.LogInHandler;
@@ -47,6 +46,11 @@ public class LoginActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
+
+        _usernameText.setText("TestUser1");
+        _passwordText.setText("TestUser1");
+
+
         _loginButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -81,9 +85,9 @@ public class LoginActivity extends AppCompatActivity{
         progressDialog = CommonUtils.createProgressDialog(this, "Authenticating...");
         progressDialog.show();
 
-
-        username = "TestUser1";
-        password = "TestUser1";
+//
+//        username = "TestUser1";
+//        password = "TestUser1";
         user = new User(username, password);
 
         logInHandler = new LogInHandler(new IConnectionStatus() {

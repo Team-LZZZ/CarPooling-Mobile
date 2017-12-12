@@ -10,9 +10,9 @@ import java.util.List;
 public class AppContainer {
 
     private static AppContainer instance = null;
-    private String token;
+    private String token = "";
     private boolean isLogIn = false;
-    private User activeUser;
+    private User activeUser = new User();
     private List<CarPool> carPools = new ArrayList<>();
 
     public static AppContainer getInstance(){
