@@ -61,7 +61,7 @@ public class MapActivity extends FragmentActivity
 
     public MapActivity() {
     }
-    
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

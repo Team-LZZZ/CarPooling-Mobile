@@ -68,7 +68,8 @@
         </activity>
         <activity android:name=".OfferCarpoolActivity" />
         <activity android:name=".CarpoolDetailActivity" />
-        <activity android:name=".MapActivity"></activity>
+        <activity android:name=".MapActivity" />
+        <activity android:name=".MakeReservationActivity"></activity>
     </application>
 
 </manifest>

@@ -44,12 +44,12 @@
         "source": "/Users/liweihao/.android/build-cache/2fad433d6b8822340929699402998279eb86b5ad/output/res/drawable/mr_ic_cast_dark.xml"
     },
     {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
-        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/drawable/abc_list_selector_holo_light.xml"
-    },
-    {
         "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/drawable/mr_ic_pause_dark.xml",
         "source": "/Users/QQZhao/.android/build-cache/5958ca067ac2ea03874c3410efc4b1591e3c1b16/output/res/drawable/mr_ic_pause_dark.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
+        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/drawable/abc_list_selector_holo_light.xml"
     },
     {
         "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/drawable/mr_ic_play_dark.xml",
@@ -136,12 +136,12 @@
         "source": "/Users/liweihao/.android/build-cache/b397c3fb29cf557b6e13fcca0b1ef98263ca471e/output/res/drawable/common_google_signin_btn_text_light.xml"
     },
     {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark.xml",
-        "source": "/Users/liweihao/.android/build-cache/b397c3fb29cf557b6e13fcca0b1ef98263ca471e/output/res/drawable/common_google_signin_btn_text_dark.xml"
-    },
-    {
         "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/drawable/cast_ic_expanded_controller_forward30.xml",
         "source": "/Users/QQZhao/.android/build-cache/76766f661f27ebeada1b6c41249333a7f815e32d/output/res/drawable/cast_ic_expanded_controller_forward30.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark.xml",
+        "source": "/Users/liweihao/.android/build-cache/b397c3fb29cf557b6e13fcca0b1ef98263ca471e/output/res/drawable/common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_material.xml",
@@ -216,16 +216,16 @@
         "source": "/Users/liweihao/.android/build-cache/729c25a849e59306355f312c9cb1966066ca4bd0/output/res/drawable/cast_ic_notification_forward10.xml"
     },
     {
-        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/drawable/girl3.jpg",
-        "source": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/res/drawable/girl3.jpg"
+        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/drawable/notification.png",
+        "source": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/res/drawable/notification.png"
     },
     {
         "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/drawable/mr_ic_pause_light.xml",
         "source": "/Users/QQZhao/.android/build-cache/5958ca067ac2ea03874c3410efc4b1591e3c1b16/output/res/drawable/mr_ic_pause_light.xml"
     },
     {
-        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/drawable/notification.png",
-        "source": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/res/drawable/notification.png"
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/drawable/girl3.jpg",
+        "source": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/res/drawable/girl3.jpg"
     },
     {
         "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
@@ -284,12 +284,12 @@
         "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/drawable/notification_icon_background.xml"
     },
     {
-        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/drawable/chat.png",
-        "source": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/res/drawable/chat.png"
-    },
-    {
         "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_skip_next.xml",
         "source": "/Users/QQZhao/.android/build-cache/76766f661f27ebeada1b6c41249333a7f815e32d/output/res/drawable/cast_ic_notification_skip_next.xml"
+    },
+    {
+        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/drawable/chat.png",
+        "source": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/res/drawable/chat.png"
     },
     {
         "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_forward.xml",

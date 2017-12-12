@@ -89,6 +89,7 @@
         <activity android:name="edu.wpi.cs528.lzzz.carpooling_mobile.OfferCarpoolActivity" />
         <activity android:name="edu.wpi.cs528.lzzz.carpooling_mobile.CarpoolDetailActivity" />
         <activity android:name="edu.wpi.cs528.lzzz.carpooling_mobile.MapActivity" />
+        <activity android:name="edu.wpi.cs528.lzzz.carpooling_mobile.MakeReservationActivity" />
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"

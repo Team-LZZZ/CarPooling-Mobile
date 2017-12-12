@@ -22,13 +22,11 @@ public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityAdapte
     {
         @Bind(R.id.offer_name_textview)
         public TextView mOfferTextView;
-
         @Bind(R.id.departure_textview)
         public TextView mDepartrueTestview;
-
         @Bind(R.id.destination_textview)
         public TextView mDestinationTextView;
-        @Bind(R.id.TVavailables_seat)
+        @Bind(R.id.availables_seats_textview)
         public TextView mCarInfoTextView;
 
         public View view;
@@ -46,9 +44,9 @@ public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityAdapte
 
     private Context mContext;
 
-    public MainActivityAdapter(List<CarPool> carPools)
+    public MainActivityAdapter(List<CarPool> carPools, Context context)
     {
-        //this.mContext = context;
+        this.mContext = context;
         this.carPools = carPools;
     }
 
@@ -73,17 +71,17 @@ public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityAdapte
 //                                        c.getTargetLocation().getCity() + ", " +
 //                                        c.getTargetLocation().getState() + ", " +
 //                                        c.getTargetLocation().getZip());
-        int avaibleSeat = c.getCar().getSeatsLimit() - c.getReserverList().size();
+//        int avaibleSeat = c.getCar().getSeatsLimit() - c.getReserverList().size();
 
-        viewHolder.mOfferTextView.setText(c.getOfferer().getUsername());
+//        viewHolder.mOfferTextView.setText(c.getOfferer().getUsername());
         viewHolder.mDepartrueTestview.setText(c.getStartLocation().getName());
-        viewHolder.mDestinationTextView.setText(c.getTargetLocation().getName());
-        viewHolder.mCarInfoTextView.setText(c.getCar().getMake()  + "     "  + c.getCar().getModel() + "     " + avaibleSeat);
+//        viewHolder.mDestinationTextView.setText(c.getTargetLocation().getName());
+//        viewHolder.mCarInfoTextView.setText(c.getCar().getMake()  + "     "  + c.getCar().getModel() + "     " + avaibleSeat);
 //        viewHolder.mImageView.setImageDrawable(mContext.getDrawable(p.getImageResourceId(mContext)));
         viewHolder.view.setOnClickListener(new  View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent i = new Intent(mContext, ReservationActivity.class);
+                Intent i = new Intent(mContext, MakeReservationActivity.class);
                 i.putExtra("carPoolId", 1);
                 i.putExtra("reserveMode", true);
                 mContext.startActivity(i);
