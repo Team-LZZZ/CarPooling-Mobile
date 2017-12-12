@@ -12,8 +12,12 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -30,9 +34,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -40,14 +42,15 @@ import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.CarPool;
 import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonConstants;
 
-public class MapActivity extends FragmentActivity
+public class MapActivity extends AppCompatActivity
         implements
         GoogleApiClient.ConnectionCallbacks,
         GoogleMap.OnInfoWindowClickListener,
         GoogleApiClient.OnConnectionFailedListener,
         OnMapReadyCallback,
         com.google.android.gms.location.LocationListener,
-        GoogleMap.OnMarkerClickListener {
+        GoogleMap.OnMarkerClickListener,
+        Toolbar.OnMenuItemClickListener{
 
     private GoogleApiClient mApiClient;
     private GoogleMap mGoogleMap;
@@ -68,6 +71,9 @@ public class MapActivity extends FragmentActivity
                 .build();
         mApiClient.connect();
         carPools = AppContainer.getInstance().getCarPools();
+        Toolbar toolbar = (Toolbar) findViewById(R.id.map_toolbar);
+        setSupportActionBar(toolbar);
+        toolbar.setOnMenuItemClickListener(this);
     }
 
     @Override
@@ -89,6 +95,26 @@ public class MapActivity extends FragmentActivity
     public void onLocationChanged(Location location) {
 
     }
+
+    @Override
+    public boolean onMenuItemClick(MenuItem item) {
+        int id = item.getItemId();
+        Log.i(CommonConstants.LogPrefix, id + "");
+        if (id == R.id.action_list) {
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+        }
+        return true;
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_map, menu);
+        return true;
+    }
+
+
 
 
     @Override
