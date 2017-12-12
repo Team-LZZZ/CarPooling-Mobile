@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tonggezhu.carpooling_v2.OfferCarpoolActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/profile_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_picture"
+                android:paddingBottom="@dimen/horizontal_padding"
+                android:paddingTop="@dimen/horizontal_padding">
+
+                <TextView
+                    android:id="@+id/profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Name"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/title_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/profile_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_name"
+                    android:text="000-000-0000"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/normal_text_size" />
+
+                <TextView
+                    android:id="@+id/profile_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_phone"
+                    android:text="wpi@wpi.edu"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/normal_text_size" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/car"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_person"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/horizontal_padding"
+                android:paddingTop="@dimen/horizontal_padding">
+
+                <TextView
+                    android:id="@+id/car_infor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Car Information"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/title_size"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/car_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/car_infor"
+                    android:paddingTop="@dimen/appbar_padding_top">
+
+                    <LinearLayout
+                        android:id="@+id/make_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/make"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.08"
+                            android:text="Make: "
+                            android:textSize="@dimen/normal_text_size"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/make_input"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:inputType="text"
+                            android:textSize="@dimen/normal_text_size" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/model_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/make_layout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/model"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Model: "
+                            android:textSize="@dimen/normal_text_size"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/model_input"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:inputType="text"
+                            android:textSize="@dimen/normal_text_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/plate_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/model_layout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/plate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Plate: "
+                            android:textSize="@dimen/normal_text_size"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/plate_input"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:inputType="text"
+                            android:textSize="@dimen/normal_text_size" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/trip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_person"
+                android:paddingBottom="@dimen/horizontal_padding"
+                android:paddingTop="@dimen/horizontal_padding">
+
+                <TextView
+                    android:id="@+id/trip_infor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trip Information"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/title_size"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/trip_infor"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/appbar_padding_top">
+
+                    <TextView
+                        android:id="@+id/day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Depart day"
+                        android:textSize="@dimen/normal_text_size"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/carppool_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="date" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/time_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/trip_infor"
+                    android:paddingTop="@dimen/appbar_padding_top">
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Depart time"
+                        android:textSize="@dimen/normal_text_size"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/carppool_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="time" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/trip_departure"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/trip_departure"
+                    android:paddingTop="@dimen/appbar_padding_top">
+
+                    <TextView
+                        android:id="@+id/departure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Depart time"
+                        android:textSize="@dimen/normal_text_size"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/carppool_departure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/normal_text_size"
+                        android:inputType="text" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/trip_departure"
+                    android:paddingTop="@dimen/appbar_padding_top">
+
+                    <TextView
+                        android:id="@+id/arrive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Arrival"
+                        android:textSize="@dimen/normal_text_size"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/carppool_arrival"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/normal_text_size"
+                        android:inputType="text" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
