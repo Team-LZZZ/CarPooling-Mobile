@@ -34,6 +34,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.CarPool;
 import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonConstants;
@@ -46,7 +48,6 @@ public class MapActivity extends FragmentActivity
         OnMapReadyCallback,
         com.google.android.gms.location.LocationListener,
         GoogleMap.OnMarkerClickListener {
-
 
 
 
@@ -108,6 +109,8 @@ public class MapActivity extends FragmentActivity
         mLocationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED ||
                 ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED){
+
+            moveMapCamera(mLocationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER));
             for (CarPool carPool : carPools){
                 createCarPoolMarker(carPool);
             }
@@ -118,7 +121,7 @@ public class MapActivity extends FragmentActivity
         }
     }
 
-    public void getCurrentMap(Location location){
+    public void moveMapCamera(Location location){
 
         if (mGoogleMap != null){
             mGoogleMap.clear();
@@ -145,23 +148,33 @@ public class MapActivity extends FragmentActivity
     private Marker createCarPoolMarker(CarPool carPool) {
         Log.i(CommonConstants.LogPrefix, carPool.getOid() + "");
 
+        String carpoolInfo = carPool.getAvailable() + "," + carPool.getStartLocation().getName() + "," + carPool.getTargetLocation().getName()
+                + "," + carPool.getDate();
         Marker marker = mGoogleMap.addMarker(
                 new MarkerOptions()
                         .position(carPool.getStartLocation().getLatLng())
                         .icon(BitmapDescriptorFactory.fromResource(R.drawable.tires_accessories))
-                        .title(carPool.getStartLocation().getName())
+                        .title(carpoolInfo)
+
         );
         markers.put(marker, carPool);
         return marker;
     }
 
     public class MarkerInfoWindowAdapter implements GoogleMap.InfoWindowAdapter {
-        private TextView mTitle;
-        private TextView mDescription;
+        @Bind(R.id.available_seat_window_textView)
+        TextView mAvailableSeat;
+        @Bind(R.id.from_address_window_textView)
+        TextView mFromAddress;
+        @Bind(R.id.to_address_window_textView)
+        TextView mToAddress;
+        @Bind(R.id.date_window_textview)
+        TextView mDate;
         private View v;
         public MarkerInfoWindowAdapter()
         {
             v  = getLayoutInflater().inflate(R.layout.custom_info_window, null);
+            ButterKnife.bind(this,v);
         }
 
         @Override
@@ -173,11 +186,11 @@ public class MapActivity extends FragmentActivity
         @Override
         public View getInfoContents(Marker marker)
         {
-            mTitle = v.findViewById(R.id.bubble_title);
-            mTitle.setText(marker.getTitle());
-            mDescription = v.findViewById(R.id.bubble_description);
-            mDescription.setText("safasfsfsadf");
-
+            String[] carpoolInfoArr = marker.getTitle().split(",");
+            mAvailableSeat.setText(carpoolInfoArr[0]);
+            mFromAddress.setText(carpoolInfoArr[1]);
+            mToAddress.setText(carpoolInfoArr[2]);
+            mDate.setText(carpoolInfoArr[3]);
             return v;
         }
     }

@@ -19,6 +19,6 @@ public class CommonConstants {
     public static String LogPrefix = "CS528Final";
 
     // GoogleMap
-    public static int MAP_CAMERA = 17;
+    public static int MAP_CAMERA = 15;
 
 }

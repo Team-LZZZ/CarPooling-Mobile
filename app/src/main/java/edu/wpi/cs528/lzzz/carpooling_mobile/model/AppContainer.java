@@ -3,6 +3,7 @@ package edu.wpi.cs528.lzzz.carpooling_mobile.model;
 import com.google.android.gms.maps.model.LatLng;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -24,16 +25,17 @@ public class AppContainer {
         return instance;
     }
 
-//    static {
-//        CarPool carPool = new CarPool();
-//        Location location = new Location("WPI");
-//        location.setLatLng(new LatLng(42.274409, -71.808752));
-//        carPool.setStartLocation(location);
-//        carPool.setOid(111);
-//        carPool.setTargetLocation(location);
-//        carPool.setAvailable(4);
-//        carPools.add(carPool);
-//    }
+    static {
+        CarPool carPool = new CarPool();
+        Location location = new Location("WPI");
+        location.setLatLng(new LatLng(42.274409, -71.808752));
+        carPool.setStartLocation(location);
+        carPool.setOid(111);
+        carPool.setTargetLocation(location);
+        carPool.setAvailable(4);
+        carPool.setDate(new Date());
+        carPools.add(carPool);
+    }
 
     public User getActiveUser() {
         return activeUser;
