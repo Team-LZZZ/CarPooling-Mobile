@@ -61,18 +61,7 @@ public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityAdapte
     public void onBindViewHolder(final ViewHolder viewHolder, int i )
     {
         CarPool c = carPools.get(i);
-//        c.getStartLocation().setName(c.getStartLocation().getStreetNumber() + ", " +
-//                                        c.getStartLocation().getStreet() + ", " +
-//                                        c.getStartLocation().getCity() + ", " +
-//                                        c.getStartLocation().getState() + ", " +
-//                                        c.getStartLocation().getZip());
-//        c.getTargetLocation().setName(c.getTargetLocation().getStreetNumber() + ", " +
-//                                        c.getTargetLocation().getStreet() + ", " +
-//                                        c.getTargetLocation().getCity() + ", " +
-//                                        c.getTargetLocation().getState() + ", " +
-//                                        c.getTargetLocation().getZip());
 //        int avaibleSeat = c.getCar().getSeatsLimit() - c.getReserverList().size();
-
 //        viewHolder.mOfferTextView.setText(c.getOfferer().getUsername());
         viewHolder.mDepartrueTestview.setText(c.getStartLocation().getName());
 //        viewHolder.mDestinationTextView.setText(c.getTargetLocation().getName());
