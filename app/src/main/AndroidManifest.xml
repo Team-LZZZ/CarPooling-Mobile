@@ -68,7 +68,7 @@
         </activity>
         <activity android:name=".OfferCarpoolActivity" />
         <activity android:name=".CarpoolDetailActivity" />
-        <activity android:name=".MapActivity" />
+        <activity android:name=".MapActivity" android:theme="@style/AppTheme.NoActionBar"/>
 
     </application>
 
