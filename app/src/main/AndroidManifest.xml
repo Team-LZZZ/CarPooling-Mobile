@@ -27,16 +27,45 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDaF4winZylkI-UQodYznCPhB-LkFikRu0" />
 
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="edu.wpi.cs528.lzzz.carpooling_mobile.LoginActivity" android:theme="@style/AppTheme.Dark" />
-        <activity android:name="edu.wpi.cs528.lzzz.carpooling_mobile.SignupActivity" android:theme="@style/AppTheme.Dark" />
-        <activity android:name="edu.wpi.cs528.lzzz.carpooling_mobile.ReservationActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity
+            android:name=".ReservationActivity"
+            android:label="@string/title_activity_reservation"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.wpi.cs528.lzzz.carpooling_mobile.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OfferListActivity"
+            android:label="@string/title_activity_offer_list"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.wpi.cs528.lzzz.carpooling_mobile.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".SignupActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".OfferCarpoolActivity" />
+        <activity android:name=".CarpoolDetailActivity"></activity>
     </application>
 
 </manifest>
