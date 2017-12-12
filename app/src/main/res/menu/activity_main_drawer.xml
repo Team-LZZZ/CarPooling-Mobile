@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/offer"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Offer a carpool" />
+        <item
+            android:id="@+id/reservation"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="My reservation" />
+        <item
+            android:id="@+id/myoffer"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="My offer" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="My profile" />
+    </group>
+
+    <item android:title="Info">
+        <menu>
+            <item
+                android:id="@+id/about_us"
+                android:icon="@drawable/ic_menu_share"
+                android:title="About us" />
+            <item
+                android:id="@+id/contact"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Contact" />
+        </menu>
+    </item>
+
+</menu>
