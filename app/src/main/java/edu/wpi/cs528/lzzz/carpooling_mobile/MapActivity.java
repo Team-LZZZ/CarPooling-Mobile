@@ -61,14 +61,7 @@ public class MapActivity extends FragmentActivity
 
     public MapActivity() {
     }
-
-//    public static MapActivity newInstance(int pageNo) {
-//        Bundle args = new Bundle();
-//        args.putInt(ARG_PAGE, pageNo);
-//        MapActivity fragment = new MapActivity();
-//        return fragment;
-//    }
-
+    
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -86,36 +79,6 @@ public class MapActivity extends FragmentActivity
         markers = new HashMap<>();
     }
 
-//    @Override
-//    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-//                             Bundle savedInstanceState) {
-//        View view = inflater.inflate(R.layout.activity_map, null, false);
-//
-//        mApiClient = new GoogleApiClient.Builder(getContext())
-//                .addApi(LocationServices.API)
-//                .addConnectionCallbacks(this)
-//                .addOnConnectionFailedListener(this)
-//                .build();
-//        mApiClient.connect();
-//        mapFragment = (SupportMapFragment) this.getChildFragmentManager().findFragmentById(R.id.map);
-//        mapFragment.getMapAsync(this);
-//        carPools = AppContainer.getInstance().getCarPools();
-//        markers = new HashMap<>();
-//        return view;
-//    }
-
-    //
-//    @Override
-//    public void onAttach(Context context) {
-//        super.onAttach(context);
-//
-//    }
-//
-//    @Override
-//    public void onDetach() {
-//        super.onDetach();
-//
-//    }
     @Override
     public void onConnected(@Nullable Bundle bundle) {
 
