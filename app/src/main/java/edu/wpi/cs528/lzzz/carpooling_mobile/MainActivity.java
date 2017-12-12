@@ -50,10 +50,10 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        if (!AppContainer.getInstance().isLogIn()) {
-//            Intent intent = new Intent(this, LoginActivity.class);
-//            startActivity(intent);
-//        }
+        if (!AppContainer.getInstance().isLogIn()) {
+            Intent intent = new Intent(this, LoginActivity.class);
+            startActivity(intent);
+        }
 
         mRecycleView = (RecyclerView) findViewById(R.id.list);
         mRecycleView.setItemAnimator(new DefaultItemAnimator());
