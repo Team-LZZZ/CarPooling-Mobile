@@ -215,21 +215,25 @@
                     android:orientation="horizontal"
                     android:layout_below="@+id/day_layout">
 
-                    <TextView
-                        android:id="@+id/time"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Departure time:"
-                        android:textSize="@dimen/normal_text_size"
-                        android:textStyle="bold" />
+                    <!--<TextView-->
+                        <!--android:id="@+id/time"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:text="Departure time:"-->
+                        <!--android:textSize="@dimen/normal_text_size"-->
+                        <!--android:textStyle="bold" />-->
 
-                    <EditText
-                        android:id="@+id/carppool_time"
-                        android:layout_width="205dp"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="time" />
+                    <!--&lt;!&ndash;<EditText&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:id="@+id/carppool_time"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_width="205dp"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:ems="10"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:inputType="time" />&ndash;&gt;-->
+                    <!--<TimePicker-->
+                        <!--android:id="@+id/timePicker1"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content" />-->
 
                 </LinearLayout>
 
