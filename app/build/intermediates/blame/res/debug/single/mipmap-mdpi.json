@@ -1,5 +1,13 @@
 [
     {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png",
+        "source": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher_round.png",
+        "source": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
         "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher_round.png",
         "source": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },

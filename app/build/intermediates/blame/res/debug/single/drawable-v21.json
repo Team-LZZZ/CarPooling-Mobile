@@ -1,7 +1,19 @@
 [
     {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/drawable-v21/avd_hide_password.xml",
+        "source": "/Users/liweihao/.android/build-cache/a6df1fc70315b9d5823a8fb79caecebf88271715/output/res/drawable-v21/avd_hide_password.xml"
+    },
+    {
         "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
         "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/drawable-v21/design_password_eye.xml",
+        "source": "/Users/liweihao/.android/build-cache/a6df1fc70315b9d5823a8fb79caecebf88271715/output/res/drawable-v21/design_password_eye.xml"
     },
     {
         "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/drawable-v21/avd_hide_password.xml",
@@ -20,6 +32,10 @@
         "source": "/Users/QQZhao/.android/build-cache/3c868aa1a1dd8e9f8aa11b8cf7ce743a4260f99e/output/res/drawable-v21/design_bottom_navigation_item_background.xml"
     },
     {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
+        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/drawable-v21/notification_action_background.xml"
+    },
+    {
         "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
         "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/drawable-v21/abc_edit_text_material.xml"
     },
@@ -28,7 +44,23 @@
         "source": "/Users/QQZhao/.android/build-cache/3c868aa1a1dd8e9f8aa11b8cf7ce743a4260f99e/output/res/drawable-v21/design_password_eye.xml"
     },
     {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/drawable-v21/design_bottom_navigation_item_background.xml",
+        "source": "/Users/liweihao/.android/build-cache/a6df1fc70315b9d5823a8fb79caecebf88271715/output/res/drawable-v21/design_bottom_navigation_item_background.xml"
+    },
+    {
         "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/drawable-v21/avd_show_password.xml",
         "source": "/Users/QQZhao/.android/build-cache/3c868aa1a1dd8e9f8aa11b8cf7ce743a4260f99e/output/res/drawable-v21/avd_show_password.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/drawable-v21/avd_show_password.xml",
+        "source": "/Users/liweihao/.android/build-cache/a6df1fc70315b9d5823a8fb79caecebf88271715/output/res/drawable-v21/avd_show_password.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/drawable-v21/abc_edit_text_material.xml"
     }
 ]

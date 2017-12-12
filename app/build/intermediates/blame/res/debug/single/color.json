@@ -8,28 +8,32 @@
         "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/color/abc_tint_switch_track.xml"
     },
     {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
         "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/design_error.xml",
         "source": "/Users/QQZhao/.android/build-cache/3c868aa1a1dd8e9f8aa11b8cf7ce743a4260f99e/output/res/color/design_error.xml"
     },
     {
-        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
-        "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/color/switch_thumb_material_light.xml"
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/common_plus_signin_btn_text_dark.xml",
+        "source": "/Users/liweihao/.android/build-cache/b397c3fb29cf557b6e13fcca0b1ef98263ca471e/output/res/color/common_plus_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/design_tint_password_toggle.xml",
+        "source": "/Users/liweihao/.android/build-cache/a6df1fc70315b9d5823a8fb79caecebf88271715/output/res/color/design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/common_plus_signin_btn_text_light.xml",
+        "source": "/Users/liweihao/.android/build-cache/b397c3fb29cf557b6e13fcca0b1ef98263ca471e/output/res/color/common_plus_signin_btn_text_light.xml"
     },
     {
         "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
         "source": "/Users/QQZhao/.android/build-cache/37ad6d383be171b9383368f52b3a46133d76d7d0/output/res/color/common_google_signin_btn_text_dark.xml"
     },
     {
-        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/common_plus_signin_btn_text_light.xml",
-        "source": "/Users/QQZhao/.android/build-cache/37ad6d383be171b9383368f52b3a46133d76d7d0/output/res/color/common_plus_signin_btn_text_light.xml"
-    },
-    {
-        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
-        "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/color/abc_search_url_text.xml"
-    },
-    {
-        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
-        "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/color/abc_secondary_text_material_dark.xml"
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_btn_colored_text_material.xml",
+        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/color/abc_btn_colored_text_material.xml"
     },
     {
         "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
@@ -44,60 +48,64 @@
         "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/color/abc_tint_default.xml"
     },
     {
-        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
-        "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/color/switch_thumb_material_dark.xml"
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/color/abc_primary_text_disable_only_material_dark.xml"
     },
     {
-        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_tint_spinner.xml",
-        "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/color/abc_tint_spinner.xml"
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
+        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_tint_seek_thumb.xml",
+        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/color/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/color/abc_primary_text_material_dark.xml"
     },
     {
         "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/wallet_primary_text_holo_light.xml",
         "source": "/Users/QQZhao/.android/build-cache/54abe1e155b4074bf560453073a53cc95cbe684f/output/res/color/wallet_primary_text_holo_light.xml"
     },
     {
-        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_light.xml",
-        "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/color/abc_hint_foreground_material_light.xml"
-    },
-    {
         "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_tint_edittext.xml",
         "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/color/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_tint_switch_thumb.xml",
+        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/color/abc_tint_switch_thumb.xml"
     },
     {
         "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_btn_colored_borderless_text_material.xml",
         "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/color/abc_btn_colored_borderless_text_material.xml"
     },
     {
-        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_tint_seek_thumb.xml",
-        "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/color/abc_tint_seek_thumb.xml"
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/wallet_secondary_text_holo_dark.xml",
+        "source": "/Users/liweihao/.android/build-cache/a09b5c95cdcb1bfa6b5f21fe472cf2306e661e4c/output/res/color/wallet_secondary_text_holo_dark.xml"
     },
     {
-        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_btn_colored_text_material.xml",
-        "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/color/abc_btn_colored_text_material.xml"
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_tint_default.xml",
+        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/color/abc_tint_default.xml"
+    },
+    {
+        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_tint_seek_thumb.xml",
+        "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/color/abc_tint_seek_thumb.xml"
     },
     {
         "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_tint_btn_checkable.xml",
         "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/color/abc_tint_btn_checkable.xml"
     },
     {
-        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_dark.xml",
-        "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/color/abc_hint_foreground_material_dark.xml"
-    },
-    {
         "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
         "source": "/Users/QQZhao/.android/build-cache/37ad6d383be171b9383368f52b3a46133d76d7d0/output/res/color/common_google_signin_btn_text_light.xml"
     },
     {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
+        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/color/abc_primary_text_material_light.xml"
+    },
+    {
         "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
         "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/color/abc_primary_text_material_dark.xml"
-    },
-    {
-        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/design_tint_password_toggle.xml",
-        "source": "/Users/QQZhao/.android/build-cache/3c868aa1a1dd8e9f8aa11b8cf7ce743a4260f99e/output/res/color/design_tint_password_toggle.xml"
-    },
-    {
-        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/wallet_secondary_text_holo_dark.xml",
-        "source": "/Users/QQZhao/.android/build-cache/54abe1e155b4074bf560453073a53cc95cbe684f/output/res/color/wallet_secondary_text_holo_dark.xml"
     },
     {
         "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
@@ -110,5 +118,109 @@
     {
         "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_tint_switch_thumb.xml",
         "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/color/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_btn_colored_borderless_text_material.xml",
+        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/color/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
+        "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
+        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/common_plus_signin_btn_text_light.xml",
+        "source": "/Users/QQZhao/.android/build-cache/37ad6d383be171b9383368f52b3a46133d76d7d0/output/res/color/common_plus_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
+        "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
+        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_dark.xml",
+        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/color/abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
+        "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_tint_spinner.xml",
+        "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/color/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_light.xml",
+        "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/color/abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/design_error.xml",
+        "source": "/Users/liweihao/.android/build-cache/a6df1fc70315b9d5823a8fb79caecebf88271715/output/res/color/design_error.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_tint_spinner.xml",
+        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/color/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/wallet_primary_text_holo_light.xml",
+        "source": "/Users/liweihao/.android/build-cache/a09b5c95cdcb1bfa6b5f21fe472cf2306e661e4c/output/res/color/wallet_primary_text_holo_light.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/Users/liweihao/.android/build-cache/b397c3fb29cf557b6e13fcca0b1ef98263ca471e/output/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_tint_switch_track.xml",
+        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/color/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_tint_edittext.xml",
+        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/color/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_btn_colored_text_material.xml",
+        "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/color/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_dark.xml",
+        "source": "/Users/QQZhao/.android/build-cache/447b696df8d0da76c8bd27b9f835db706f74a51a/output/res/color/abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_tint_btn_checkable.xml",
+        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/color/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_light.xml",
+        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/color/abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/design_tint_password_toggle.xml",
+        "source": "/Users/QQZhao/.android/build-cache/3c868aa1a1dd8e9f8aa11b8cf7ce743a4260f99e/output/res/color/design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "/Users/QQZhao/Desktop/MobileProject/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/wallet_secondary_text_holo_dark.xml",
+        "source": "/Users/QQZhao/.android/build-cache/54abe1e155b4074bf560453073a53cc95cbe684f/output/res/color/wallet_secondary_text_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/Users/liweihao/.android/build-cache/e723306d168663617719088b13c533abc2271441/output/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/liweihao/Desktop/CS 528/Final Project/CarPooling-Mobile/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/Users/liweihao/.android/build-cache/b397c3fb29cf557b6e13fcca0b1ef98263ca471e/output/res/color/common_google_signin_btn_text_light.xml"
     }
 ]
