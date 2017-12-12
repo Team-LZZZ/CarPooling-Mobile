@@ -49,19 +49,10 @@ public class MapActivity extends FragmentActivity
         com.google.android.gms.location.LocationListener,
         GoogleMap.OnMarkerClickListener {
 
-
-
-    public static final String ARG_PAGE = "ARG_PAGE";
-    public int mPageNo;
-    private SupportMapFragment mapFragment;
     private GoogleApiClient mApiClient;
     private GoogleMap mGoogleMap;
     private LocationManager mLocationManager;
     private List<CarPool> carPools;
-    private Map<Marker, CarPool> markers;
-
-    public MapActivity() {
-    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -77,7 +68,6 @@ public class MapActivity extends FragmentActivity
                 .build();
         mApiClient.connect();
         carPools = AppContainer.getInstance().getCarPools();
-        markers = new HashMap<>();
     }
 
     @Override
@@ -138,16 +128,13 @@ public class MapActivity extends FragmentActivity
 
     @Override
     public void onInfoWindowClick(Marker marker) {
-        CarPool carPool = markers.get(marker);
         Intent i = new Intent(this, ReservationActivity.class);
-        i.putExtra("carPoolId", carPool.getOid());
+        i.putExtra("carPoolId", marker.getSnippet());
         i.putExtra("reserveMode", true);
         startActivity(i);
     }
 
     private Marker createCarPoolMarker(CarPool carPool) {
-        Log.i(CommonConstants.LogPrefix, carPool.getOid() + "");
-
         String carpoolInfo = carPool.getAvailable() + "," + carPool.getStartLocation().getName() + "," + carPool.getTargetLocation().getName()
                 + "," + carPool.getDate();
         Marker marker = mGoogleMap.addMarker(
@@ -155,9 +142,8 @@ public class MapActivity extends FragmentActivity
                         .position(carPool.getStartLocation().getLatLng())
                         .icon(BitmapDescriptorFactory.fromResource(R.drawable.tires_accessories))
                         .title(carpoolInfo)
-
+                        .snippet(String.valueOf(carPool.getOid()))
         );
-        markers.put(marker, carPool);
         return marker;
     }
 
