@@ -70,7 +70,7 @@ public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityAdapte
         viewHolder.view.setOnClickListener(new  View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent i = new Intent(mContext, MakeReservationActivity.class);
+                Intent i = new Intent(mContext, CarpoolDetailActivity.class);
                 i.putExtra("carPoolId", 1);
                 i.putExtra("reserveMode", true);
                 mContext.startActivity(i);
