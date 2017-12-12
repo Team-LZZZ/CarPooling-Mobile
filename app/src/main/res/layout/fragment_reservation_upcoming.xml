@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.tonggezhu.carpooling_v2.ReservationUpcomingFragment"
+    tools:context="edu.wpi.cs528.lzzz.carpooling_mobile.ReservationUpcomingFragment"
     android:text="@string/tab_label2">
 
     <!-- TODO: Update blank fragment layout -->
