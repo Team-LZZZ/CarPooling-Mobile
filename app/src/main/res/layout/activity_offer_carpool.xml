@@ -15,7 +15,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/activity_vertical_margin"
             android:layout_marginRight="@dimen/activity_vertical_margin"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/activity_vertical_margin">
 
             <RelativeLayout
                 android:id="@+id/profile_person"
@@ -168,8 +169,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/profile_person"
-                android:paddingBottom="@dimen/horizontal_padding"
-                android:paddingTop="@dimen/horizontal_padding">
+                >
 
                 <TextView
                     android:id="@+id/trip_infor"
@@ -181,6 +181,7 @@
                     android:textStyle="bold" />
 
                 <LinearLayout
+                    android:id="@+id/day_layout"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_below="@+id/trip_infor"
@@ -192,7 +193,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="Depart day"
+                        android:text="Departure day:"
                         android:textSize="@dimen/normal_text_size"
                         android:textStyle="bold" />
 
@@ -211,42 +212,39 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
-                    android:layout_below="@+id/trip_infor"
-                    android:paddingTop="@dimen/appbar_padding_top">
+                    android:layout_below="@+id/day_layout">
 
                     <TextView
                         android:id="@+id/time"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="Depart time"
+                        android:text="Departure time:"
                         android:textSize="@dimen/normal_text_size"
                         android:textStyle="bold" />
 
                     <EditText
                         android:id="@+id/carppool_time"
-                        android:layout_width="wrap_content"
+                        android:layout_width="205dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:ems="10"
                         android:inputType="time" />
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/trip_departure"
+                    android:id="@+id/trip_departure_layout"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
-                    android:layout_below="@+id/trip_departure"
-                    android:paddingTop="@dimen/appbar_padding_top">
+                    android:layout_below="@+id/time_layout">
 
                     <TextView
                         android:id="@+id/departure"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Depart time"
+                        android:layout_weight="0.31"
+                        android:text="From: "
                         android:textSize="@dimen/normal_text_size"
                         android:textStyle="bold" />
 
@@ -254,7 +252,7 @@
                         android:id="@+id/carppool_departure"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
+                        android:layout_weight="2.65"
                         android:textSize="@dimen/normal_text_size"
                         android:inputType="text" />
 
@@ -264,15 +262,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
-                    android:layout_below="@+id/trip_departure"
-                    android:paddingTop="@dimen/appbar_padding_top">
+                    android:layout_below="@+id/trip_departure_layout">
 
                     <TextView
                         android:id="@+id/arrive"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="Arrival"
+                        android:text="To: "
                         android:textSize="@dimen/normal_text_size"
                         android:textStyle="bold" />
 
@@ -280,13 +277,25 @@
                         android:id="@+id/carppool_arrival"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
+                        android:layout_weight="5.56"
                         android:textSize="@dimen/normal_text_size"
                         android:inputType="text" />
 
                 </LinearLayout>
 
             </RelativeLayout>
+
+            <Button
+                android:paddingTop="@dimen/appbar_padding_top"
+                android:id="@+id/Offer_carpool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lightred"
+                android:text="Offer Carpool"
+                android:textColor="@color/rice"
+                android:textStyle="bold" />
+
+
         </LinearLayout>
     </ScrollView>
 
