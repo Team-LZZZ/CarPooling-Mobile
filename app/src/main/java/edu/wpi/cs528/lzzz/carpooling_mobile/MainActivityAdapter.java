@@ -6,26 +6,31 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
+
+import edu.wpi.cs528.lzzz.carpooling_mobile.model.CarPool;
 
 import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import edu.wpi.cs528.lzzz.carpooling_mobile.model.CarPool;
 
 
-public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
+public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityAdapter.ViewHolder>{
 
     public static class ViewHolder extends RecyclerView.ViewHolder
     {
         @Bind(R.id.offer_name_textview)
         public TextView mOfferTextView;
-        @Bind(R.id.address_textview)
-        public TextView mAddressTextView;
-        @Bind(R.id.car_info_textview)
+
+        @Bind(R.id.departure_textview)
+        public TextView mDepartrueTestview;
+
+        @Bind(R.id.destination_textview)
+        public TextView mDestinationTextView;
+        @Bind(R.id.TVavailables_seat)
         public TextView mCarInfoTextView;
+
         public View view;
 
         public ViewHolder( View v )
@@ -41,16 +46,16 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
 
     private Context mContext;
 
-    public MyAdapter( Context context ,  List<CarPool> carPools)
+    public MainActivityAdapter(List<CarPool> carPools)
     {
-        this.mContext = context;
+        //this.mContext = context;
         this.carPools = carPools;
     }
 
     @Override
     public ViewHolder onCreateViewHolder( ViewGroup viewGroup, int i )
     {
-        View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.card_view, viewGroup, false);
+        View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.carpool_card_view, viewGroup, false);
         return new ViewHolder(v);
     }
 
@@ -58,19 +63,22 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
     public void onBindViewHolder(final ViewHolder viewHolder, int i )
     {
         CarPool c = carPools.get(i);
-        c.getStartLocation().setName(c.getStartLocation().getStreetNumber() + ", " +
-                                        c.getStartLocation().getStreet() + ", " +
-                                        c.getStartLocation().getCity() + ", " +
-                                        c.getStartLocation().getState() + ", " +
-                                        c.getStartLocation().getZip());
-        c.getTargetLocation().setName(c.getTargetLocation().getStreetNumber() + ", " +
-                                        c.getTargetLocation().getStreet() + ", " +
-                                        c.getTargetLocation().getCity() + ", " +
-                                        c.getTargetLocation().getState() + ", " +
-                                        c.getTargetLocation().getZip());
+//        c.getStartLocation().setName(c.getStartLocation().getStreetNumber() + ", " +
+//                                        c.getStartLocation().getStreet() + ", " +
+//                                        c.getStartLocation().getCity() + ", " +
+//                                        c.getStartLocation().getState() + ", " +
+//                                        c.getStartLocation().getZip());
+//        c.getTargetLocation().setName(c.getTargetLocation().getStreetNumber() + ", " +
+//                                        c.getTargetLocation().getStreet() + ", " +
+//                                        c.getTargetLocation().getCity() + ", " +
+//                                        c.getTargetLocation().getState() + ", " +
+//                                        c.getTargetLocation().getZip());
+        int avaibleSeat = c.getCar().getSeatsLimit() - c.getReserverList().size();
+
         viewHolder.mOfferTextView.setText(c.getOfferer().getUsername());
-        viewHolder.mAddressTextView.setText("From     " + c.getStartLocation().getName() + "       To     "+ c.getTargetLocation().getName());
-        viewHolder.mCarInfoTextView.setText(c.getCar().getMake()  + "     "  + c.getCar().getModel() + "     " + c.getCar().getPlate());
+        viewHolder.mDepartrueTestview.setText(c.getStartLocation().getName());
+        viewHolder.mDestinationTextView.setText(c.getTargetLocation().getName());
+        viewHolder.mCarInfoTextView.setText(c.getCar().getMake()  + "     "  + c.getCar().getModel() + "     " + avaibleSeat);
 //        viewHolder.mImageView.setImageDrawable(mContext.getDrawable(p.getImageResourceId(mContext)));
         viewHolder.view.setOnClickListener(new  View.OnClickListener(){
             @Override

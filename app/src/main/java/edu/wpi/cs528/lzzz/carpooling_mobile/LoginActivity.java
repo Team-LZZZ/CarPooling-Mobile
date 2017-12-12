@@ -11,15 +11,16 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.gson.Gson;
-
-import butterknife.Bind;
-import butterknife.ButterKnife;
+import edu.wpi.cs528.lzzz.carpooling_mobile.R;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.CarpoolsHandler;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.IConnectionStatus;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.LogInHandler;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.User;
+import com.google.gson.Gson;
+
+import butterknife.Bind;
+import butterknife.ButterKnife;
 import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonConstants;
 import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonUtils;
 
@@ -42,6 +43,7 @@ public class LoginActivity extends AppCompatActivity{
     
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        Log.i("LoginActivity", "================");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
@@ -60,7 +62,7 @@ public class LoginActivity extends AppCompatActivity{
                 Intent intent = new Intent(getApplicationContext(), SignupActivity.class);
                 startActivityForResult(intent, REQUEST_SIGNUP);
 //                finish();
-                overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
+//                overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
             }
         });
     }

@@ -3,15 +3,6 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="colorOrange">#F68159</color>
-    <color name="colorLightGray">#a6abae</color>
-    <color name="colorBackroundWhite">#f0f2ea</color>
-    <color name="colorGray">#495C67</color>
-
-    <color name="primary">#3F51B5</color>
-    <color name="primary_dark">#303F9F</color>
-    <color name="primary_darker">#23248f</color>
-    <color name="accent">#FFFFFF</color>
 
     <color name="black">#000000</color>
     <color name="jet">#222222</color>
@@ -22,4 +13,20 @@
     <color name="base">#AAAAAA</color>
     <color name="iron">#CCCCCC</color>
     <color name="white">#FFFFFF</color>
+    <color name="colorOrange">#F68159</color>
+    <color name="colorBackroundWhite">#f0f2ea</color>
+
+    <color name="primary">#3F51B5</color>
+    <color name="primary_dark">#303F9F</color>
+    <color name="primary_darker">#23248f</color>
+    <color name="accent">#FFFFFF</color>
+
+    <color name="rice">#F7fff7</color>
+    <color name="lightred">#Ff6b6b</color>
+    <color name="lightgreen">#4ecdc4</color>
+    <color name="darkgreen">#1a535c</color>
+    <color name="dark">#080705</color>
+
+
+
 </resources>

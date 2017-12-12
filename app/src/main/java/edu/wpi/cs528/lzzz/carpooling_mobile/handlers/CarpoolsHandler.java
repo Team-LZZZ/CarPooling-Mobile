@@ -9,7 +9,6 @@ import com.google.gson.GsonBuilder;
 import java.util.ArrayList;
 import java.util.List;
 
-import edu.wpi.cs528.lzzz.carpooling_mobile.SearchFragment;
 import edu.wpi.cs528.lzzz.carpooling_mobile.connection.ConnectionAsyncTask;
 import edu.wpi.cs528.lzzz.carpooling_mobile.connection.HttpRequestMessage;
 import edu.wpi.cs528.lzzz.carpooling_mobile.connection.HttpResponseMessage;
