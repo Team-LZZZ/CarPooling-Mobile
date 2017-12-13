@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity
     private CarpoolsHandler carpoolsHandler;
     private RecyclerView.LayoutManager layoutManager;
     private ProgressDialog progressDialog;
+
+    private int loginCode = 0;
     TextView name;
     TextView phone;
     TextView email;
@@ -54,7 +56,7 @@ public class MainActivity extends AppCompatActivity
 
         if (!AppContainer.getInstance().isLogIn()) {
             Intent intent = new Intent(this, LoginActivity.class);
-            startActivity(intent);
+            startActivityForResult(intent, loginCode);
         }
 
         mRecycleView = (RecyclerView) findViewById(R.id.list);
@@ -212,5 +214,14 @@ public class MainActivity extends AppCompatActivity
     }
     private void onGetAllCarpoolFailed(String error){
         Toast.makeText(this, error, Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (resultCode == this.loginCode){
+            mainActivityAdapter = new MainActivityAdapter(AppContainer.getInstance().getCarPools(), this);
+            mRecycleView.setAdapter(mainActivityAdapter);
+            mainActivityAdapter.notifyDataSetChanged();
+        }
     }
 }
