@@ -4,7 +4,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/offer"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_menu_offer"
             android:title="Offer a carpool" />
         <item
             android:id="@+id/reservation"
@@ -16,7 +16,7 @@
             android:title="My offer" />
         <item
             android:id="@+id/profile"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_menu_profile"
             android:title="My profile" />
     </group>
 

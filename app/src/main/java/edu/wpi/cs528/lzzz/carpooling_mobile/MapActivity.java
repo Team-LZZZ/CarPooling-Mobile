@@ -103,6 +103,7 @@ public class MapActivity extends AppCompatActivity
         if (id == R.id.action_list) {
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
+            finish();
         }
         return true;
     }
