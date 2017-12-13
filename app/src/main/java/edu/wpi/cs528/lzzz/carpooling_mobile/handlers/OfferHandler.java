@@ -43,7 +43,7 @@ public class OfferHandler implements IConnectionAsyncTaskDelegate {
                     additionalInfos = responseMessage.getMessage().get(0);
                 }
             }else{
-
+                isSuccessful = true;
             }
 
         }catch (Exception ex){

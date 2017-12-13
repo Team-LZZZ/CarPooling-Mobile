@@ -1,7 +1,9 @@
 package edu.wpi.cs528.lzzz.carpooling_mobile.utils;
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 
 import com.google.gson.Gson;
 
@@ -55,5 +57,24 @@ public class CommonUtils {
         progressDialog.setIndeterminate(true);
         progressDialog.setMessage(message);
         return progressDialog;
+    }
+
+    public static void showAlert(Context context, boolean success, String message){
+        AlertDialog alertDialog = new AlertDialog.Builder(context).create();
+
+        if (!success){
+            alertDialog.setTitle("Failure");
+        }else{
+            alertDialog.setTitle("Results");
+        }
+
+        alertDialog.setMessage(message);
+        alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+        alertDialog.show();
     }
 }

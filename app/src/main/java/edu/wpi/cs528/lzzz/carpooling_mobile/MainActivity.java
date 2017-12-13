@@ -1,5 +1,6 @@
 package edu.wpi.cs528.lzzz.carpooling_mobile;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -22,23 +23,24 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.CarpoolsHandler;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.ConnectionHandler;
+import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.IConnectionStatus;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.SignUpHandler;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.User;
 import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonConstants;
+import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonUtils;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, Toolbar.OnMenuItemClickListener {
-
-
     private RecyclerView mRecycleView;
     private MainActivityAdapter mainActivityAdapter;
     private CarpoolsHandler carpoolsHandler;
     private RecyclerView.LayoutManager layoutManager;
-
+    private ProgressDialog progressDialog;
     TextView name;
     TextView phone;
     TextView email;
@@ -50,10 +52,10 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        if (!AppContainer.getInstance().isLogIn()) {
-//            Intent intent = new Intent(this, LoginActivity.class);
-//            startActivity(intent);
-//        }
+        if (!AppContainer.getInstance().isLogIn()) {
+            Intent intent = new Intent(this, LoginActivity.class);
+            startActivity(intent);
+        }
 
         mRecycleView = (RecyclerView) findViewById(R.id.list);
         mRecycleView.setItemAnimator(new DefaultItemAnimator());
@@ -61,9 +63,22 @@ public class MainActivity extends AppCompatActivity
 
         layoutManager = new LinearLayoutManager(this);
         mRecycleView.setLayoutManager(layoutManager);
-        mainActivityAdapter = new MainActivityAdapter(AppContainer.getInstance().getCarPools(), this);
-        mRecycleView.setAdapter(mainActivityAdapter);
 
+
+//        progressDialog = CommonUtils.createProgressDialog(this, "loading...");
+//        progressDialog.show();
+        CarpoolsHandler carpoolsHandler = new CarpoolsHandler(new IConnectionStatus() {
+            @Override
+            public void onComplete(Boolean isSuccess, String additionalInfos) {
+//               progressDialog.dismiss();
+                if (isSuccess){
+                    onGetAllCarpoolSuccess();
+                }else{
+                    onGetAllCarpoolFailed(additionalInfos);
+                }
+            }
+        });
+        carpoolsHandler.connectForResponse(CommonUtils.createHttpGETRequestMessageWithToken(CommonConstants.getAllCarpools));
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -107,13 +122,6 @@ public class MainActivity extends AppCompatActivity
         super.onStart();
         this.updateUserDisplay();
     }
-
-//    @Override
-//    protected void onResume() {
-//        Log.i("Resume", "-----------");
-//        super.onResume();
-//        this.updateUserDisplay();
-//    }
 
     @Override
     public void onBackPressed() {
@@ -195,5 +203,14 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
         }
         return true;
+    }
+
+    private void onGetAllCarpoolSuccess(){
+        mainActivityAdapter = new MainActivityAdapter(AppContainer.getInstance().getCarPools(), this);
+        mRecycleView.setAdapter(mainActivityAdapter);
+        mainActivityAdapter.notifyDataSetChanged();
+    }
+    private void onGetAllCarpoolFailed(String error){
+        Toast.makeText(this, error, Toast.LENGTH_LONG).show();
     }
 }

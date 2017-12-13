@@ -11,6 +11,10 @@ public class Car {
     private String plate;
     private int seatsLimit;
 
+    public Car(){
+
+    }
+
     public Car(String make, String model, String plate, int seatsLimit) {
         this.make = make;
         this.model = model;
