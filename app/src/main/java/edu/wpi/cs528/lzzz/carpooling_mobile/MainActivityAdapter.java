@@ -68,7 +68,7 @@ public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityAdapte
         viewHolder.mOfferTextView.setText(viewHolder.c.getOfferer().getUsername());
         viewHolder.mDepartrueTestview.setText(viewHolder.c.getStartLocation().getAddress());
         viewHolder.mDestinationTextView.setText(viewHolder.c.getTargetLocation().getAddress());
-        viewHolder.mCarInfoTextView.setText(viewHolder.c.getCar().getMake()  + "     "  + viewHolder.c.getCar().getModel() + "     " + avaibleSeat);
+        viewHolder.mCarInfoTextView.setText( avaibleSeat + "");
 //        viewHolder.mImageView.setImageDrawable(mContext.getDrawable(p.getImageResourceId(mContext)));
         viewHolder.view.setOnClickListener(new  View.OnClickListener(){
             @Override

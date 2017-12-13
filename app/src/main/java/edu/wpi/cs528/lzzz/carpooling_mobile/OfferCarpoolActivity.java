@@ -241,8 +241,14 @@ public class OfferCarpoolActivity extends AppCompatActivity implements DatePicke
         if ((requestCode == 0 || requestCode == 1) && resultCode == Activity.RESULT_OK){
 
             final Place place = PlacePicker.getPlace(data, this);
-            final CharSequence name = place.getName();
-
+            final CharSequence nameChar = place.getName();
+            final CharSequence addressChar = place.getAddress();
+            String name = nameChar.toString();
+            String address = addressChar.toString();
+            if (name.contains("\"")){
+                name = transferLatLngToAddress(address);
+            }
+                Log.i(CommonConstants.LogPrefix,address);
             String attributions = PlacePicker.getAttributions(data);
             if(attributions == null){
                 attributions = "";
@@ -251,12 +257,12 @@ public class OfferCarpoolActivity extends AppCompatActivity implements DatePicke
             switch (requestCode){
                 case(0):
                     fromAddressEditText.setText(name);
-                    this.startAddressName = name.toString();
+                    this.startAddressName = name;
                     this.startAddressLattitude = place.getLatLng().latitude;
                     this.startAddressLongitude = place.getLatLng().longitude;
                     break;
                 case(1):
-                    this.targetAddressName = name.toString();
+                    this.targetAddressName = name;
                     toAddressEditText.setText(name);
                     this.targetAddressLattitude = place.getLatLng().latitude;
                     this.targetAddressLongitude = place.getLatLng().longitude;
@@ -285,6 +291,11 @@ public class OfferCarpoolActivity extends AppCompatActivity implements DatePicke
                     }
                 });
         alertDialog.show();
+    }
+
+    public String transferLatLngToAddress(String address){
+        String[] addressInfo = address.split(",");
+        return addressInfo[0] + "," + addressInfo[1];
     }
 }
 
