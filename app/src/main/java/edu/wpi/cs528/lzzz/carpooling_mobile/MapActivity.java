@@ -121,13 +121,10 @@ public class MapActivity extends AppCompatActivity
     }
 
 
-
-
     @Override
     public void onMapReady(GoogleMap googleMap) {
 
         mGoogleMap = googleMap;
-
         mLocationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED ||
                 ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED){

@@ -12,19 +12,19 @@
         android:padding="5dp"
         >
 
-        <com.google.android.gms.maps.MapView
-            android:id="@+id/mapview"
+        <ImageView
+            android:id="@+id/card_imageView"
             android:layout_width="110dp"
             android:layout_height="110dp"
-            android:padding="5dp" />
-
+            android:padding="5dp"
+            card_view:srcCompat="@drawable/wpi" />
 
         <RelativeLayout
             android:layout_marginTop="5dp"
             android:id="@+id/txt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/mapview"
+            android:layout_toRightOf="@+id/card_imageView"
             >
 
 
@@ -63,17 +63,16 @@
                     android:id="@+id/TVfrom"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="@dimen/title_size"
-                    android:text="From: " />
+                    android:text="From: "
+                    android:textSize="14sp" />
 
                 <TextView
                     android:id="@+id/departure_textview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@+id/TVfrom"
                     android:layout_alignBottom="@+id/TVfrom"
-                    android:textSize="@dimen/normal_text_size"
-                     />
+                    android:layout_toRightOf="@+id/TVfrom"
+                    android:textSize="14sp" />
 
             </RelativeLayout>
 
@@ -88,17 +87,16 @@
                     android:id="@+id/TVto"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="@dimen/title_size"
-                    android:text="To: " />
+                    android:text="To: "
+                    android:textSize="14sp" />
 
                 <TextView
                     android:id="@+id/destination_textview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@+id/TVto"
                     android:layout_alignBottom="@+id/TVto"
-                    android:textSize="@dimen/normal_text_size"
-                    />
+                    android:layout_toRightOf="@+id/TVto"
+                    android:textSize="14sp" />
 
             </RelativeLayout>
 

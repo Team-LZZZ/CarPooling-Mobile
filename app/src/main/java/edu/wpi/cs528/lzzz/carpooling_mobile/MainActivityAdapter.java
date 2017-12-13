@@ -6,16 +6,19 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.gson.Gson;
 
+import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.CarPool;
 
 import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonUtils;
 
 
 public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityAdapter.ViewHolder>{
@@ -23,14 +26,15 @@ public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityAdapte
     public static class ViewHolder extends RecyclerView.ViewHolder
     {
         @Bind(R.id.offer_name_textview)
-        public TextView mOfferTextView;
+        TextView mOfferTextView;
         @Bind(R.id.departure_textview)
-        public TextView mDepartrueTestview;
+        TextView mDepartrueTestview;
         @Bind(R.id.destination_textview)
-        public TextView mDestinationTextView;
+        TextView mDestinationTextView;
         @Bind(R.id.availables_seats_textview)
-        public TextView mCarInfoTextView;
-
+        TextView mCarInfoTextView;
+        @Bind(R.id.card_imageView)
+        ImageView mImageView;
         public View view;
         private CarPool c;
 
@@ -69,7 +73,7 @@ public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityAdapte
         viewHolder.mDepartrueTestview.setText(viewHolder.c.getStartLocation().getAddress());
         viewHolder.mDestinationTextView.setText(viewHolder.c.getTargetLocation().getAddress());
         viewHolder.mCarInfoTextView.setText( avaibleSeat + "");
-//        viewHolder.mImageView.setImageDrawable(mContext.getDrawable(p.getImageResourceId(mContext)));
+        CommonUtils.getProfile(mContext, carPools.get(i).getOfferer().getPhoto(), viewHolder.mImageView);
         viewHolder.view.setOnClickListener(new  View.OnClickListener(){
             @Override
             public void onClick(View v){
