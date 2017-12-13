@@ -5,6 +5,8 @@ import android.util.Log;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import java.util.List;
+
 import edu.wpi.cs528.lzzz.carpooling_mobile.connection.ConnectionAsyncTask;
 import edu.wpi.cs528.lzzz.carpooling_mobile.connection.HttpRequestMessage;
 import edu.wpi.cs528.lzzz.carpooling_mobile.connection.HttpResponseMessage;
@@ -19,6 +21,7 @@ import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonUtils;
 public class LogInHandler implements IConnectionAsyncTaskDelegate {
     private final String LoginTAG = "LogInHandler";
     private IConnectionStatus ConnectionStatus;
+
 
     public LogInHandler(IConnectionStatus connectionStatus){
         this.ConnectionStatus = connectionStatus;
@@ -43,6 +46,13 @@ public class LogInHandler implements IConnectionAsyncTaskDelegate {
             }else{
                 Log.i(LoginTAG + " token: ", responseMessage.getToken());
                 AppContainer.getInstance().setToken(responseMessage.getToken());
+                List<String> userJson =responseMessage.getMessage();
+                User user = gson.fromJson(userJson.get(0), User.class);
+                AppContainer.getInstance().setActiveUser(user);
+
+
+
+
             }
         }catch (Exception ex){
             isSuccessful = false;

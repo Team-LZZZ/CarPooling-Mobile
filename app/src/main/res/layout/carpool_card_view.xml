@@ -48,7 +48,7 @@
                     android:layout_toRightOf="@+id/TVhost"
                     android:layout_alignBottom="@+id/TVhost"
                     android:textSize="@dimen/normal_text_size"
-                    android:text="Weihao Li" />
+                     />
             </RelativeLayout>
 
 
@@ -73,7 +73,7 @@
                     android:layout_toRightOf="@+id/TVfrom"
                     android:layout_alignBottom="@+id/TVfrom"
                     android:textSize="@dimen/normal_text_size"
-                    android:text="TextView" />
+                     />
 
             </RelativeLayout>
 
@@ -98,7 +98,7 @@
                     android:layout_toRightOf="@+id/TVto"
                     android:layout_alignBottom="@+id/TVto"
                     android:textSize="@dimen/normal_text_size"
-                    android:text="TextView" />
+                    />
 
             </RelativeLayout>
 
@@ -123,7 +123,7 @@
                     android:layout_toRightOf="@+id/TVseat_number"
                     android:layout_alignBottom="@+id/TVseat_number"
                     android:textSize="@dimen/normal_text_size"
-                    android:text="TextView" />
+                     />
 
             </RelativeLayout>
 

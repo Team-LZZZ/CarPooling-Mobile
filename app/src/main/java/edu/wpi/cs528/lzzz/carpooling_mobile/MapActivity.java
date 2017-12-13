@@ -34,7 +34,12 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.List;
+import java.util.Locale;
+import java.util.TimeZone;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -132,6 +137,7 @@ public class MapActivity extends AppCompatActivity
                 createCarPoolMarker(carPool);
             }
             mGoogleMap.setMyLocationEnabled(true);
+            mGoogleMap.setPadding(0,150,0,0);
             mGoogleMap.setOnInfoWindowClickListener(this);
             mGoogleMap.setOnMarkerClickListener(this);
             mGoogleMap.setInfoWindowAdapter(new MarkerInfoWindowAdapter());
@@ -155,18 +161,24 @@ public class MapActivity extends AppCompatActivity
 
     @Override
     public void onInfoWindowClick(Marker marker) {
-        Intent i = new Intent(this, ReservationActivity.class);
+        Intent i = new Intent(this, CarpoolDetailActivity.class);
         i.putExtra("carPoolId", marker.getSnippet());
         i.putExtra("reserveMode", true);
         startActivity(i);
     }
 
     private Marker createCarPoolMarker(CarPool carPool) {
-        String carpoolInfo = carPool.getAvailable() + "," + carPool.getStartLocation().getName() + "," + carPool.getTargetLocation().getName()
-                + "," + carPool.getDate();
+        Long millis = Long.valueOf(carPool.getTime());
+        SimpleDateFormat sdf = new SimpleDateFormat("MMM dd, yyyy", Locale.US);
+        GregorianCalendar calendar = new GregorianCalendar(TimeZone.getTimeZone("US/East"));
+        calendar.setTimeInMillis(millis);
+        String date = sdf.format(calendar.getTime());
+        String carpoolInfo = carPool.getAvailable() + "," + carPool.getStartLocation().getAddress() + "," + carPool.getTargetLocation().getAddress()
+                + "," + date;
+        LatLng latLng = new LatLng(carPool.getStartLocation().getLatitude(),carPool.getStartLocation().getLongitude());
         Marker marker = mGoogleMap.addMarker(
                 new MarkerOptions()
-                        .position(carPool.getStartLocation().getLatLng())
+                        .position(latLng)
                         .icon(BitmapDescriptorFactory.fromResource(R.drawable.tires_accessories))
                         .title(carpoolInfo)
                         .snippet(String.valueOf(carPool.getOid()))
