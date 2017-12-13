@@ -8,6 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.google.gson.Gson;
+
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.CarPool;
 
 import java.util.List;
@@ -30,6 +32,7 @@ public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityAdapte
         public TextView mCarInfoTextView;
 
         public View view;
+        private CarPool c;
 
         public ViewHolder( View v )
 
@@ -60,19 +63,21 @@ public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityAdapte
     @Override
     public void onBindViewHolder(final ViewHolder viewHolder, int i )
     {
-        CarPool c = carPools.get(i);
-        int avaibleSeat = 4 - c.getReserverList().size();
-        viewHolder.mOfferTextView.setText(c.getOfferer().getUsername());
-        viewHolder.mDepartrueTestview.setText(c.getStartLocation().getName());
-        viewHolder.mDestinationTextView.setText(c.getTargetLocation().getName());
-        viewHolder.mCarInfoTextView.setText(c.getCar().getMake()  + "     "  + c.getCar().getModel() + "     " + avaibleSeat);
+        viewHolder.c = carPools.get(i);
+        int avaibleSeat = 4 - viewHolder.c.getReserverList().size();
+        viewHolder.mOfferTextView.setText(viewHolder.c.getOfferer().getUsername());
+        viewHolder.mDepartrueTestview.setText(viewHolder.c.getStartLocation().getAddress());
+        viewHolder.mDestinationTextView.setText(viewHolder.c.getTargetLocation().getAddress());
+        viewHolder.mCarInfoTextView.setText(viewHolder.c.getCar().getMake()  + "     "  + viewHolder.c.getCar().getModel() + "     " + avaibleSeat);
 //        viewHolder.mImageView.setImageDrawable(mContext.getDrawable(p.getImageResourceId(mContext)));
         viewHolder.view.setOnClickListener(new  View.OnClickListener(){
             @Override
             public void onClick(View v){
                 Intent i = new Intent(mContext, CarpoolDetailActivity.class);
-                i.putExtra("carPoolId", 1);
-                i.putExtra("reserveMode", true);
+                Gson gson = new Gson();
+                String carPoolJson = gson.toJson(viewHolder.c);
+                i.putExtra("carPoolInfo", carPoolJson);
+//                i.putExtra("reserveMode", true);
                 mContext.startActivity(i);
             }
         });
