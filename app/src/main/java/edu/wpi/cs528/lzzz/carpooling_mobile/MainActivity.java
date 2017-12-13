@@ -41,13 +41,15 @@ public class MainActivity extends AppCompatActivity
     private CarpoolsHandler carpoolsHandler;
     private RecyclerView.LayoutManager layoutManager;
     private ProgressDialog progressDialog;
+    NavigationView navigationView;
+
 
     private int loginCode = 0;
-    TextView name;
-    TextView phone;
-    TextView email;
+//    TextView name;
+//    TextView phone;
+//    TextView email;
 
-    public User mUser;
+//    public User mUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,17 +61,7 @@ public class MainActivity extends AppCompatActivity
             startActivityForResult(intent, loginCode);
         }
 
-        mRecycleView = (RecyclerView) findViewById(R.id.list);
-        mRecycleView.setItemAnimator(new DefaultItemAnimator());
-        mRecycleView.setHasFixedSize(true);
-
-        layoutManager = new LinearLayoutManager(this);
-        mRecycleView.setLayoutManager(layoutManager);
-
-
-//        progressDialog = CommonUtils.createProgressDialog(this, "loading...");
-//        progressDialog.show();
-        CarpoolsHandler carpoolsHandler = new CarpoolsHandler(new IConnectionStatus() {
+        carpoolsHandler = new CarpoolsHandler(new IConnectionStatus() {
             @Override
             public void onComplete(Boolean isSuccess, String additionalInfos) {
 //               progressDialog.dismiss();
@@ -81,6 +73,18 @@ public class MainActivity extends AppCompatActivity
             }
         });
         carpoolsHandler.connectForResponse(CommonUtils.createHttpGETRequestMessageWithToken(CommonConstants.getAllCarpools));
+
+        mRecycleView = (RecyclerView) findViewById(R.id.list);
+        mRecycleView.setItemAnimator(new DefaultItemAnimator());
+        mRecycleView.setHasFixedSize(true);
+
+        layoutManager = new LinearLayoutManager(this);
+        mRecycleView.setLayoutManager(layoutManager);
+
+
+//        progressDialog = CommonUtils.createProgressDialog(this, "loading...");
+//        progressDialog.show();
+
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -102,17 +106,18 @@ public class MainActivity extends AppCompatActivity
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
 
-        View header = navigationView.getHeaderView(0);
+
 //        mUser = AppContainer.getInstance().getActiveUser();
 
-        Log.i("User", "======================");
-        ImageView photo = (ImageView) header.findViewById(R.id.imageView);
-        name = (TextView) header.findViewById(R.id.name);
-        phone = (TextView) header.findViewById(R.id.phone);
-        email = (TextView) header.findViewById(R.id.email);
-        //photo.setImageURI(Uri.parse(AppContainer.getInstance().getActiveUser().getPhoto()));
+//        Log.i("User", "======================");
+//        ImageView photo = (ImageView) header.findViewById(R.id.imageView);
+//        name = (TextView) header.findViewById(R.id.name);
+//        phone = (TextView) header.findViewById(R.id.phone);
+//        email = (TextView) header.findViewById(R.id.email);
+//        //photo.setImageURI(Uri.parse(AppContainer.getInstance().getActiveUser().getPhoto()));
+
 
 
         navigationView.setNavigationItemSelectedListener(this);
@@ -122,7 +127,7 @@ public class MainActivity extends AppCompatActivity
     protected void onStart() {
         Log.i("start", "========");
         super.onStart();
-        this.updateUserDisplay();
+
     }
 
     @Override
@@ -191,8 +196,17 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void updateUserDisplay() {
-        mUser = AppContainer.getInstance().getActiveUser();
+        Log.i("User", "======================");
+        View header = navigationView.getHeaderView(0);
+        ImageView photo = (ImageView) header.findViewById(R.id.imageView);
+        TextView name = (TextView) header.findViewById(R.id.name);
+        TextView phone = (TextView) header.findViewById(R.id.phone);
+        TextView email = (TextView) header.findViewById(R.id.email);
+        //photo.setImageURI(Uri.parse(AppContainer.getInstance().getActiveUser().getPhoto()));
+
+        User mUser = AppContainer.getInstance().getActiveUser();
         name.setText(mUser.getUsername());
+
         phone.setText(mUser.getPhone());
         email.setText(mUser.getEmail());
     }
@@ -222,6 +236,7 @@ public class MainActivity extends AppCompatActivity
             mainActivityAdapter = new MainActivityAdapter(AppContainer.getInstance().getCarPools(), this);
             mRecycleView.setAdapter(mainActivityAdapter);
             mainActivityAdapter.notifyDataSetChanged();
+            this.updateUserDisplay();
         }
     }
 }

@@ -114,7 +114,7 @@ public class LoginActivity extends AppCompatActivity{
 
     public void onLoginSuccess() {
         _loginButton.setEnabled(true);
-        AppContainer.getInstance().setActiveUser(this.user);
+        //AppContainer.getInstance().setActiveUser(this.user);
         CarpoolsHandler carpoolsHandler = new CarpoolsHandler(new IConnectionStatus() {
             @Override
             public void onComplete(Boolean isSuccess, String additionalInfos) {
