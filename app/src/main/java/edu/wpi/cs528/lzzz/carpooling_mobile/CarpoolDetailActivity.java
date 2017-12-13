@@ -38,8 +38,10 @@ public class CarpoolDetailActivity extends AppCompatActivity {
     private TextView fromAddressTextView;
     private TextView toAddressTextView;
     private TextView dateTextView;
+    private int numberPeople;
     private NumberPicker reservationNumberPicker;
     private Button makeReservationBtn;
+
 
 
     @Override
@@ -52,16 +54,28 @@ public class CarpoolDetailActivity extends AppCompatActivity {
         Gson gson = new Gson();
         this.carPool = gson.fromJson(carPoolJson, CarPool.class);
 
-        nameTextView = (TextView)findViewById(R.id.carppool_detail_name);
-        phoneTextView = (TextView)findViewById(R.id.carppool_detail_phone);
-        emailTextView = (TextView)findViewById(R.id.carppool_detail_email);
-        plateTextView = (TextView)findViewById(R.id.carppool_detail_car_plate);
-        modelMakeTextView = (TextView)findViewById(R.id.carppool_detail_car_detail);
-        fromAddressTextView = (TextView)findViewById(R.id.carppool_detail_from_address);
-        toAddressTextView = (TextView)findViewById(R.id.carppool_detail_to_address);
-        dateTextView = (TextView)findViewById(R.id.carppool_detail_departure_time);
+        nameTextView = (TextView) findViewById(R.id.carppool_detail_name);
+        phoneTextView = (TextView) findViewById(R.id.carppool_detail_phone);
+        emailTextView = (TextView) findViewById(R.id.carppool_detail_email);
+        plateTextView = (TextView) findViewById(R.id.carppool_detail_car_plate);
+        modelMakeTextView = (TextView) findViewById(R.id.carppool_detail_car_detail);
+        fromAddressTextView = (TextView) findViewById(R.id.carppool_detail_from_address);
+        toAddressTextView = (TextView) findViewById(R.id.carppool_detail_to_address);
+        dateTextView = (TextView) findViewById(R.id.carppool_detail_departure_time);
         reservationNumberPicker = (NumberPicker) findViewById(R.id.numberPicker);
+        reservationNumberPicker.setMinValue(1);
+        reservationNumberPicker.setMaxValue(7);
+        reservationNumberPicker.setWrapSelectorWheel(true);
         makeReservationBtn = (Button) findViewById(R.id.reservation);
+
+        reservationNumberPicker.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
+            @Override
+            public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
+                //Display the newly selected number from picker
+                numberPeople = newVal;
+            }
+        });
+
 
         nameTextView.setText(carPool.getOfferer().getUsername());
         phoneTextView.setText(carPool.getOfferer().getPhone());
@@ -83,17 +97,18 @@ public class CarpoolDetailActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int offer_id = CarpoolDetailActivity.this.carPool.getOid();
                 int num = reservationNumberPicker.getValue();
-                ReservationInput input = new ReservationInput(offer_id, num);
+                //ReservationInput input = new ReservationInput(offer_id, num);
+                ReservationInput input = new ReservationInput(offer_id, numberPeople);
                 Gson gson = new Gson();
                 String inputJson = gson.toJson(input);
 
                 ReservationHandler handler = new ReservationHandler(new IConnectionStatus() {
                     @Override
                     public void onComplete(Boolean success, String additionalInfos) {
-                        if (success){
+                        if (success) {
 //                            makeReservationSucceed();
                             showReservationAlert(true, "Reservation is Successful.");
-                        }else{
+                        } else {
 //                            makeReservationFailed(additionalInfos);
                             showReservationAlert(false, "Reservation failed.");
                         }

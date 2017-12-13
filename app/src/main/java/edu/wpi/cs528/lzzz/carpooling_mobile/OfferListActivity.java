@@ -75,9 +75,9 @@ public class OfferListActivity extends AppCompatActivity {
 
             switch (position){
                 case 0 :
-                    return "Tab 1";
+                    return "Past";
                 case 1 :
-                    return "Tab 2";
+                    return "Upcoming";
 
             }
             return null;

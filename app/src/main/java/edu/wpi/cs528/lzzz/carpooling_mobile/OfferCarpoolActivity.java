@@ -57,7 +57,7 @@ public class OfferCarpoolActivity extends AppCompatActivity implements DatePicke
     private EditText makeInputEditText;
     private EditText modelInputEditText;
     private EditText plateInputEditText;
-    private EditText dateInputEditText;
+    private TextView dateInputEditText;
     private TextView fromAddressEditText;
     private TextView toAddressEditText;
     private Button makeOfferBtn;
@@ -83,7 +83,7 @@ public class OfferCarpoolActivity extends AppCompatActivity implements DatePicke
         makeInputEditText = (EditText) findViewById(R.id.make_input);
         modelInputEditText = (EditText) findViewById(R.id.model_input);
         plateInputEditText = (EditText) findViewById(R.id.plate_input);
-        dateInputEditText = (EditText) findViewById(R.id.carppool_day);
+        dateInputEditText = (TextView) findViewById(R.id.carppool_day);
 
         fromAddressEditText = (TextView) findViewById(R.id.carppool_departure);
         toAddressEditText = (TextView) findViewById(R.id.carppool_arrival);
@@ -241,8 +241,14 @@ public class OfferCarpoolActivity extends AppCompatActivity implements DatePicke
         if ((requestCode == 0 || requestCode == 1) && resultCode == Activity.RESULT_OK){
 
             final Place place = PlacePicker.getPlace(data, this);
-            final CharSequence name = place.getName();
-
+            final CharSequence nameChar = place.getName();
+            final CharSequence addressChar = place.getAddress();
+            String name = nameChar.toString();
+            String address = addressChar.toString();
+            if (name.contains("\"")){
+                name = transferLatLngToAddress(address);
+            }
+                Log.i(CommonConstants.LogPrefix,address);
             String attributions = PlacePicker.getAttributions(data);
             if(attributions == null){
                 attributions = "";
@@ -251,12 +257,12 @@ public class OfferCarpoolActivity extends AppCompatActivity implements DatePicke
             switch (requestCode){
                 case(0):
                     fromAddressEditText.setText(name);
-                    this.startAddressName = name.toString();
+                    this.startAddressName = name;
                     this.startAddressLattitude = place.getLatLng().latitude;
                     this.startAddressLongitude = place.getLatLng().longitude;
                     break;
                 case(1):
-                    this.targetAddressName = name.toString();
+                    this.targetAddressName = name;
                     toAddressEditText.setText(name);
                     this.targetAddressLattitude = place.getLatLng().latitude;
                     this.targetAddressLongitude = place.getLatLng().longitude;
@@ -285,6 +291,11 @@ public class OfferCarpoolActivity extends AppCompatActivity implements DatePicke
                     }
                 });
         alertDialog.show();
+    }
+
+    public String transferLatLngToAddress(String address){
+        String[] addressInfo = address.split(",");
+        return addressInfo[0] + "," + addressInfo[1];
     }
 }
 
