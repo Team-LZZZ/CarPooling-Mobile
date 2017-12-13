@@ -18,8 +18,8 @@
     <string name="title_activity_offer_list">OfferListActivity</string>
     <string name="departure_day">Departure Day:</string>
     <string name="departure_day_picker">Select a departure day</string>
-    <string name="from">FROM: </string>
-    <string name="to">TO:</string>
+    <string name="from">From: </string>
+    <string name="to">To:</string>
     <string name="Search_a_Carpool">Search a Carpool</string>
     <string name="People_number">Select the number of people</string>
     <string name="car_info">Car Information</string>

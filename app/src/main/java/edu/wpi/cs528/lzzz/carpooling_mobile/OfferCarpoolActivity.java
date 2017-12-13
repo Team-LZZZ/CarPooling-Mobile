@@ -57,7 +57,7 @@ public class OfferCarpoolActivity extends AppCompatActivity implements DatePicke
     private EditText makeInputEditText;
     private EditText modelInputEditText;
     private EditText plateInputEditText;
-    private EditText dateInputEditText;
+    private TextView dateInputEditText;
     private TextView fromAddressEditText;
     private TextView toAddressEditText;
     private Button makeOfferBtn;
@@ -83,7 +83,7 @@ public class OfferCarpoolActivity extends AppCompatActivity implements DatePicke
         makeInputEditText = (EditText) findViewById(R.id.make_input);
         modelInputEditText = (EditText) findViewById(R.id.model_input);
         plateInputEditText = (EditText) findViewById(R.id.plate_input);
-        dateInputEditText = (EditText) findViewById(R.id.carppool_day);
+        dateInputEditText = (TextView) findViewById(R.id.carppool_day);
 
         fromAddressEditText = (TextView) findViewById(R.id.carppool_departure);
         toAddressEditText = (TextView) findViewById(R.id.carppool_arrival);
