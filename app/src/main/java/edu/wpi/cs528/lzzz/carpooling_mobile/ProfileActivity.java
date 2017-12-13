@@ -31,6 +31,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
+import com.google.gson.Gson;
 
 import java.io.File;
 import java.util.Locale;
@@ -38,6 +39,9 @@ import java.util.Random;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.IConnectionStatus;
+import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.LogInHandler;
+import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.UpdateUserHandler;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.User;
 import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonConstants;
@@ -54,6 +58,7 @@ public class ProfileActivity extends AppCompatActivity {
     private static final int REQUEST_PHOTO= 2;
     private ProgressDialog progressDialog;
     private static final String TAG = "UploadActivity";
+    private UpdateUserHandler updateUserHandler;
     private User user;
     long time;
     Random random = new Random();
@@ -108,6 +113,21 @@ public class ProfileActivity extends AppCompatActivity {
                 file);
         observer.setTransferListener(new UploadListener());
         user.setPhoto(CommonConstants.S3_PREFIX + mPhotoFile.getName() + time);
+        updateUserHandler = new UpdateUserHandler(new IConnectionStatus() {
+            @Override
+            public void onComplete(Boolean isSuccess, String additionalInfos) {
+                progressDialog.dismiss();
+                if (isSuccess){
+                }else{
+                        Toast.makeText(getBaseContext(), additionalInfos, Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+        Gson gson = new Gson();
+        User userInfo = new User();
+        userInfo.setPhoto(user.getPhoto());
+        String userJson = gson.toJson(userInfo);
+        updateUserHandler.connectForResponse(CommonUtils.createHttpPOSTRequestMessageWithToken(userJson, CommonConstants.userSetting, "PUT"));
     }
 
     @Override

@@ -96,6 +96,15 @@ public class CommonUtils {
         return request;
     }
 
+    public static HttpRequestMessage createHttpPOSTRequestMessageWithToken(String jsonString, String apiName, String method){
+        HttpRequestMessage request = new HttpRequestMessage();
+        request.setMethod(method);
+        request.setBody(jsonString);
+        request.setUrl(CommonConstants.BASE_URL + apiName);
+        request.setToken(AppContainer.getInstance().getToken());
+        return request;
+    }
+
     public static HttpRequestMessage createHttpGETRequestMessage(String apiName){
         HttpRequestMessage request = new HttpRequestMessage();
         request.setMethod("GET");
