@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="edu.wpi.cs528.lzzz.carpooling_mobile.ProfileActivity"
+    android:layout_margin="@dimen/horizontal_margin">
+
+    <TextView
+        android:id="@+id/car_detail_profile_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:text="Carpool detail"
+        android:textAlignment="center"
+        android:textColor="@color/darkgreen"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:id="@+id/car_detail_profile_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/horizontal_padding"
+        android:paddingBottom="@dimen/horizontal_padding"
+        android:layout_below="@+id/car_detail_profile_title">
+
+        <TextView
+            android:id="@+id/carppool_detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textAlignment="center"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/carppool_detail_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/carppool_detail_name"
+            android:textSize="@dimen/normal_text_size"
+            android:text="000-000-0000"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/carppool_detail_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/carppool_detail_phone"
+            android:textSize="@dimen/normal_text_size"
+            android:text="wpi@wpi.edu"
+            android:textAlignment="center" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/carppool_detail_car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/horizontal_padding"
+        android:paddingBottom="@dimen/horizontal_padding"
+        android:layout_below="@+id/car_detail_profile_person">
+
+        <TextView
+            android:id="@+id/carppool_detail_car_plate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxxxxxx"
+            android:textAlignment="center"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/carppool_detail_car_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/carppool_detail_car_plate"
+            android:textSize="@dimen/normal_text_size"
+            android:text="Toyota Tacuma black"
+            android:textAlignment="center" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/carppool_detail_trip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/horizontal_padding"
+        android:paddingBottom="@dimen/horizontal_padding"
+        android:layout_below="@+id/carppool_detail_car"
+        >
+
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/from"
+            android:textAlignment="center"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/carppool_detail_from_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/from"
+            android:textSize="@dimen/normal_text_size"
+            android:text="28 N Ashland ST, Worcester, MA 01609"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/carppool_detail_from_address"
+            android:text="@string/to"
+            android:textAlignment="center"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/carppool_detail_to_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/to"
+            android:textSize="@dimen/normal_text_size"
+            android:text="204 Park AVE, Worcester, MA 01609"
+            android:textAlignment="center" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/carppool_detail_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/horizontal_padding"
+        android:paddingBottom="@dimen/horizontal_padding"
+        android:layout_below="@+id/carppool_detail_trip"
+        >
+
+        <TextView
+            android:id="@+id/departure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/departure_day"
+            android:textAlignment="center"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/carppool_detail_departure_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mock Departure day"
+            android:layout_below="@id/departure"
+            android:textSize="@dimen/normal_text_size"
+            android:textAlignment="center" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
+
+
