@@ -45,7 +45,6 @@ public class ReservationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Log.i("Res    Activity", "================");
 
         setContentView(R.layout.activity_reservation);
 
