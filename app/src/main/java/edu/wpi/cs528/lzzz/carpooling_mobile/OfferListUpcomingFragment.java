@@ -19,6 +19,7 @@ public class OfferListUpcomingFragment extends Fragment {
     private MainActivityAdapter mainActivityAdapter;
     public static final String ARG_PAGE = "ARG_PAGE";
     private int mPageNo;
+    public static final int VIEW_INCOME_OFFER = 5;
 
     public static ReservationPastFragment newInstance(int pageNo) {
 
@@ -49,7 +50,7 @@ public class OfferListUpcomingFragment extends Fragment {
         layoutManager = new LinearLayoutManager(this.getContext());
         mRecycleView.setLayoutManager(layoutManager);
 
-        mainActivityAdapter = new MainActivityAdapter(AppContainer.getInstance().getCarPools(), getContext());
+        mainActivityAdapter = new MainActivityAdapter(VIEW_INCOME_OFFER , AppContainer.getInstance().getCarPools(), getContext());
         mRecycleView.setAdapter(mainActivityAdapter);
         mainActivityAdapter.notifyDataSetChanged();
         return view;

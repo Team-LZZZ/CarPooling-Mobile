@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity
     private RecyclerView.LayoutManager layoutManager;
     private ProgressDialog progressDialog;
     NavigationView navigationView;
-
+    public static final int MAKE_RESERVATION = 1;
 
     private int loginCode = 0;
 //    TextView name;
@@ -125,6 +125,7 @@ public class MainActivity extends AppCompatActivity
 
 
         navigationView.setNavigationItemSelectedListener(this);
+        updateUserDisplay();
     }
 
     @Override
@@ -200,7 +201,6 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void updateUserDisplay() {
-        Log.i("User", "======================");
         View header = navigationView.getHeaderView(0);
         ImageView photo = (ImageView) header.findViewById(R.id.imageView);
         TextView name = (TextView) header.findViewById(R.id.name);
@@ -226,7 +226,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void onGetAllCarpoolSuccess(){
-        mainActivityAdapter = new MainActivityAdapter(CommonUtils.getAvailabeRes(), this);
+        mainActivityAdapter = new MainActivityAdapter(MAKE_RESERVATION, CommonUtils.getAvailabeRes(), this);
         mRecycleView.setAdapter(mainActivityAdapter);
         mainActivityAdapter.notifyDataSetChanged();
     }
@@ -237,7 +237,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (resultCode == this.loginCode){
-            mainActivityAdapter = new MainActivityAdapter(CommonUtils.getAvailabeRes(), this);
+            mainActivityAdapter = new MainActivityAdapter(MAKE_RESERVATION, CommonUtils.getAvailabeRes(), this);
             mRecycleView.setAdapter(mainActivityAdapter);
             mainActivityAdapter.notifyDataSetChanged();
             this.updateUserDisplay();

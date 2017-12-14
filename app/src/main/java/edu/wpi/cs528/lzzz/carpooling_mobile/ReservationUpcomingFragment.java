@@ -20,6 +20,7 @@ public class ReservationUpcomingFragment extends Fragment {
     private RecyclerView.LayoutManager layoutManager;
     private MainActivityAdapter mainActivityAdapter;
     public static final String ARG_PAGE = "ARG_PAGE";
+    public static final int VIEW_INCOME_RESERVATION = 3;
     private int mPageNo;
 
     public static ReservationPastFragment newInstance(int pageNo) {
@@ -51,7 +52,7 @@ public class ReservationUpcomingFragment extends Fragment {
         layoutManager = new LinearLayoutManager(this.getContext());
         mRecycleView.setLayoutManager(layoutManager);
 
-        mainActivityAdapter = new MainActivityAdapter(AppContainer.getInstance().getCarPools(), getContext());
+        mainActivityAdapter = new MainActivityAdapter(VIEW_INCOME_RESERVATION, AppContainer.getInstance().getCarPools(), getContext());
         mRecycleView.setAdapter(mainActivityAdapter);
         mainActivityAdapter.notifyDataSetChanged();
         return view;

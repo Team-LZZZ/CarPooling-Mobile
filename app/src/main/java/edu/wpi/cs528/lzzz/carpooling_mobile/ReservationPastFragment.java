@@ -21,6 +21,7 @@ public class ReservationPastFragment extends Fragment {
     private MainActivityAdapter mainActivityAdapter;
     public static final String ARG_PAGE = "ARG_PAGE";
     private int mPageNo;
+    public static final int VIEW_PAST_RESERVATION = 2;
 
     public static ReservationPastFragment newInstance(int pageNo) {
 
@@ -51,7 +52,7 @@ public class ReservationPastFragment extends Fragment {
         layoutManager = new LinearLayoutManager(this.getContext());
         mRecycleView.setLayoutManager(layoutManager);
 
-        mainActivityAdapter = new MainActivityAdapter(AppContainer.getInstance().getCarPools(), getContext());
+        mainActivityAdapter = new MainActivityAdapter(VIEW_PAST_RESERVATION, AppContainer.getInstance().getCarPools(), getContext());
         mRecycleView.setAdapter(mainActivityAdapter);
         mainActivityAdapter.notifyDataSetChanged();
         return view;

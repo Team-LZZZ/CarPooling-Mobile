@@ -18,13 +18,13 @@ import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonConstants;
 import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonUtils;
 
 
 public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityAdapter.ViewHolder>{
 
-    public static class ViewHolder extends RecyclerView.ViewHolder
-    {
+    public static class ViewHolder extends RecyclerView.ViewHolder {
         @Bind(R.id.offer_name_textview)
         TextView mOfferTextView;
         @Bind(R.id.departure_textview)
@@ -51,16 +51,20 @@ public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityAdapte
 
     private Context mContext;
 
-    public MainActivityAdapter(List<CarPool> carPools, Context context)
+    private int action;
+
+    public MainActivityAdapter(int action, List<CarPool> carPools, Context context)
     {
         this.mContext = context;
         this.carPools = carPools;
+        this.action = action;
     }
 
     @Override
     public ViewHolder onCreateViewHolder( ViewGroup viewGroup, int i )
     {
         View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.carpool_card_view, viewGroup, false);
+
         return new ViewHolder(v);
     }
 
@@ -74,16 +78,20 @@ public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityAdapte
         viewHolder.mDestinationTextView.setText(viewHolder.c.getTargetLocation().getAddress());
         viewHolder.mCarInfoTextView.setText( avaibleSeat + "");
         CommonUtils.getProfile(mContext, carPools.get(i).getOfferer().getPhoto(), viewHolder.mImageView);
-        viewHolder.view.setOnClickListener(new  View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent i = new Intent(mContext, CarpoolDetailActivity.class);
-                Gson gson = new Gson();
-                String carPoolJson = gson.toJson(viewHolder.c);
-                i.putExtra("carPoolInfo", carPoolJson);
-                mContext.startActivity(i);
-            }
-        });
+        if (action == CommonConstants.MAKE_RESERVATION || action == CommonConstants.VIEW_INCOME_RESERVATION){
+            viewHolder.view.setOnClickListener(new  View.OnClickListener(){
+                @Override
+                public void onClick(View v){
+                    Intent i = new Intent(mContext, CarpoolDetailActivity.class);
+                    Gson gson = new Gson();
+                    String carPoolJson = gson.toJson(viewHolder.c);
+                    i.putExtra("carPoolInfo", carPoolJson);
+                    i.putExtra("action", action);
+                    mContext.startActivity(i);
+                }
+            });
+        }
+
     }
 
 

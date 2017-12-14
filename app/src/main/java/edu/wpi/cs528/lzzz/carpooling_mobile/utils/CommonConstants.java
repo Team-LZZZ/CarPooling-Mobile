@@ -29,4 +29,13 @@ public class CommonConstants {
     public static final String BUCKET_NAME = "wpics528";
     public static final String BUCKET_REGION = "us-east-2";
     public static final String S3_PREFIX = "https://s3.us-east-2.amazonaws.com/wpics528/";
+
+    // Activity
+    public static final int MAKE_RESERVATION = 1;
+    public static final int VIEW_PAST_RESERVATION = 2;
+    public static final int VIEW_INCOME_RESERVATION = 3;
+    public static final int VIEW_PAST_OFFER = 4;
+    public static final int VIEW_INCOME_OFFER = 5;
+
+
 }
