@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
+import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonUtils;
 
 
 public class ReservationPastFragment extends Fragment {
@@ -33,7 +34,7 @@ public class ReservationPastFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mPageNo = getArguments().getInt(ARG_PAGE);
+        //mPageNo = getArguments().getInt(ARG_PAGE);
     }
 
     @Override
