@@ -12,7 +12,6 @@ import edu.wpi.cs528.lzzz.carpooling_mobile.R;
 public class User {
 
     private String name;
-//    private Bitmap photo;
     private String phone;
     private String email;
     private String password;

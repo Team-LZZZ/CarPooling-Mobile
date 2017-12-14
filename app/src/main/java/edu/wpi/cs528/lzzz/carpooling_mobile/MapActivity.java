@@ -33,6 +33,7 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.gson.Gson;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -46,6 +47,7 @@ import butterknife.ButterKnife;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.CarPool;
 import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonConstants;
+import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonUtils;
 
 public class MapActivity extends AppCompatActivity
         implements
@@ -75,7 +77,7 @@ public class MapActivity extends AppCompatActivity
                 .addOnConnectionFailedListener(this)
                 .build();
         mApiClient.connect();
-        carPools = AppContainer.getInstance().getCarPools();
+        carPools = CommonUtils.getAvailabeRes();
         Toolbar toolbar = (Toolbar) findViewById(R.id.map_toolbar);
         setSupportActionBar(toolbar);
         toolbar.setOnMenuItemClickListener(this);
@@ -121,17 +123,13 @@ public class MapActivity extends AppCompatActivity
     }
 
 
-
-
     @Override
     public void onMapReady(GoogleMap googleMap) {
 
         mGoogleMap = googleMap;
-
         mLocationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED ||
                 ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED){
-
             moveMapCamera(mLocationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER));
             for (CarPool carPool : carPools){
                 createCarPoolMarker(carPool);
@@ -162,8 +160,7 @@ public class MapActivity extends AppCompatActivity
     @Override
     public void onInfoWindowClick(Marker marker) {
         Intent i = new Intent(this, CarpoolDetailActivity.class);
-        i.putExtra("carPoolId", marker.getSnippet());
-        i.putExtra("reserveMode", true);
+        i.putExtra("carPoolInfo", marker.getSnippet());
         startActivity(i);
     }
 
@@ -176,12 +173,16 @@ public class MapActivity extends AppCompatActivity
         String carpoolInfo = carPool.getAvailable() + "," + carPool.getStartLocation().getAddress() + "," + carPool.getTargetLocation().getAddress()
                 + "," + date;
         LatLng latLng = new LatLng(carPool.getStartLocation().getLatitude(),carPool.getStartLocation().getLongitude());
+
+        Gson gson = new Gson();
+        String carPoolJson = gson.toJson(carPool);
+
         Marker marker = mGoogleMap.addMarker(
                 new MarkerOptions()
                         .position(latLng)
                         .icon(BitmapDescriptorFactory.fromResource(R.drawable.tires_accessories))
                         .title(carpoolInfo)
-                        .snippet(String.valueOf(carPool.getOid()))
+                        .snippet(carPoolJson)
         );
         return marker;
     }

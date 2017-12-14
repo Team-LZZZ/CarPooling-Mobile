@@ -46,7 +46,7 @@ public class BaseConnection{
             }
 
             // add params for post method
-            if (httpRequest.getMethod().equals("POST")){
+            if (httpRequest.getMethod().equals("POST") || httpRequest.getMethod().equals("PUT") || httpRequest.getMethod().equals("DELETE")){
                 conn.setDoInput(true);
                 conn.setDoOutput(true);
                 OutputStream os = conn.getOutputStream();

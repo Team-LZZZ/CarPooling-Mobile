@@ -31,6 +31,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
+import com.google.gson.Gson;
 
 import java.io.File;
 import java.util.Locale;
@@ -38,6 +39,9 @@ import java.util.Random;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.IConnectionStatus;
+import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.LogInHandler;
+import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.UpdateUserHandler;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.User;
 import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonConstants;
@@ -54,6 +58,7 @@ public class ProfileActivity extends AppCompatActivity {
     private static final int REQUEST_PHOTO= 2;
     private ProgressDialog progressDialog;
     private static final String TAG = "UploadActivity";
+    private UpdateUserHandler updateUserHandler;
     private User user;
     long time;
     Random random = new Random();
@@ -84,7 +89,7 @@ public class ProfileActivity extends AppCompatActivity {
                 startActivityForResult(captureImage, REQUEST_PHOTO);
             }
         });
-        getProfile(user.getPhoto());
+        CommonUtils.getProfile(this,user.getPhoto(),mImageView);
 
     }
 
@@ -108,6 +113,21 @@ public class ProfileActivity extends AppCompatActivity {
                 file);
         observer.setTransferListener(new UploadListener());
         user.setPhoto(CommonConstants.S3_PREFIX + mPhotoFile.getName() + time);
+        updateUserHandler = new UpdateUserHandler(new IConnectionStatus() {
+            @Override
+            public void onComplete(Boolean isSuccess, String additionalInfos) {
+                progressDialog.dismiss();
+                if (isSuccess){
+                }else{
+                        Toast.makeText(getBaseContext(), additionalInfos, Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+        Gson gson = new Gson();
+        User userInfo = new User();
+        userInfo.setPhoto(user.getPhoto());
+        String userJson = gson.toJson(userInfo);
+        updateUserHandler.connectForResponse(CommonUtils.createHttpRequestMessageWithToken(userJson, CommonConstants.userSetting, "PUT"));
     }
 
     @Override
@@ -205,22 +225,6 @@ public class ProfileActivity extends AppCompatActivity {
             Log.d(TAG, "onStateChanged: " + id + ", " + newState);
         }
     }
-
-    private void getProfile(String photoPath){
-        Glide.with(this).load(photoPath).diskCacheStrategy(DiskCacheStrategy.ALL).listener(new RequestListener() {
-            @Override public boolean onException(Exception e, Object model, Target target, boolean isFirstResource) {
-                android.util.Log.d(CommonConstants.LogPrefix, String.format(Locale.ROOT,
-                        "onException(%s, %s, %s, %s)", e, model, target, isFirstResource), e);
-                return false;
-            }
-            @Override public boolean onResourceReady(Object resource, Object model, Target target, boolean isFromMemoryCache, boolean isFirstResource) {
-                android.util.Log.d(CommonConstants.LogPrefix, String.format(Locale.ROOT,
-                        "onResourceReady(%s, %s, %s, %s, %s)", resource, model, target, isFromMemoryCache, isFirstResource));
-                return false;
-            }
-        }).error(R.drawable.wpi).into(mImageView);
-    }
-
 
     private void deleOldPhoto(String keyName){
         try {
