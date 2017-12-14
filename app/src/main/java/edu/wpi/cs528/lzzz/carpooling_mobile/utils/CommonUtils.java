@@ -33,6 +33,7 @@ import edu.wpi.cs528.lzzz.carpooling_mobile.R;
 import edu.wpi.cs528.lzzz.carpooling_mobile.connection.HttpRequestMessage;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.CarPool;
+import edu.wpi.cs528.lzzz.carpooling_mobile.model.Reserver;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.User;
 
 /**
@@ -174,7 +175,8 @@ public class CommonUtils {
     public static List<CarPool> getAvailabeRes(){
         List<CarPool> AvailCarpool = new ArrayList<>();
         for (CarPool cp : AppContainer.getInstance().getCarPools()) {
-            if (cp.getAvailable() > 0) {
+            Long date = Long.valueOf(cp.getTime());
+            if (cp.getAvailable() > 0 && date > System.currentTimeMillis()) {
                 AvailCarpool.add(cp);
             }
         }
@@ -184,8 +186,10 @@ public class CommonUtils {
     public static List<CarPool> performPastRes() {
         List<CarPool> pastRes = new ArrayList<>();
         for (CarPool cp : AppContainer.getInstance().getCarPools()) {
-            String currentDate = String.valueOf(System.currentTimeMillis());
-            if (cp.getReserverList().contains(AppContainer.getInstance().getActiveUser()) && (cp.getTime().compareTo(currentDate) <= 0)) {
+            //String currentDate = String.valueOf(System.currentTimeMillis());
+            Long date = Long.valueOf(cp.getTime());
+
+            if (cp.getReserverList().contains(AppContainer.getInstance().getActiveUser()) && date <= System.currentTimeMillis() ) {
                 pastRes.add(cp);
             }
         }
@@ -195,9 +199,14 @@ public class CommonUtils {
     public static List<CarPool> performUpcomingRes() {
         List<CarPool> upcomingRes = new ArrayList<>();
         for (CarPool cp : AppContainer.getInstance().getCarPools()) {
-            String currentDate = String.valueOf(System.currentTimeMillis());
-            if (cp.getReserverList().contains(AppContainer.getInstance().getActiveUser()) && (cp.getTime().compareTo(currentDate) > 0)) {
-                upcomingRes.add(cp);
+            Long date = Long.valueOf(cp.getTime());
+            if (date > System.currentTimeMillis()) {
+                for(Reserver reserver : cp.getReserverList()){
+                    if(reserver.getUsername().equals(AppContainer.getInstance().getActiveUser().getUsername())){
+                        upcomingRes.add(cp);
+                    }
+                }
+
             }
         }
         return upcomingRes;
@@ -206,9 +215,14 @@ public class CommonUtils {
     public static List<CarPool> performPastOffer() {
         List<CarPool> pastOffer = new ArrayList<>();
         for (CarPool cp : AppContainer.getInstance().getCarPools()) {
-            String currentDate = String.valueOf(System.currentTimeMillis());
-            if (cp.getOfferer().getUsername().equals(AppContainer.getInstance().getActiveUser().getUsername()) && (cp.getTime().compareTo(currentDate) <= 0)) {
-                pastOffer.add(cp);
+            Long date = Long.valueOf(cp.getTime());
+            if (date < System.currentTimeMillis()) {
+                for(Reserver reserver : cp.getReserverList()){
+                    if(reserver.getUsername().equals(AppContainer.getInstance().getActiveUser().getUsername())){
+                        pastOffer.add(cp);
+                    }
+                }
+
             }
         }
         return pastOffer;
@@ -217,8 +231,8 @@ public class CommonUtils {
     public static List<CarPool> performUpcomingOffer() {
         List<CarPool> upcomingOffer = new ArrayList<>();
         for (CarPool cp : AppContainer.getInstance().getCarPools()) {
-            String currentDate = String.valueOf(System.currentTimeMillis());
-            if (cp.getOfferer().getUsername().equals(AppContainer.getInstance().getActiveUser().getUsername()) && (cp.getTime().compareTo(currentDate) > 0)) {
+            Long date = Long.valueOf(cp.getTime());
+            if (cp.getOfferer().getUsername().equals(AppContainer.getInstance().getActiveUser().getUsername()) && date > System.currentTimeMillis()) {
                 upcomingOffer.add(cp);
             }
         }
