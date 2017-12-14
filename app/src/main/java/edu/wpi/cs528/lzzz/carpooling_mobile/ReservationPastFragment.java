@@ -14,6 +14,8 @@ import android.view.ViewGroup;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
 import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonUtils;
 
+import static edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonUtils.performPastRes;
+
 
 public class ReservationPastFragment extends Fragment {
     private RecyclerView mRecycleView;
@@ -52,7 +54,7 @@ public class ReservationPastFragment extends Fragment {
         layoutManager = new LinearLayoutManager(this.getContext());
         mRecycleView.setLayoutManager(layoutManager);
 
-        mainActivityAdapter = new MainActivityAdapter(VIEW_PAST_RESERVATION, AppContainer.getInstance().getCarPools(), getContext());
+        mainActivityAdapter = new MainActivityAdapter(VIEW_PAST_RESERVATION, performPastRes(), getContext());
         mRecycleView.setAdapter(mainActivityAdapter);
         mainActivityAdapter.notifyDataSetChanged();
         return view;

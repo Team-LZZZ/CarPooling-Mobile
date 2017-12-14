@@ -12,6 +12,8 @@ import android.view.ViewGroup;
 
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
 
+import static edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonUtils.performPastOffer;
+
 
 public class OfferListPastFragment extends Fragment {
     private RecyclerView mRecycleView;
@@ -50,7 +52,7 @@ public class OfferListPastFragment extends Fragment {
         layoutManager = new LinearLayoutManager(this.getContext());
         mRecycleView.setLayoutManager(layoutManager);
 
-        mainActivityAdapter = new MainActivityAdapter(VIEW_PAST_OFFER, AppContainer.getInstance().getCarPools(), getContext());
+        mainActivityAdapter = new MainActivityAdapter(VIEW_PAST_OFFER, performPastOffer(), getContext());
         mRecycleView.setAdapter(mainActivityAdapter);
         mainActivityAdapter.notifyDataSetChanged();
         return view;

@@ -33,6 +33,7 @@ import edu.wpi.cs528.lzzz.carpooling_mobile.R;
 import edu.wpi.cs528.lzzz.carpooling_mobile.connection.HttpRequestMessage;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.CarPool;
+import edu.wpi.cs528.lzzz.carpooling_mobile.model.Reserver;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.User;
 
 /**
@@ -71,7 +72,7 @@ public class CommonUtils {
         return sTransferUtility;
     }
 
-    public static void deletePhoto(String keyName){
+    public static void deletePhoto(String keyName) {
         sS3Client.deleteObject(new DeleteObjectRequest(CommonConstants.BUCKET_NAME, keyName));
     }
 
@@ -88,7 +89,7 @@ public class CommonUtils {
         return response.getVersionId();
     }
 
-    public static HttpRequestMessage createHttpPOSTRequestMessage(String jsonString, String apiName){
+    public static HttpRequestMessage createHttpPOSTRequestMessage(String jsonString, String apiName) {
         HttpRequestMessage request = new HttpRequestMessage();
         request.setMethod("POST");
         request.setBody(jsonString);
@@ -96,7 +97,7 @@ public class CommonUtils {
         return request;
     }
 
-    public static HttpRequestMessage createHttpPOSTRequestMessageWithToken(String jsonString, String apiName){
+    public static HttpRequestMessage createHttpPOSTRequestMessageWithToken(String jsonString, String apiName) {
         HttpRequestMessage request = new HttpRequestMessage();
         request.setMethod("POST");
         request.setBody(jsonString);
@@ -105,7 +106,7 @@ public class CommonUtils {
         return request;
     }
 
-    public static HttpRequestMessage createHttpRequestMessageWithToken(String jsonString, String apiName, String method){
+    public static HttpRequestMessage createHttpRequestMessageWithToken(String jsonString, String apiName, String method) {
         HttpRequestMessage request = new HttpRequestMessage();
         request.setMethod(method);
         request.setBody(jsonString);
@@ -114,14 +115,14 @@ public class CommonUtils {
         return request;
     }
 
-    public static HttpRequestMessage createHttpGETRequestMessage(String apiName){
+    public static HttpRequestMessage createHttpGETRequestMessage(String apiName) {
         HttpRequestMessage request = new HttpRequestMessage();
         request.setMethod("GET");
         request.setUrl(CommonConstants.BASE_URL + apiName);
         return request;
     }
 
-    public static HttpRequestMessage createHttpGETRequestMessageWithToken(String apiName){
+    public static HttpRequestMessage createHttpGETRequestMessageWithToken(String apiName) {
         HttpRequestMessage request = new HttpRequestMessage();
         request.setMethod("GET");
         request.setToken(AppContainer.getInstance().getToken());
@@ -129,7 +130,7 @@ public class CommonUtils {
         return request;
     }
 
-    public static ProgressDialog createProgressDialog(Context context, String message){
+    public static ProgressDialog createProgressDialog(Context context, String message) {
         ProgressDialog progressDialog = new ProgressDialog(context,
                 R.style.AppTheme_Dark_Dialog);
         progressDialog.setIndeterminate(true);
@@ -137,12 +138,12 @@ public class CommonUtils {
         return progressDialog;
     }
 
-    public static void showAlert(Context context, boolean success, String message){
+    public static void showAlert(Context context, boolean success, String message) {
         AlertDialog alertDialog = new AlertDialog.Builder(context).create();
 
-        if (!success){
+        if (!success) {
             alertDialog.setTitle("Failure");
-        }else{
+        } else {
             alertDialog.setTitle("Results");
         }
 
@@ -156,14 +157,17 @@ public class CommonUtils {
         alertDialog.show();
     }
 
-    public static void getProfile(Context context, String photoPath, ImageView mImageView){
+    public static void getProfile(Context context, String photoPath, ImageView mImageView) {
         Glide.with(context).load(photoPath).diskCacheStrategy(DiskCacheStrategy.ALL).listener(new RequestListener() {
-            @Override public boolean onException(Exception e, Object model, Target target, boolean isFirstResource) {
+            @Override
+            public boolean onException(Exception e, Object model, Target target, boolean isFirstResource) {
                 android.util.Log.d(CommonConstants.LogPrefix, String.format(Locale.ROOT,
                         "onException(%s, %s, %s, %s)", e, model, target, isFirstResource), e);
                 return false;
             }
-            @Override public boolean onResourceReady(Object resource, Object model, Target target, boolean isFromMemoryCache, boolean isFirstResource) {
+
+            @Override
+            public boolean onResourceReady(Object resource, Object model, Target target, boolean isFromMemoryCache, boolean isFirstResource) {
                 android.util.Log.d(CommonConstants.LogPrefix, String.format(Locale.ROOT,
                         "onResourceReady(%s, %s, %s, %s, %s)", resource, model, target, isFromMemoryCache, isFirstResource));
                 return false;
@@ -171,10 +175,11 @@ public class CommonUtils {
         }).error(R.drawable.wpi).into(mImageView);
     }
 
-    public static List<CarPool> getAvailabeRes(){
+    public static List<CarPool> getAvailabeRes() {
         List<CarPool> AvailCarpool = new ArrayList<>();
         for (CarPool cp : AppContainer.getInstance().getCarPools()) {
-            if (cp.getAvailable() > 0) {
+            Long date = Long.valueOf(cp.getTime());
+            if (cp.getAvailable() > 0 && date > System.currentTimeMillis()) {
                 AvailCarpool.add(cp);
             }
         }
@@ -184,9 +189,15 @@ public class CommonUtils {
     public static List<CarPool> performPastRes() {
         List<CarPool> pastRes = new ArrayList<>();
         for (CarPool cp : AppContainer.getInstance().getCarPools()) {
-            String currentDate = String.valueOf(System.currentTimeMillis());
-            if (cp.getReserverList().contains(AppContainer.getInstance().getActiveUser()) && (cp.getTime().compareTo(currentDate) <= 0)) {
-                pastRes.add(cp);
+            //String currentDate = String.valueOf(System.currentTimeMillis());
+            Long date = Long.valueOf(cp.getTime());
+
+            if (date <= System.currentTimeMillis()) {
+                for (Reserver reserver : cp.getReserverList()) {
+                    if (reserver.getUsername().equals(AppContainer.getInstance().getActiveUser().getUsername())) {
+                        pastRes.add(cp);
+                    }
+                }
             }
         }
         return pastRes;
@@ -195,9 +206,14 @@ public class CommonUtils {
     public static List<CarPool> performUpcomingRes() {
         List<CarPool> upcomingRes = new ArrayList<>();
         for (CarPool cp : AppContainer.getInstance().getCarPools()) {
-            String currentDate = String.valueOf(System.currentTimeMillis());
-            if (cp.getReserverList().contains(AppContainer.getInstance().getActiveUser()) && (cp.getTime().compareTo(currentDate) > 0)) {
-                upcomingRes.add(cp);
+            Long date = Long.valueOf(cp.getTime());
+            if (date > System.currentTimeMillis()) {
+                for (Reserver reserver : cp.getReserverList()) {
+                    if (reserver.getUsername().equals(AppContainer.getInstance().getActiveUser().getUsername())) {
+                        upcomingRes.add(cp);
+                    }
+                }
+
             }
         }
         return upcomingRes;
@@ -206,8 +222,8 @@ public class CommonUtils {
     public static List<CarPool> performPastOffer() {
         List<CarPool> pastOffer = new ArrayList<>();
         for (CarPool cp : AppContainer.getInstance().getCarPools()) {
-            String currentDate = String.valueOf(System.currentTimeMillis());
-            if (cp.getOfferer().getUsername().equals(AppContainer.getInstance().getActiveUser().getUsername()) && (cp.getTime().compareTo(currentDate) <= 0)) {
+            Long date = Long.valueOf(cp.getTime());
+            if (cp.getOfferer().getUsername().equals(AppContainer.getInstance().getActiveUser().getUsername()) && date < System.currentTimeMillis()) {
                 pastOffer.add(cp);
             }
         }
@@ -217,17 +233,13 @@ public class CommonUtils {
     public static List<CarPool> performUpcomingOffer() {
         List<CarPool> upcomingOffer = new ArrayList<>();
         for (CarPool cp : AppContainer.getInstance().getCarPools()) {
-            String currentDate = String.valueOf(System.currentTimeMillis());
-            if (cp.getOfferer().getUsername().equals(AppContainer.getInstance().getActiveUser().getUsername()) && (cp.getTime().compareTo(currentDate) > 0)) {
+            Long date = Long.valueOf(cp.getTime());
+            if (cp.getOfferer().getUsername().equals(AppContainer.getInstance().getActiveUser().getUsername()) && date > System.currentTimeMillis()) {
                 upcomingOffer.add(cp);
             }
         }
         return upcomingOffer;
     }
-
-
-
-
 
 
 }
