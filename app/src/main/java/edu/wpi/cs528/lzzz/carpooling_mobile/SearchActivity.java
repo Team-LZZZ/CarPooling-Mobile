@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.ui.PlacePicker;
@@ -23,6 +24,7 @@ import java.util.GregorianCalendar;
 
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.ISearchStatus;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.SearchHandler;
+import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
 import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonConstants;
 
 public class SearchActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
@@ -32,7 +34,8 @@ public class SearchActivity extends AppCompatActivity implements DatePickerDialo
 
     private double targetAddressLattitude;
     private double targetAddressLongitude;
-    private String targetAddressName;
+    private String targetAddressName = "";
+    private String targetDateDisplay = "";
 
     private Button searchBtn;
 
@@ -62,15 +65,11 @@ public class SearchActivity extends AppCompatActivity implements DatePickerDialo
         };
         searchTargetAddressText.setOnClickListener(selectAddressListener);
 
-
-//        final String targetAddress = searchTargetAddressText.getText().toString();
-//        String searchDateString = searchDateText.getText().toString();
-//        long searchMilliseconds =
-
         searchBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.i("+============", "searchbutton clicked.");
+                String searchCriteriaObtained = targetAddressName + "      " + SearchActivity.this.targetDateDisplay + "     X";
+                AppContainer.getInstance().setSearchCriteriaDisplayContent(searchCriteriaObtained);
                 ISearchStatus searchStatus = new ISearchStatus() {
                     @Override
                     public void onSearchComplete() {
@@ -79,7 +78,20 @@ public class SearchActivity extends AppCompatActivity implements DatePickerDialo
                     }
                 };
                 final String targetAddress = searchTargetAddressText.getText().toString();
-                SearchHandler.performSearch(targetAddress, searchStatus);
+                if(SearchActivity.this.targetDateDisplay.equals("") && SearchActivity.this.targetAddressName.equals("")){
+                    Toast.makeText(SearchActivity.this, "You have to choose a date or location", Toast.LENGTH_LONG);
+                    return;
+                }
+                else{
+                    if (SearchActivity.this.targetDateDisplay.equals("")){
+                        SearchHandler.performSearch(true, SearchActivity.this.targetAddressName, searchStatus);
+                    }else if(SearchActivity.this.targetAddressName.equals("")){
+                        SearchHandler.performSearch(false, SearchActivity.this.targetDateDisplay, searchStatus);
+                    }else{
+                        SearchHandler.performSearch(SearchActivity.this.targetAddressName, SearchActivity.this.targetDateDisplay, searchStatus);
+                    }
+                }
+
             }
         });
     }
@@ -92,8 +104,8 @@ public class SearchActivity extends AppCompatActivity implements DatePickerDialo
 
     private void setDate(final Calendar calendar) {
         final DateFormat dateFormat = DateFormat.getDateInstance(DateFormat.MEDIUM);
-        this.searchDateText.setText(dateFormat.format(calendar.getTime()));
-
+        this.targetDateDisplay = dateFormat.format(calendar.getTime());
+        this.searchDateText.setText(this.targetDateDisplay);
     }
 
     @Override
@@ -136,8 +148,6 @@ public class SearchActivity extends AppCompatActivity implements DatePickerDialo
             if (attributions == null) {
                 attributions = "";
             }
-
-
             searchTargetAddressText.setText(name);
             this.targetAddressName = name;
             this.targetAddressLattitude = place.getLatLng().latitude;

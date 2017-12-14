@@ -25,6 +25,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -46,6 +48,7 @@ public class MainActivity extends AppCompatActivity
     private RecyclerView.LayoutManager layoutManager;
     private ProgressDialog progressDialog;
     NavigationView navigationView;
+    private TextView searchCriteriaTextView;
     public static final int MAKE_RESERVATION = 1;
 
     private int loginCode = 0;
@@ -64,7 +67,16 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(this, LoginActivity.class);
             startActivityForResult(intent, loginCode);
         }
-
+        searchCriteriaTextView = (TextView) findViewById(R.id.search_criteria);
+        searchCriteriaTextView.setText(AppContainer.getInstance().getSearchCriteriaDisplayContent());
+        searchCriteriaTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AppContainer.getInstance().setSearchCriteriaDisplayContent("");
+                finish();
+                startActivity(getIntent());
+            }
+        });
         carpoolsHandler = new CarpoolsHandler(new IConnectionStatus() {
             @Override
             public void onComplete(Boolean isSuccess, String additionalInfos) {
@@ -125,7 +137,6 @@ public class MainActivity extends AppCompatActivity
 
 
         navigationView.setNavigationItemSelectedListener(this);
-        updateUserDisplay();
     }
 
     @Override
@@ -201,6 +212,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void updateUserDisplay() {
+        Log.i("User", "======================");
         View header = navigationView.getHeaderView(0);
         ImageView photo = (ImageView) header.findViewById(R.id.imageView);
         TextView name = (TextView) header.findViewById(R.id.name);
@@ -226,9 +238,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void onGetAllCarpoolSuccess(){
-        mainActivityAdapter = new MainActivityAdapter(MAKE_RESERVATION, CommonUtils.getAvailabeRes(), this);
-        mRecycleView.setAdapter(mainActivityAdapter);
-        mainActivityAdapter.notifyDataSetChanged();
+        updateCarPoolsDisplay();
     }
     private void onGetAllCarpoolFailed(String error){
         Toast.makeText(this, error, Toast.LENGTH_LONG).show();
@@ -237,10 +247,22 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (resultCode == this.loginCode){
+            updateCarPoolsDisplay();
+            this.updateUserDisplay();
+        }
+    }
+
+    private void updateCarPoolsDisplay(){
+
+        if (AppContainer.getInstance().getSearchCriteriaDisplayContent().equals("")){
             mainActivityAdapter = new MainActivityAdapter(MAKE_RESERVATION, CommonUtils.getAvailabeRes(), this);
             mRecycleView.setAdapter(mainActivityAdapter);
             mainActivityAdapter.notifyDataSetChanged();
-            this.updateUserDisplay();
+        }else{
+            searchCriteriaTextView.setText(AppContainer.getInstance().getSearchCriteriaDisplayContent());
+            mainActivityAdapter = new MainActivityAdapter(MAKE_RESERVATION, AppContainer.getInstance().getSearchResult(), this);
+            mRecycleView.setAdapter(mainActivityAdapter);
+            mainActivityAdapter.notifyDataSetChanged();
         }
     }
 
