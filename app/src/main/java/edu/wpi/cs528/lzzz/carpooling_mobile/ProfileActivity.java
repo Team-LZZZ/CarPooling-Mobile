@@ -18,6 +18,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.amazonaws.AmazonClientException;
@@ -53,6 +54,13 @@ public class ProfileActivity extends AppCompatActivity {
     ImageView mImageView;
     @Bind(R.id.profile_imageButton)
     ImageButton mImageButton;
+    @Bind(R.id.profile_name)
+    TextView mNameTextView;
+    @Bind(R.id.profile_email)
+    TextView mEmailTextView;
+    @Bind(R.id.profile_phone)
+    TextView mPhoneTextView;
+
     private TransferUtility transferUtility;
     private TransferObserver transferObserver;
     private static final int REQUEST_PHOTO= 2;
@@ -90,7 +98,9 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
         CommonUtils.getProfile(this,user.getPhoto(),mImageView);
-
+        mNameTextView.setText(user.getUsername());
+        mEmailTextView.setText(user.getEmail());
+        mPhoneTextView.setText(user.getPhone());
     }
 
     private void beginUpload(String filePath) {
