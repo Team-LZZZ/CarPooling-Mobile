@@ -8,8 +8,8 @@ public class CommonConstants {
 
     // connections
 //    public static String BASE_URL = "http://youzhou1993.pythonanywhere.com/api/";
- //   public static String BASE_URL = "http://10.0.2.2:5000/api/";
-    public static String BASE_URL = "https://8132e714.ngrok.io/api/";
+    public static String BASE_URL = "http://10.0.2.2:5000/api/";
+//    public static String BASE_URL = "https://8132e714.ngrok.io/api/";
     public static String registration = "reg";
     public static String login = "login";
     public static String getAllCarpools = "carPools";

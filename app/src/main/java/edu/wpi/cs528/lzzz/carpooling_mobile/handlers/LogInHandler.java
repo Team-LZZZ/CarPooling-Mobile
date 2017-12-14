@@ -46,13 +46,10 @@ public class LogInHandler implements IConnectionAsyncTaskDelegate {
             }else{
                 Log.i(LoginTAG + " token: ", responseMessage.getToken());
                 AppContainer.getInstance().setToken(responseMessage.getToken());
-                List<String> userJson =responseMessage.getMessage();
+                List<String> userJson = responseMessage.getMessage();
+                Log.i(LoginTAG + " userJson: ", userJson.get(0));
                 User user = gson.fromJson(userJson.get(0), User.class);
                 AppContainer.getInstance().setActiveUser(user);
-
-
-
-
             }
         }catch (Exception ex){
             isSuccessful = false;

@@ -16,13 +16,24 @@ public class AppContainer {
     private String token = "";
     private boolean isLogIn = false;
     private User activeUser = new User();
-    private static List<CarPool> carPools = new ArrayList<>();
+    private List<CarPool> carPools = new ArrayList<>();
+    private List<CarPool> searchResult = new ArrayList<>();
 
     public static AppContainer getInstance(){
         if(instance == null){
             instance = new AppContainer();
         }
         return instance;
+    }
+
+
+
+    public List<CarPool> getSearchResult() {
+        return searchResult;
+    }
+
+    public void setSearchResult(List<CarPool> searchResult) {
+        this.searchResult = searchResult;
     }
 
     public User getActiveUser() {

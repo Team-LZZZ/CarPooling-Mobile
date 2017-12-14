@@ -112,12 +112,12 @@ public class OfferCarpoolActivity extends AppCompatActivity implements DatePicke
         fromAddressEditText.setOnClickListener(selectAddressListener);
         toAddressEditText.setOnClickListener(selectAddressListener);
 
-//        this.startAddressName = "WPI";
-//        this.startAddressLattitude = 42.274637;
-//        this.startAddressLongitude = -71.806339;
-//        this.targetAddressName = "Boston";
-//        this.targetAddressLattitude = 42.360082;
-//        this.targetAddressLongitude = -71.058880;
+        this.startAddressName = "World Center2";
+        this.startAddressLattitude = 42.274637;
+        this.startAddressLongitude = -71.806339;
+        this.targetAddressName = "Hello2";
+        this.targetAddressLattitude = 42.360082;
+        this.targetAddressLongitude = -71.058880;
 
         makeOfferBtn = (Button) findViewById(R.id.Offer_carpool);
         makeOfferBtn.setOnClickListener(new View.OnClickListener() {
