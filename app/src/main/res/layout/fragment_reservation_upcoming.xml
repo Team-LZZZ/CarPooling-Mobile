@@ -2,13 +2,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="edu.wpi.cs528.lzzz.carpooling_mobile.ReservationUpcomingFragment"
+    tools:context="edu.wpi.cs528.lzzz.carpooling_mobile.ReservationActivity"
     android:text="@string/tab_label2">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/res_upcoming_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="ReservationUpcomingFragment" />
-
+        android:divider="#b5b5b5"
+        android:dividerHeight="1dp"
+        tools:context=".ReservationActivity"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp" />
 </RelativeLayout>

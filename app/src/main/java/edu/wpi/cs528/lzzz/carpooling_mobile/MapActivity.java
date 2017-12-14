@@ -63,6 +63,7 @@ public class MapActivity extends AppCompatActivity
     private GoogleMap mGoogleMap;
     private LocationManager mLocationManager;
     private List<CarPool> carPools;
+    public static final int MAKE_RESERVATION = 1;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -161,6 +162,7 @@ public class MapActivity extends AppCompatActivity
     public void onInfoWindowClick(Marker marker) {
         Intent i = new Intent(this, CarpoolDetailActivity.class);
         i.putExtra("carPoolInfo", marker.getSnippet());
+        i.putExtra("action", MAKE_RESERVATION);
         startActivity(i);
     }
 

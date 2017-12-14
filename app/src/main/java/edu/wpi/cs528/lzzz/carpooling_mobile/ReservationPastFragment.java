@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
+import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonUtils;
 
 
 public class ReservationPastFragment extends Fragment {
@@ -20,6 +21,7 @@ public class ReservationPastFragment extends Fragment {
     private MainActivityAdapter mainActivityAdapter;
     public static final String ARG_PAGE = "ARG_PAGE";
     private int mPageNo;
+    public static final int VIEW_PAST_RESERVATION = 2;
 
     public static ReservationPastFragment newInstance(int pageNo) {
 
@@ -33,7 +35,7 @@ public class ReservationPastFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mPageNo = getArguments().getInt(ARG_PAGE);
+        //mPageNo = getArguments().getInt(ARG_PAGE);
     }
 
     @Override
@@ -50,7 +52,7 @@ public class ReservationPastFragment extends Fragment {
         layoutManager = new LinearLayoutManager(this.getContext());
         mRecycleView.setLayoutManager(layoutManager);
 
-        mainActivityAdapter = new MainActivityAdapter(AppContainer.getInstance().getCarPools(), getContext());
+        mainActivityAdapter = new MainActivityAdapter(VIEW_PAST_RESERVATION, AppContainer.getInstance().getCarPools(), getContext());
         mRecycleView.setAdapter(mainActivityAdapter);
         mainActivityAdapter.notifyDataSetChanged();
         return view;

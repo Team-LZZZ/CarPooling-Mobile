@@ -1,13 +1,18 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="edu.wpi.cs528.lzzz.carpooling_mobile.OfferListUpcomingFragment">
+    tools:context="edu.wpi.cs528.lzzz.carpooling_mobile.OfferListActivity">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/offer_upcoming_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="offerListUpcomingFragment" />
+        android:divider="#b5b5b5"
+        android:dividerHeight="1dp"
+        tools:context=".OfferListActivity"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp" />
 
-</FrameLayout>
+</RelativeLayout>

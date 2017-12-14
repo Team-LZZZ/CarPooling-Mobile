@@ -53,6 +53,8 @@ public class CarpoolDetailActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         String carPoolJson = intent.getStringExtra("carPoolInfo");
+        int action  = intent.getIntExtra("action", 0);
+
         Gson gson = new Gson();
         this.carPool = gson.fromJson(carPoolJson, CarPool.class);
         nameTextView = (TextView) findViewById(R.id.carppool_detail_name);
@@ -64,33 +66,14 @@ public class CarpoolDetailActivity extends AppCompatActivity {
         toAddressTextView = (TextView) findViewById(R.id.carppool_detail_to_address);
         dateTextView = (TextView) findViewById(R.id.carppool_detail_departure_time);
         mChooseNumberTextView = (TextView) findViewById(R.id.NumberPeople);
-//        reservationNumberPicker = (NumberPicker) findViewById(R.id.numberPicker);
-//        reservationNumberPicker.setMinValue(1);
-//        reservationNumberPicker.setMaxValue(7);
-//        reservationNumberPicker.setWrapSelectorWheel(true);
         makeReservationBtn = (Button) findViewById(R.id.reservation);
         makeCancelBtn = (Button) findViewById(R.id.cancel);
-
-//        reservationNumberPicker.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
-//            @Override
-//            public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
-//                //Display the newly selected number from picker
-//                numberPeople = newVal;
-//            }
-//        });
         mChooseNumberTextView.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 showNumberPicker(1, carPool.getAvailable());
             }
         });
-
-
-
-
-
-
-
 
         nameTextView.setText(carPool.getOfferer().getUsername());
         phoneTextView.setText(carPool.getOfferer().getPhone());
@@ -99,8 +82,6 @@ public class CarpoolDetailActivity extends AppCompatActivity {
         modelMakeTextView.setText(carPool.getCar().getMake() + " " + carPool.getCar().getMake());
         fromAddressTextView.setText(carPool.getStartLocation().getAddress());
         toAddressTextView.setText(carPool.getTargetLocation().getAddress());
-        makeCancelBtn.setEnabled(false);
-        makeCancelBtn.setBackgroundColor(Color.DKGRAY);
 
         Long millis = Long.valueOf(carPool.getTime());
         SimpleDateFormat sdf = new SimpleDateFormat("MMM dd, yyyy", Locale.US);
@@ -109,11 +90,19 @@ public class CarpoolDetailActivity extends AppCompatActivity {
         String date = sdf.format(calendar.getTime());
         dateTextView.setText(date);
 
+        if (action == CommonConstants.MAKE_RESERVATION){
+            makeCancelBtn.setBackgroundColor(Color.DKGRAY);
+            makeCancelBtn.setEnabled(false);
+        } else if (action == CommonConstants.VIEW_INCOME_RESERVATION){
+            makeReservationBtn.setBackgroundColor(Color.DKGRAY);
+            makeReservationBtn.setEnabled(false);
+        }
+
         makeReservationBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 int offer_id = CarpoolDetailActivity.this.carPool.getOid();
-                int num = Integer.valueOf(mChooseNumberTextView.getText().toString());
+                int num = Integer.valueOf(numberPeople);
                 ReservationInput input = new ReservationInput(offer_id, num);
                 Gson gson = new Gson();
                 String inputJson = gson.toJson(input);
@@ -124,9 +113,7 @@ public class CarpoolDetailActivity extends AppCompatActivity {
                         if (success) {
 //                            makeReservationSucceed();
                             showReservationAlert(true, "Reservation is Successful.");
-                            makeReservationBtn.setEnabled(false);
-                            makeReservationBtn.setBackgroundColor(Color.DKGRAY);
-                            makeCancelBtn.setEnabled(true);
+
 
                         } else {
 //                            makeReservationFailed(additionalInfos);
@@ -190,6 +177,7 @@ public class CarpoolDetailActivity extends AppCompatActivity {
             public void onWheeled(int index, Number item) {
                 titleView.setText("Number of people : " + item.intValue());
                 mChooseNumberTextView.setText("Number of people : " + item.intValue());
+                numberPeople = item.intValue();
             }
         });
         picker.show();
