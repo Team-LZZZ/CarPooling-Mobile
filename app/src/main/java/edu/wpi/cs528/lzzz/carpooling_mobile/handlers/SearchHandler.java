@@ -27,26 +27,23 @@ import edu.wpi.cs528.lzzz.carpooling_mobile.model.User;
 
 public class SearchHandler {
 
-    public static void performSearch(String targetLocationString, long time, ISearchStatus searchStatus) {
+    public static void performSearch(String targetAddressString, String targetDateString, ISearchStatus searchStatus) {
         AppContainer.getInstance().getSearchResult().clear();
-        List<CarPool> intermediateRes = searchByTime(AppContainer.getInstance().getCarPools(), time);
-        List<CarPool> finalRes = searchByLocation(intermediateRes, targetLocationString);
+        List<CarPool> intermediateRes = searchByTime(AppContainer.getInstance().getCarPools(), targetDateString);
+        List<CarPool> finalRes = searchByLocation(intermediateRes, targetAddressString);
         AppContainer.getInstance().setSearchResult(finalRes);
         searchStatus.onSearchComplete();
     }
 
-    public static void performSearch(String targetLocationString, ISearchStatus searchStatus) {
+    public static void performSearch(boolean inputIsAddress, String inputString, ISearchStatus searchStatus){
         AppContainer.getInstance().getSearchResult().clear();
-        AppContainer.getInstance().setSearchResult(searchByLocation(AppContainer.getInstance().getCarPools(), targetLocationString));
+        if (inputIsAddress){
+            AppContainer.getInstance().setSearchResult(searchByLocation(AppContainer.getInstance().getCarPools(), inputString));
+        }else{
+            AppContainer.getInstance().setSearchResult(searchByTime(AppContainer.getInstance().getCarPools(), inputString));
+        }
         searchStatus.onSearchComplete();
     }
-
-    public static void performSearch(long time, ISearchStatus searchStatus) {
-        AppContainer.getInstance().getSearchResult().clear();
-        AppContainer.getInstance().setSearchResult(searchByTime(AppContainer.getInstance().getCarPools(), time));
-        searchStatus.onSearchComplete();
-    }
-
 
     private static List<CarPool> searchByLocation(List<CarPool> carpoolsSearchPool, String targetLocationString) {
         Map<CarPool, Integer> scoreMap = new HashMap<>();
@@ -56,7 +53,6 @@ public class SearchHandler {
             Integer similarityScore = getSimilarityScore(carPoolAddress, targetLocationString);
             scoreMap.put(carPool, similarityScore);
         }
-
         List<Map.Entry<CarPool, Integer>> list = new ArrayList<Map.Entry<CarPool, Integer>>(scoreMap.entrySet());
         Collections.sort(list, new Comparator<Map.Entry<CarPool, Integer>>() {
             public int compare(Map.Entry<CarPool, Integer> o1,
@@ -73,14 +69,16 @@ public class SearchHandler {
             logSB.append(c.getTargetLocation().getAddress());
             logSB.append("\n");
         }
+        Log.i("SearchHandler====: ", logSB.toString());
         return carPools;
     }
 
-    private static List<CarPool> searchByTime(List<CarPool> carpoolsSearchPool, long searchTime) {
+    private static List<CarPool> searchByTime(List<CarPool> carpoolsSearchPool, String targetformatedDateTimeString) {
         List<CarPool> res = new ArrayList<>();
         for (CarPool carPool : carpoolsSearchPool) {
             long eachCarPoolTime = Long.valueOf(carPool.getTime());
-            if (isTheSameDate(eachCarPoolTime, searchTime)) {
+            String eachCarPoolFormattedDateTimeString = convertMillisecondsToDateString(eachCarPoolTime);
+            if (isTheSameDate(eachCarPoolFormattedDateTimeString, targetformatedDateTimeString)) {
                 res.add(carPool);
             }
         }
@@ -88,20 +86,21 @@ public class SearchHandler {
     }
 
     private static String convertMillisecondsToDateString(long time) {
-        SimpleDateFormat sdf = new SimpleDateFormat("MMM dd yyyy", Locale.US);
+        SimpleDateFormat sdf = new SimpleDateFormat("MMM dd, yyyy", Locale.US);
         GregorianCalendar calendar = new GregorianCalendar(TimeZone.getTimeZone("US/East"));
         calendar.setTimeInMillis(time);
         return sdf.format(calendar.getTime());
     }
 
-    private static boolean isTheSameDate(long time1, long time2) {
-        String date_1 = convertMillisecondsToDateString(time1).split(" ")[1];
-        String date_2 = convertMillisecondsToDateString(time2).split(" ")[1];
-        String month_1 = convertMillisecondsToDateString(time1).split(" ")[0];
-        String month_2 = convertMillisecondsToDateString(time2).split(" ")[0];
-        String year_1 = convertMillisecondsToDateString(time1).split(" ")[2];
-        String year_2 = convertMillisecondsToDateString(time2).split(" ")[2];
-        return date_1.equals(date_2) && month_1.equals(month_2) && year_1.equals(year_2);
+    private static boolean isTheSameDate(String time1, String time2) {
+        String[] time1Array = time1.replace(" ", ",").split(",");
+        String[] time2Array = time2.replace(" ", ",").split(",");
+        for (int i = 0; i < time1Array.length; i++){
+            if (!time1Array[i].equals(time2Array[i])){
+                return false;
+            }
+        }
+        return true;
     }
 
     private static Integer getSimilarityScore(String address_1, String address_2) {
@@ -116,6 +115,7 @@ public class SearchHandler {
 
         for (String infoInOne : addressOneArray) {
             for (String infoInTwo : addressTwoArray) {
+                Log.i("SearchHandlerCity==: ", infoInOne + "    " + infoInTwo);
                 if (infoInOne.equals(infoInTwo)) {
                     score++;
                 }

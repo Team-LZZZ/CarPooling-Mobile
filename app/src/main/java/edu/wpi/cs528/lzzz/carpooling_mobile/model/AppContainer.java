@@ -18,6 +18,7 @@ public class AppContainer {
     private User activeUser = new User();
     private List<CarPool> carPools = new ArrayList<>();
     private List<CarPool> searchResult = new ArrayList<>();
+    private String searchCriteriaDisplayContent = "";
 
     public static AppContainer getInstance(){
         if(instance == null){
@@ -26,7 +27,13 @@ public class AppContainer {
         return instance;
     }
 
+    public String getSearchCriteriaDisplayContent() {
+        return searchCriteriaDisplayContent;
+    }
 
+    public void setSearchCriteriaDisplayContent(String searchCriteriaDisplayContent) {
+        this.searchCriteriaDisplayContent = searchCriteriaDisplayContent;
+    }
 
     public List<CarPool> getSearchResult() {
         return searchResult;
