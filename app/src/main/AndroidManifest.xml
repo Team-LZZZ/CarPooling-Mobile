@@ -8,8 +8,10 @@
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-feature android:name="android.hardware.camera" android:required="false" />
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
 
     <permission
         android:name="com.example.permission.MAPS_RECEIVE"
@@ -72,10 +74,15 @@
         </activity>
         <activity android:name=".OfferCarpoolActivity" />
         <activity android:name=".CarpoolDetailActivity" />
-        <activity android:name=".MapActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".MapActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
         <service
             android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
             android:enabled="true" />
+
+        <activity android:name=".OfferCarpoolViewActivity"></activity>
     </application>
 
 </manifest>
