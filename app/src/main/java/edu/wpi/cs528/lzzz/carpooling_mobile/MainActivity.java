@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity
     private ProgressDialog progressDialog;
     NavigationView navigationView;
     private TextView searchCriteriaTextView;
-
+    public static final int MAKE_RESERVATION = 1;
 
     private int loginCode = 0;
 //    TextView name;
@@ -255,12 +255,12 @@ public class MainActivity extends AppCompatActivity
     private void updateCarPoolsDisplay(){
 
         if (AppContainer.getInstance().getSearchCriteriaDisplayContent().equals("")){
-            mainActivityAdapter = new MainActivityAdapter(CommonUtils.getAvailabeRes(), this);
+            mainActivityAdapter = new MainActivityAdapter(MAKE_RESERVATION, CommonUtils.getAvailabeRes(), this);
             mRecycleView.setAdapter(mainActivityAdapter);
             mainActivityAdapter.notifyDataSetChanged();
         }else{
             searchCriteriaTextView.setText(AppContainer.getInstance().getSearchCriteriaDisplayContent());
-            mainActivityAdapter = new MainActivityAdapter(AppContainer.getInstance().getSearchResult(), this);
+            mainActivityAdapter = new MainActivityAdapter(MAKE_RESERVATION, AppContainer.getInstance().getSearchResult(), this);
             mRecycleView.setAdapter(mainActivityAdapter);
             mainActivityAdapter.notifyDataSetChanged();
         }
