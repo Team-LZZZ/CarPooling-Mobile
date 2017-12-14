@@ -93,7 +93,7 @@ public class OfferCarpoolActivity extends AppCompatActivity implements DatePicke
         nameTextView.setText(user.getUsername());
         phoneTextView.setText(user.getPhone());
         emailTextView.setText(user.getEmail());
-        
+
         View.OnClickListener selectAddressListener = new View.OnClickListener(){
 
             @Override

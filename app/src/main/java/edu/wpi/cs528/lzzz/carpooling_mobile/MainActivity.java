@@ -202,7 +202,6 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void updateUserDisplay() {
-        Log.i("User", "======================");
         View header = navigationView.getHeaderView(0);
         ImageView photo = (ImageView) header.findViewById(R.id.imageView);
         TextView name = (TextView) header.findViewById(R.id.name);
@@ -212,7 +211,7 @@ public class MainActivity extends AppCompatActivity
 
         User mUser = AppContainer.getInstance().getActiveUser();
         name.setText(mUser.getUsername());
-
+        CommonUtils.getProfile(this,mUser.getPhoto(), photo);
         phone.setText(mUser.getPhone());
         email.setText(mUser.getEmail());
     }
