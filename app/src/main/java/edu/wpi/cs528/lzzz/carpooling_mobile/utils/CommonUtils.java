@@ -174,12 +174,60 @@ public class CommonUtils {
     public static List<CarPool> getAvailabeRes(){
         List<CarPool> AvailCarpool = new ArrayList<>();
         for (CarPool cp : AppContainer.getInstance().getCarPools()) {
-
-
             if (cp.getAvailable() > 0) {
                 AvailCarpool.add(cp);
             }
         }
         return AvailCarpool;
     }
+
+    public static List<CarPool> performPastRes() {
+        List<CarPool> pastRes = new ArrayList<>();
+        for (CarPool cp : AppContainer.getInstance().getCarPools()) {
+            String currentDate = String.valueOf(System.currentTimeMillis());
+            if (cp.getReserverList().contains(AppContainer.getInstance().getActiveUser()) && (cp.getTime().compareTo(currentDate) <= 0)) {
+                pastRes.add(cp);
+            }
+        }
+        return pastRes;
+    }
+
+    public static List<CarPool> performUpcomingRes() {
+        List<CarPool> upcomingRes = new ArrayList<>();
+        for (CarPool cp : AppContainer.getInstance().getCarPools()) {
+            String currentDate = String.valueOf(System.currentTimeMillis());
+            if (cp.getReserverList().contains(AppContainer.getInstance().getActiveUser()) && (cp.getTime().compareTo(currentDate) > 0)) {
+                upcomingRes.add(cp);
+            }
+        }
+        return upcomingRes;
+    }
+
+    public static List<CarPool> performPastOffer() {
+        List<CarPool> pastOffer = new ArrayList<>();
+        for (CarPool cp : AppContainer.getInstance().getCarPools()) {
+            String currentDate = String.valueOf(System.currentTimeMillis());
+            if (cp.getOfferer().equals(AppContainer.getInstance().getActiveUser()) && (cp.getTime().compareTo(currentDate) <= 0)) {
+                pastOffer.add(cp);
+            }
+        }
+        return pastOffer;
+    }
+
+    public static List<CarPool> performUpcomingOffer() {
+        List<CarPool> upcomingOffer = new ArrayList<>();
+        for (CarPool cp : AppContainer.getInstance().getCarPools()) {
+            String currentDate = String.valueOf(System.currentTimeMillis());
+            if (cp.getOfferer().equals(AppContainer.getInstance().getActiveUser()) && (cp.getTime().compareTo(currentDate) > 0)) {
+                upcomingOffer.add(cp);
+            }
+        }
+        return upcomingOffer;
+    }
+
+
+
+
+
+
 }

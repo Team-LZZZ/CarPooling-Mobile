@@ -19,6 +19,7 @@ import java.util.TreeMap;
 
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.CarPool;
+import edu.wpi.cs528.lzzz.carpooling_mobile.model.User;
 
 /**
  * Created by QQZhao on 12/13/17.
@@ -45,6 +46,7 @@ public class SearchHandler {
         AppContainer.getInstance().setSearchResult(searchByTime(AppContainer.getInstance().getCarPools(), time));
         searchStatus.onSearchComplete();
     }
+
 
     private static List<CarPool> searchByLocation(List<CarPool> carpoolsSearchPool, String targetLocationString) {
         Map<CarPool, Integer> scoreMap = new HashMap<>();
