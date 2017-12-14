@@ -19,6 +19,16 @@ public class AppContainer {
     private List<CarPool> carPools = new ArrayList<>();
     private List<CarPool> searchResult = new ArrayList<>();
     private String searchCriteriaDisplayContent = "";
+    private List<CarPool> myReservations = new ArrayList<>();
+
+
+    public List<CarPool> getMyReservations() {
+        return myReservations;
+    }
+
+    public void setMyReservations(List<CarPool> myReservations) {
+        this.myReservations = myReservations;
+    }
 
     public static AppContainer getInstance(){
         if(instance == null){

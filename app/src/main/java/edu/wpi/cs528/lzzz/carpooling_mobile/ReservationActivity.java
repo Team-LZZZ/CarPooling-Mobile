@@ -23,6 +23,7 @@ import com.google.gson.Gson;
 
 import butterknife.internal.ListenerClass;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.IConnectionStatus;
+import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.MyReservationHandler;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.ReservationHandler;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.Reservation;
@@ -38,6 +39,7 @@ public class ReservationActivity extends AppCompatActivity {
     private TabLayout tabLayout;
     private ViewPager viewPager;
     public static int int_items = 2 ;
+    private MyAdapter myAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,7 +56,9 @@ public class ReservationActivity extends AppCompatActivity {
         tabLayout = (TabLayout) findViewById(R.id.tabs);
 
 
-        viewPager.setAdapter(new MyAdapter(getSupportFragmentManager()));
+        myAdapter = new MyAdapter(getSupportFragmentManager());
+
+        viewPager.setAdapter(myAdapter);
 
         tabLayout.post(new Runnable() {
             @Override
@@ -63,10 +67,18 @@ public class ReservationActivity extends AppCompatActivity {
             }
         });
 
+        MyReservationHandler myReservationHandler = new MyReservationHandler(new IConnectionStatus() {
+            @Override
+            public void onComplete(Boolean success, String additionalInfos) {
+                if (success){
+                    myAdapter.notifyDataSetChanged();
+                }else{
+                    CommonUtils.showAlert(ReservationActivity.this, false, "can not get my reservations.");
+                }
+            }
+        });
+        myReservationHandler.connectForResponse(CommonUtils.createHttpGETRequestMessageWithToken(CommonConstants.getMyReservations));
     }
-
-
-
 
     private class MyAdapter extends FragmentPagerAdapter {
 
