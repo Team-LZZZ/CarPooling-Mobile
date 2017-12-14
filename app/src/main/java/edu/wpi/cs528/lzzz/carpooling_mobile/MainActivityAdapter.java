@@ -90,6 +90,19 @@ public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityAdapte
                     mContext.startActivity(i);
                 }
             });
+        } else {
+            viewHolder.view.setOnClickListener(new  View.OnClickListener(){
+                @Override
+                public void onClick(View v){
+                    Intent i = new Intent(mContext, OfferCarpoolViewActivity.class);
+                    Gson gson = new Gson();
+                    String carPoolJson = gson.toJson(viewHolder.c);
+                    i.putExtra("carPoolInfo", carPoolJson);
+                    i.putExtra("action", action);
+                    mContext.startActivity(i);
+                }
+            });
+
         }
 
     }

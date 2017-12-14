@@ -207,7 +207,7 @@ public class CommonUtils {
         List<CarPool> pastOffer = new ArrayList<>();
         for (CarPool cp : AppContainer.getInstance().getCarPools()) {
             String currentDate = String.valueOf(System.currentTimeMillis());
-            if (cp.getOfferer().equals(AppContainer.getInstance().getActiveUser()) && (cp.getTime().compareTo(currentDate) <= 0)) {
+            if (cp.getOfferer().getUsername().equals(AppContainer.getInstance().getActiveUser().getUsername()) && (cp.getTime().compareTo(currentDate) <= 0)) {
                 pastOffer.add(cp);
             }
         }
@@ -218,7 +218,7 @@ public class CommonUtils {
         List<CarPool> upcomingOffer = new ArrayList<>();
         for (CarPool cp : AppContainer.getInstance().getCarPools()) {
             String currentDate = String.valueOf(System.currentTimeMillis());
-            if (cp.getOfferer().equals(AppContainer.getInstance().getActiveUser()) && (cp.getTime().compareTo(currentDate) > 0)) {
+            if (cp.getOfferer().getUsername().equals(AppContainer.getInstance().getActiveUser().getUsername()) && (cp.getTime().compareTo(currentDate) > 0)) {
                 upcomingOffer.add(cp);
             }
         }

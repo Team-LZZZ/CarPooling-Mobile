@@ -27,5 +27,6 @@
     <string name="car_model">Model: </string>
     <string name="car_Plate">Plate: </string>
     <string name="trip_info">Trip Information</string>
+    <string name="reserverList">Reservation List</string>
 
 </resources>
