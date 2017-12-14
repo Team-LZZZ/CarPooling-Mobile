@@ -23,6 +23,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -67,6 +68,8 @@ public class ProfileActivity extends AppCompatActivity{
     TextView mEmailTextView;
     @Bind(R.id.profile_phone)
     TextView mPhoneTextView;
+    @Bind(R.id.profile_back_btn)
+    Button mProfileBackBtn;
 
     private TransferUtility transferUtility;
     private TransferObserver transferObserver;
@@ -108,18 +111,17 @@ public class ProfileActivity extends AppCompatActivity{
         mNameTextView.setText(user.getUsername());
         mEmailTextView.setText(user.getEmail());
         mPhoneTextView.setText(user.getPhone());
+
+        mProfileBackBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(ProfileActivity.this, MainActivity.class);
+                startActivity(i);
+            }
+        });
     }
 
     private void beginUpload(String filePath) {
-
-//        Runnable runnable = new Runnable(){
-//            @Override
-//            public void run() {
-//                deleOldPhoto(mPhotoFile.getName() + time);
-//                Log.i(CommonConstants.LogPrefix, "delete");
-//            }
-//        };
-//        new Thread(runnable).start();
         if (filePath == null) {
             Toast.makeText(this, "Could not find the filepath of the selected file",
                     Toast.LENGTH_LONG).show();
@@ -159,13 +161,11 @@ public class ProfileActivity extends AppCompatActivity{
             new android.os.Handler().postDelayed(
                     new Runnable() {
                         public void run() {
-
                             beginUpload(mPhotoFile.getPath());
                             updatePhotoView();
                             progressDialog.dismiss();
                         }
                     }, 3000);
-
         }
     }
 

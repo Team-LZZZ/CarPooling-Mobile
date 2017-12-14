@@ -230,7 +230,7 @@ public class MainActivity extends AppCompatActivity
         updateCarPoolsDisplay();
     }
     private void onGetAllCarpoolFailed(String error){
-        Toast.makeText(this, error, Toast.LENGTH_LONG).show();
+//        Toast.makeText(this, error, Toast.LENGTH_LONG).show();
     }
 
     @Override

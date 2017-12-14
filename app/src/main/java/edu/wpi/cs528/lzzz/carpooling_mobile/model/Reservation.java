@@ -11,15 +11,12 @@ public class Reservation {
     public long getCarPoolId() {
         return carPoolId;
     }
-
     public void setCarPoolId(long carPoolId) {
         this.carPoolId = carPoolId;
     }
-
     public int getNewReservedSeatsNumber() {
         return newReservedSeatsNumber;
     }
-
     public void setNewReservedSeatsNumber(int newReservedSeatsNumber) {
         this.newReservedSeatsNumber = newReservedSeatsNumber;
     }

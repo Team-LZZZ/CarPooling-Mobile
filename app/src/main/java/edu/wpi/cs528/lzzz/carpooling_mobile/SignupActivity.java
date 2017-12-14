@@ -47,10 +47,10 @@ public class SignupActivity extends AppCompatActivity {
         setContentView(R.layout.activity_signup);
         ButterKnife.bind(this);
 
-        _nameText.setText("TestUser1");
-        _emailText.setText("TestUser1@test.com");
-        _mobileText.setText("1111111111");
-        _passwordText.setText("TestUser1");
+//        _nameText.setText("TestUser1");
+//        _emailText.setText("TestUser1@test.com");
+//        _mobileText.setText("1111111111");
+//        _passwordText.setText("TestUser1");
 
         _signupButton.setOnClickListener(new View.OnClickListener() {
             @Override

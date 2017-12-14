@@ -14,6 +14,7 @@ import android.widget.Toast;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.CarpoolsHandler;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.IConnectionStatus;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.LogInHandler;
+import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.MyReservationHandler;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.User;
 import com.google.gson.Gson;
@@ -47,8 +48,8 @@ public class LoginActivity extends AppCompatActivity{
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
 
-        _usernameText.setText("TestUser1");
-        _passwordText.setText("TestUser1");
+//        _usernameText.setText("TestUser1");
+//        _passwordText.setText("TestUser1");
 
 
         _loginButton.setOnClickListener(new View.OnClickListener() {
@@ -145,6 +146,20 @@ public class LoginActivity extends AppCompatActivity{
     }
 
     private void onGetAllCarpoolsSuccess(){
+        MyReservationHandler myReservationHandler = new MyReservationHandler(new IConnectionStatus() {
+            @Override
+            public void onComplete(Boolean success, String additionalInfos) {
+                if (success){
+                    onUpdateMyReservation();
+                }else{
+                    CommonUtils.showAlert(LoginActivity.this, false, "can not get my reservations.");
+                }
+            }
+        });
+        myReservationHandler.connectForResponse(CommonUtils.createHttpGETRequestMessageWithToken(CommonConstants.getMyReservations));
+    }
+
+    private void onUpdateMyReservation(){
         finish();
     }
 

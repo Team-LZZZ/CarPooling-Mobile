@@ -76,7 +76,12 @@ public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityAdapte
         viewHolder.mOfferTextView.setText(viewHolder.c.getOfferer().getUsername());
         viewHolder.mDepartrueTestview.setText(viewHolder.c.getStartLocation().getAddress());
         viewHolder.mDestinationTextView.setText(viewHolder.c.getTargetLocation().getAddress());
-        viewHolder.mCarInfoTextView.setText( avaibleSeat + "");
+        if(action == CommonConstants.VIEW_PAST_RESERVATION || action == CommonConstants.VIEW_INCOME_RESERVATION){
+            viewHolder.mCarInfoTextView.setText((4 - viewHolder.c.getReserverList().size()) + "");
+        }else{
+            viewHolder.mCarInfoTextView.setText( avaibleSeat + "");
+        }
+
         CommonUtils.getProfile(mContext, carPools.get(i).getOfferer().getPhoto(), viewHolder.mImageView);
         if (action == CommonConstants.MAKE_RESERVATION || action == CommonConstants.VIEW_INCOME_RESERVATION){
             viewHolder.view.setOnClickListener(new  View.OnClickListener(){

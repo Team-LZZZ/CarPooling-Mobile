@@ -56,7 +56,6 @@ public class ReservationActivity extends AppCompatActivity {
 
 
         myAdapter = new MyAdapter(getSupportFragmentManager());
-
         viewPager.setAdapter(myAdapter);
 
         tabLayout.post(new Runnable() {
@@ -71,6 +70,7 @@ public class ReservationActivity extends AppCompatActivity {
             public void onComplete(Boolean success, String additionalInfos) {
                 if (success){
                     myAdapter.notifyDataSetChanged();
+                    Log.i("ReservationActivity", "" + AppContainer.getInstance().getMyReservations().size());
                 }else{
                     CommonUtils.showAlert(ReservationActivity.this, false, "can not get my reservations.");
                 }
