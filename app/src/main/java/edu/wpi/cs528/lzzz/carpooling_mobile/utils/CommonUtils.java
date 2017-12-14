@@ -130,6 +130,15 @@ public class CommonUtils {
         return request;
     }
 
+    public static HttpRequestMessage createHttpDeleteRequestMessageWithToken(String jsonString, String apiName) {
+        HttpRequestMessage request = new HttpRequestMessage();
+        request.setMethod("DELETE");
+        request.setBody(jsonString);
+        request.setUrl(CommonConstants.BASE_URL + apiName);
+        request.setToken(AppContainer.getInstance().getToken());
+        return request;
+    }
+
     public static ProgressDialog createProgressDialog(Context context, String message) {
         ProgressDialog progressDialog = new ProgressDialog(context,
                 R.style.AppTheme_Dark_Dialog);
@@ -188,16 +197,10 @@ public class CommonUtils {
 
     public static List<CarPool> performPastRes() {
         List<CarPool> pastRes = new ArrayList<>();
-        for (CarPool cp : AppContainer.getInstance().getCarPools()) {
-            //String currentDate = String.valueOf(System.currentTimeMillis());
+        for (CarPool cp : AppContainer.getInstance().getMyReservations()) {
             Long date = Long.valueOf(cp.getTime());
-
             if (date <= System.currentTimeMillis()) {
-                for (Reserver reserver : cp.getReserverList()) {
-                    if (reserver.getUsername().equals(AppContainer.getInstance().getActiveUser().getUsername())) {
-                        pastRes.add(cp);
-                    }
-                }
+                pastRes.add(cp);
             }
         }
         return pastRes;
@@ -205,15 +208,10 @@ public class CommonUtils {
 
     public static List<CarPool> performUpcomingRes() {
         List<CarPool> upcomingRes = new ArrayList<>();
-        for (CarPool cp : AppContainer.getInstance().getCarPools()) {
+        for (CarPool cp : AppContainer.getInstance().getMyReservations()) {
             Long date = Long.valueOf(cp.getTime());
             if (date > System.currentTimeMillis()) {
-                for (Reserver reserver : cp.getReserverList()) {
-                    if (reserver.getUsername().equals(AppContainer.getInstance().getActiveUser().getUsername())) {
-                        upcomingRes.add(cp);
-                    }
-                }
-
+                upcomingRes.add(cp);
             }
         }
         return upcomingRes;

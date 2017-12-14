@@ -14,6 +14,7 @@ public class CommonConstants {
     public static String login = "login";
     public static String getAllCarpools = "carPools";
     public static String makeNewReservation = "reservations";
+    public static String cancelReservation = "cancel";
     public static String makeNewOffer = "offers";
     public static String  userSetting = "settings";
     public static String getMyReservations = "reservations";
