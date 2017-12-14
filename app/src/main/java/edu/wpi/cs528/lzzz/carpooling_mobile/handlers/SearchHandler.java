@@ -20,6 +20,7 @@ import java.util.TreeMap;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.CarPool;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.User;
+import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonUtils;
 
 /**
  * Created by QQZhao on 12/13/17.
@@ -29,7 +30,7 @@ public class SearchHandler {
 
     public static void performSearch(String targetAddressString, String targetDateString, ISearchStatus searchStatus) {
         AppContainer.getInstance().getSearchResult().clear();
-        List<CarPool> intermediateRes = searchByTime(AppContainer.getInstance().getCarPools(), targetDateString);
+        List<CarPool> intermediateRes = searchByTime(CommonUtils.getAvailabeRes(), targetDateString);
         List<CarPool> finalRes = searchByLocation(intermediateRes, targetAddressString);
         AppContainer.getInstance().setSearchResult(finalRes);
         searchStatus.onSearchComplete();
@@ -38,9 +39,9 @@ public class SearchHandler {
     public static void performSearch(boolean inputIsAddress, String inputString, ISearchStatus searchStatus){
         AppContainer.getInstance().getSearchResult().clear();
         if (inputIsAddress){
-            AppContainer.getInstance().setSearchResult(searchByLocation(AppContainer.getInstance().getCarPools(), inputString));
+            AppContainer.getInstance().setSearchResult(searchByLocation(CommonUtils.getAvailabeRes(), inputString));
         }else{
-            AppContainer.getInstance().setSearchResult(searchByTime(AppContainer.getInstance().getCarPools(), inputString));
+            AppContainer.getInstance().setSearchResult(searchByTime(CommonUtils.getAvailabeRes(), inputString));
         }
         searchStatus.onSearchComplete();
     }
