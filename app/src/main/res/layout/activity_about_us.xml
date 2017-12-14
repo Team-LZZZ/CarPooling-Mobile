@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.wpi.cs528.lzzz.carpooling_mobile.AboutUsActivity"
+    android:layout_margin="@dimen/horizontal_margin">
+
+    <TextView
+        android:id="@+id/search_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:text="About us"
+        android:textAlignment="center"
+        android:textColor="@color/darkgreen"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/lwh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/search_title"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/name_lwh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weihao Li"
+            android:textAlignment="center"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_lwh"
+            android:textSize="@dimen/normal_text_size"
+            android:text="wli6@wpi.edu"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/zqq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/lwh"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/name_zqq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Qingquan Zhao"
+            android:textAlignment="center"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_lwh"
+            android:textSize="@dimen/normal_text_size"
+            android:text="wli6@wpi.edu"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/zy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/zqq"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/name_zy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You Zhou"
+            android:textAlignment="center"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_zqq"
+            android:textSize="@dimen/normal_text_size"
+            android:text="yzhou11@wpi.edu"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ztg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/zy"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/name_ztg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Qingquan Zhao"
+            android:textAlignment="center"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_ztg"
+            android:textSize="@dimen/normal_text_size"
+            android:text="tzhu@wpi.edu"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

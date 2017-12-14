@@ -82,7 +82,8 @@
             android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
             android:enabled="true" />
 
-        <activity android:name=".OfferCarpoolViewActivity"></activity>
+        <activity android:name=".OfferCarpoolViewActivity" />
+        <activity android:name=".AboutUsActivity"></activity>
     </application>
 
 </manifest>

@@ -21,6 +21,7 @@ import java.util.GregorianCalendar;
 import java.util.Locale;
 import java.util.TimeZone;
 
+import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.CancelResHandler;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.IConnectionStatus;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.ReservationHandler;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
@@ -125,6 +126,35 @@ public class CarpoolDetailActivity extends AppCompatActivity {
                 handler.connectForResponse(CommonUtils.createHttpPOSTRequestMessageWithToken(inputJson, CommonConstants.makeNewReservation));
             }
         });
+
+
+        makeCancelBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int offer_id = CarpoolDetailActivity.this.carPool.getOid();
+
+                CancelInput input = new CancelInput(offer_id);
+                Gson gson = new Gson();
+                String inputJson = gson.toJson(input);
+
+                CancelResHandler handler = new CancelResHandler(new IConnectionStatus() {
+                    @Override
+                    public void onComplete(Boolean success, String additionalInfos) {
+                        if (success) {
+//                            makeReservationSucceed();
+                            showCancelReservationAlert(true, "Cancel reservation is Successful.");
+
+
+                        } else {
+//                            makeReservationFailed(additionalInfos);
+                            showCancelReservationAlert(false, "Cancel reservation failed.");
+                        }
+                    }
+                });
+
+                handler.connectForResponse(CommonUtils.createHttpDeleteRequestMessageWithToken(inputJson, CommonConstants.makeNewReservation));
+            }
+        });
     }
 
 //    private void makeReservationSucceed(){
@@ -133,6 +163,30 @@ public class CarpoolDetailActivity extends AppCompatActivity {
 //    private void makeReservationFailed(String error){
 //        Toast.makeText(this, "reservation failed", Toast.LENGTH_SHORT).show();
 //    }
+
+    private void showCancelReservationAlert(boolean success, String message){
+        AlertDialog alertDialog = new AlertDialog.Builder(this).create();
+
+        if (!success){
+            alertDialog.setTitle("Failure");
+        }else{
+            alertDialog.setTitle("Results");
+        }
+
+        alertDialog.setMessage(message);
+        alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                        Intent intent = new Intent(CarpoolDetailActivity.this, MainActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                });
+        alertDialog.show();
+    }
+
+
 
     private void showReservationAlert(boolean success, String message){
         AlertDialog alertDialog = new AlertDialog.Builder(this).create();
@@ -208,4 +262,23 @@ class ReservationInput{
     public void setNum(int num) {
         this.num = num;
     }
+}
+
+class CancelInput{
+    private int offer_id;
+
+    public CancelInput(int offer_id) {
+        this.offer_id = offer_id;
+
+    }
+
+    public int getOffer_id() {
+        return offer_id;
+    }
+
+    public void setOffer_id(int offer_id) {
+        this.offer_id = offer_id;
+    }
+
+
 }

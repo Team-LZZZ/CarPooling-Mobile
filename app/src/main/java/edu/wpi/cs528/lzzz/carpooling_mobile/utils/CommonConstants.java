@@ -14,8 +14,10 @@ public class CommonConstants {
     public static String login = "login";
     public static String getAllCarpools = "carPools";
     public static String makeNewReservation = "reservations";
+    public static String cancelReservation = "cancel";
     public static String makeNewOffer = "offers";
     public static String  userSetting = "settings";
+    public static String getMyReservations = "reservations";
 
    //    public static String BASE_URL = "http://127.0.0.1:5000/api/";
     public static String LogPrefix = "CS528Final";
