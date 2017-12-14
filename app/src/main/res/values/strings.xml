@@ -21,7 +21,7 @@
     <string name="from">From: </string>
     <string name="to">To:</string>
     <string name="Search_a_Carpool">Search a Carpool</string>
-    <string name="People_number">Select the number of people</string>
+    <string name="People_number">Choose to select the number of people</string>
     <string name="car_info">Car Information</string>
     <string name="car_make">Make: </string>
     <string name="car_model">Model: </string>

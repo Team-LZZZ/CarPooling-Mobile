@@ -226,7 +226,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void onGetAllCarpoolSuccess(){
-        mainActivityAdapter = new MainActivityAdapter(AppContainer.getInstance().getCarPools(), this);
+        mainActivityAdapter = new MainActivityAdapter(CommonUtils.getAvailabeRes(), this);
         mRecycleView.setAdapter(mainActivityAdapter);
         mainActivityAdapter.notifyDataSetChanged();
     }
