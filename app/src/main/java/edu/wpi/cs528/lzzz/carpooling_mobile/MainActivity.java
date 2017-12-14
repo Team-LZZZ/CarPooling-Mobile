@@ -25,11 +25,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.CarpoolsHandler;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.ConnectionHandler;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.IConnectionStatus;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.SignUpHandler;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
+import edu.wpi.cs528.lzzz.carpooling_mobile.model.CarPool;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.User;
 import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonConstants;
 import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonUtils;
@@ -233,10 +237,11 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (resultCode == this.loginCode){
-            mainActivityAdapter = new MainActivityAdapter(AppContainer.getInstance().getCarPools(), this);
+            mainActivityAdapter = new MainActivityAdapter(CommonUtils.getAvailabeRes(), this);
             mRecycleView.setAdapter(mainActivityAdapter);
             mainActivityAdapter.notifyDataSetChanged();
             this.updateUserDisplay();
         }
     }
+
 }

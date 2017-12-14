@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -22,6 +23,7 @@ import java.util.TimeZone;
 
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.IConnectionStatus;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.ReservationHandler;
+import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.CarPool;
 import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonConstants;
 import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonUtils;
@@ -41,7 +43,7 @@ public class CarpoolDetailActivity extends AppCompatActivity {
     private int numberPeople;
     private NumberPicker reservationNumberPicker;
     private Button makeReservationBtn;
-
+    private Button makeCancelBtn;
 
 
     @Override
@@ -67,6 +69,7 @@ public class CarpoolDetailActivity extends AppCompatActivity {
         reservationNumberPicker.setMaxValue(7);
         reservationNumberPicker.setWrapSelectorWheel(true);
         makeReservationBtn = (Button) findViewById(R.id.reservation);
+        makeCancelBtn = (Button) findViewById(R.id.cancel);
 
         reservationNumberPicker.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
             @Override
@@ -84,6 +87,8 @@ public class CarpoolDetailActivity extends AppCompatActivity {
         modelMakeTextView.setText(carPool.getCar().getMake() + " " + carPool.getCar().getMake());
         fromAddressTextView.setText(carPool.getStartLocation().getAddress());
         toAddressTextView.setText(carPool.getTargetLocation().getAddress());
+        makeCancelBtn.setEnabled(false);
+        makeCancelBtn.setBackgroundColor(Color.DKGRAY);
 
         Long millis = Long.valueOf(carPool.getTime());
         SimpleDateFormat sdf = new SimpleDateFormat("MMM dd, yyyy", Locale.US);
@@ -108,6 +113,10 @@ public class CarpoolDetailActivity extends AppCompatActivity {
                         if (success) {
 //                            makeReservationSucceed();
                             showReservationAlert(true, "Reservation is Successful.");
+                            makeReservationBtn.setEnabled(false);
+                            makeReservationBtn.setBackgroundColor(Color.DKGRAY);
+                            makeCancelBtn.setEnabled(true);
+
                         } else {
 //                            makeReservationFailed(additionalInfos);
                             showReservationAlert(false, "Reservation failed.");

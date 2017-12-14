@@ -23,6 +23,8 @@ import com.bumptech.glide.request.target.Target;
 import com.google.gson.Gson;
 
 import java.io.ByteArrayInputStream;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 import java.util.Random;
 
@@ -30,6 +32,7 @@ import edu.wpi.cs528.lzzz.carpooling_mobile.LoginActivity;
 import edu.wpi.cs528.lzzz.carpooling_mobile.R;
 import edu.wpi.cs528.lzzz.carpooling_mobile.connection.HttpRequestMessage;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
+import edu.wpi.cs528.lzzz.carpooling_mobile.model.CarPool;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.User;
 
 /**
@@ -166,5 +169,17 @@ public class CommonUtils {
                 return false;
             }
         }).error(R.drawable.wpi).into(mImageView);
+    }
+
+    public static List<CarPool> getAvailabeRes(){
+        List<CarPool> AvailCarpool = new ArrayList<>();
+        for (CarPool cp : AppContainer.getInstance().getCarPools()) {
+
+
+            if (cp.getAvailable() > 0) {
+                AvailCarpool.add(cp);
+            }
+        }
+        return AvailCarpool;
     }
 }
