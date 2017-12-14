@@ -7,8 +7,21 @@
     tools:context="edu.wpi.cs528.lzzz.carpooling_mobile.ProfileActivity"
     android:layout_margin="@dimen/horizontal_margin">
 
+    <TextView
+        android:id="@+id/profile_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:text="My Profile"
+        android:textAlignment="center"
+        android:textColor="@color/darkgreen"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold" />
+
     <include
         layout="@layout/content_profile"
+        android:layout_below="@+id/profile_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

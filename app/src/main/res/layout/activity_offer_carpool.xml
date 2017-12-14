@@ -10,6 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -18,13 +21,23 @@
             android:orientation="vertical"
             android:layout_marginBottom="@dimen/activity_vertical_margin">
 
+            <TextView
+                android:id="@+id/profile_title"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="Offer a carpool"
+                android:textAlignment="center"
+                android:textColor="@color/darkgreen"
+                android:textSize="@dimen/title_size"
+                android:textStyle="bold" />
+
             <RelativeLayout
                 android:id="@+id/profile_person"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/profile_picture"
-                android:paddingBottom="@dimen/horizontal_padding"
-                android:paddingTop="@dimen/horizontal_padding">
+                android:paddingBottom="@dimen/horizontal_padding">
 
                 <TextView
                     android:id="@+id/profile_name"
@@ -79,7 +92,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/car_infor"
-                    android:paddingTop="@dimen/appbar_padding_top">
+                    android:paddingTop="20dp">
 
                     <LinearLayout
                         android:id="@+id/make_layout"
@@ -169,6 +182,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/profile_person"
+                android:paddingBottom="@dimen/horizontal_padding"
                 >
 
                 <TextView
@@ -186,7 +200,8 @@
                     android:layout_height="match_parent"
                     android:layout_below="@+id/trip_infor"
                     android:orientation="horizontal"
-                    android:paddingTop="@dimen/appbar_padding_top">
+                    android:paddingTop="@dimen/nav_header_vertical_spacing"
+                    android:paddingBottom="@dimen/horizontal_padding">
 
                     <TextView
                         android:id="@+id/day"
@@ -208,41 +223,14 @@
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/time_layout"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_below="@+id/day_layout">
-
-                    <!--<TextView-->
-                        <!--android:id="@+id/time"-->
-                        <!--android:layout_width="wrap_content"-->
-                        <!--android:layout_height="match_parent"-->
-                        <!--android:layout_weight="1"-->
-                        <!--android:text="Departure time:"-->
-                        <!--android:textSize="@dimen/normal_text_size"-->
-                        <!--android:textStyle="bold" />-->
-
-                    <!--&lt;!&ndash;<EditText&ndash;&gt;-->
-                        <!--&lt;!&ndash;android:id="@+id/carppool_time"&ndash;&gt;-->
-                        <!--&lt;!&ndash;android:layout_width="205dp"&ndash;&gt;-->
-                        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
-                        <!--&lt;!&ndash;android:ems="10"&ndash;&gt;-->
-                        <!--&lt;!&ndash;android:inputType="time" />&ndash;&gt;-->
-                    <!--<TimePicker-->
-                        <!--android:id="@+id/timePicker1"-->
-                        <!--android:layout_width="wrap_content"-->
-                        <!--android:layout_height="wrap_content" />-->
-
-                </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/trip_departure_layout"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
-                    android:layout_below="@+id/time_layout">
+                    android:layout_below="@+id/day_layout"
+                    android:paddingBottom="@dimen/horizontal_padding">
 
                     <TextView
                         android:id="@+id/departure"
@@ -267,7 +255,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
-                    android:layout_below="@+id/trip_departure_layout">
+                    android:layout_below="@+id/trip_departure_layout"
+                    android:paddingBottom="@dimen/horizontal_padding">
 
                     <TextView
                         android:id="@+id/arrive"
@@ -291,7 +280,6 @@
             </RelativeLayout>
 
             <Button
-                android:paddingTop="@dimen/appbar_padding_top"
                 android:id="@+id/Offer_carpool"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

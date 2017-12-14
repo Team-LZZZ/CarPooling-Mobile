@@ -55,25 +55,29 @@
             android:name=".ReservationActivity"
             android:label="@string/title_activity_reservation"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="edu.wpi.cs528.lzzz.carpooling_mobile.MainActivity" />
         </activity>
         <activity
             android:name=".ProfileActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            />
         <activity
             android:name=".OfferListActivity"
             android:label="@string/title_activity_offer_list"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
+            >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="edu.wpi.cs528.lzzz.carpooling_mobile.MainActivity" />
         </activity>
         <activity android:name=".OfferCarpoolActivity" />
-        <activity android:name=".CarpoolDetailActivity" />
+        <activity android:name=".CarpoolDetailActivity"
+            />
         <activity
             android:name=".MapActivity"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -84,6 +88,7 @@
 
         <activity android:name=".OfferCarpoolViewActivity" />
         <activity android:name=".AboutUsActivity"></activity>
+
     </application>
 
 </manifest>
