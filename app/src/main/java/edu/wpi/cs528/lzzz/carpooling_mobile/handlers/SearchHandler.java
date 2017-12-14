@@ -47,49 +47,6 @@ public class SearchHandler {
         searchStatus.onSearchComplete();
     }
 
-    public static void performPastRes() {
-        AppContainer.getInstance().getSearchResult().clear();
-        List<CarPool> PastCarpool = new ArrayList<>();
-        for (CarPool cp : AppContainer.getInstance().getCarPools()) {
-            String currentDate = String.valueOf(System.currentTimeMillis());
-            if (cp.getReserverList().contains(AppContainer.getInstance().getActiveUser()) && (cp.getTime().compareTo(currentDate) <= 0)) {
-                AppContainer.getInstance().getSearchResult().add(cp);
-            }
-        }
-    }
-
-    public static void performUpcomingRes() {
-        AppContainer.getInstance().getSearchResult().clear();
-        List<CarPool> PastCarpool = new ArrayList<>();
-        for (CarPool cp : AppContainer.getInstance().getCarPools()) {
-            String currentDate = String.valueOf(System.currentTimeMillis());
-            if (cp.getReserverList().contains(AppContainer.getInstance().getActiveUser()) && (cp.getTime().compareTo(currentDate) > 0)) {
-                AppContainer.getInstance().getSearchResult().add(cp);
-            }
-        }
-    }
-
-    public static void performPastOffer() {
-        AppContainer.getInstance().getSearchResult().clear();
-        List<CarPool> PastCarpool = new ArrayList<>();
-        for (CarPool cp : AppContainer.getInstance().getCarPools()) {
-            String currentDate = String.valueOf(System.currentTimeMillis());
-            if (cp.getOfferer().equals(AppContainer.getInstance().getActiveUser()) && (cp.getTime().compareTo(currentDate) <= 0)) {
-                AppContainer.getInstance().getSearchResult().add(cp);
-            }
-        }
-    }
-
-    public static void performUpcomingOffer() {
-        AppContainer.getInstance().getSearchResult().clear();
-        List<CarPool> PastCarpool = new ArrayList<>();
-        for (CarPool cp : AppContainer.getInstance().getCarPools()) {
-            String currentDate = String.valueOf(System.currentTimeMillis());
-            if (cp.getOfferer().equals(AppContainer.getInstance().getActiveUser()) && (cp.getTime().compareTo(currentDate) > 0)) {
-                AppContainer.getInstance().getSearchResult().add(cp);
-            }
-        }
-    }
 
     private static List<CarPool> searchByLocation(List<CarPool> carpoolsSearchPool, String targetLocationString) {
         Map<CarPool, Integer> scoreMap = new HashMap<>();
