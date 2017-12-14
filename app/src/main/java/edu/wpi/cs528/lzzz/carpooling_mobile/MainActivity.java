@@ -123,20 +123,8 @@ public class MainActivity extends AppCompatActivity
         toggle.syncState();
 
         navigationView = (NavigationView) findViewById(R.id.nav_view);
-
-
-//        mUser = AppContainer.getInstance().getActiveUser();
-
-//        Log.i("User", "======================");
-//        ImageView photo = (ImageView) header.findViewById(R.id.imageView);
-//        name = (TextView) header.findViewById(R.id.name);
-//        phone = (TextView) header.findViewById(R.id.phone);
-//        email = (TextView) header.findViewById(R.id.email);
-//        //photo.setImageURI(Uri.parse(AppContainer.getInstance().getActiveUser().getPhoto()));
-
-
-
         navigationView.setNavigationItemSelectedListener(this);
+        updateUserDisplay();
     }
 
     @Override

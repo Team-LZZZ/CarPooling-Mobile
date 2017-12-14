@@ -13,8 +13,15 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -48,7 +55,7 @@ import edu.wpi.cs528.lzzz.carpooling_mobile.model.User;
 import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonConstants;
 import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonUtils;
 
-public class ProfileActivity extends AppCompatActivity {
+public class ProfileActivity extends AppCompatActivity{
 
     @Bind(R.id.profile_imageView)
     ImageView mImageView;
@@ -97,7 +104,7 @@ public class ProfileActivity extends AppCompatActivity {
                 startActivityForResult(captureImage, REQUEST_PHOTO);
             }
         });
-        CommonUtils.getProfile(this,user.getPhoto(),mImageView);
+        CommonUtils.getProfile(this, user.getPhoto(), mImageView);
         mNameTextView.setText(user.getUsername());
         mEmailTextView.setText(user.getEmail());
         mPhoneTextView.setText(user.getPhone());

@@ -39,9 +39,11 @@ import butterknife.Bind;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.IConnectionStatus;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.LogInHandler;
 import edu.wpi.cs528.lzzz.carpooling_mobile.handlers.OfferHandler;
+import edu.wpi.cs528.lzzz.carpooling_mobile.model.AppContainer;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.Car;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.CarPool;
 import edu.wpi.cs528.lzzz.carpooling_mobile.model.Location;
+import edu.wpi.cs528.lzzz.carpooling_mobile.model.User;
 import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonConstants;
 import edu.wpi.cs528.lzzz.carpooling_mobile.utils.CommonUtils;
 
@@ -87,6 +89,11 @@ public class OfferCarpoolActivity extends AppCompatActivity implements DatePicke
 
         fromAddressEditText = (TextView) findViewById(R.id.carppool_departure);
         toAddressEditText = (TextView) findViewById(R.id.carppool_arrival);
+        User user = AppContainer.getInstance().getActiveUser();
+        nameTextView.setText(user.getUsername());
+        phoneTextView.setText(user.getPhone());
+        emailTextView.setText(user.getEmail());
+        
         View.OnClickListener selectAddressListener = new View.OnClickListener(){
 
             @Override
