@@ -82,8 +82,8 @@ public class ReservationActivity extends AppCompatActivity {
             switch (position){
                 case 0 :
                     Log.i("case0", "++++++++++");
-                    return new ReservationPastFragment();
-
+//                    ReservationPastFragment reservationPastFragment = new ReservationPastFragment();
+                    return ReservationPastFragment.newInstance(1);
                 case 1 :
                     Log.i("case1", "++++++++++");
                     return new ReservationUpcomingFragment();
