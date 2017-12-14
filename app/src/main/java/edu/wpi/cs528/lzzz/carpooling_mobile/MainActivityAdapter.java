@@ -81,7 +81,6 @@ public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityAdapte
                 Gson gson = new Gson();
                 String carPoolJson = gson.toJson(viewHolder.c);
                 i.putExtra("carPoolInfo", carPoolJson);
-//                i.putExtra("reserveMode", true);
                 mContext.startActivity(i);
             }
         });

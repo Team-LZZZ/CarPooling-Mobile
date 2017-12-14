@@ -41,10 +41,10 @@ public class CarpoolDetailActivity extends AppCompatActivity {
     private TextView toAddressTextView;
     private TextView dateTextView;
     private int numberPeople;
-    private NumberPicker reservationNumberPicker;
+//    private NumberPicker reservationNumberPicker;
     private Button makeReservationBtn;
     private Button makeCancelBtn;
-
+    private TextView mChooseNumberTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +55,6 @@ public class CarpoolDetailActivity extends AppCompatActivity {
         String carPoolJson = intent.getStringExtra("carPoolInfo");
         Gson gson = new Gson();
         this.carPool = gson.fromJson(carPoolJson, CarPool.class);
-
         nameTextView = (TextView) findViewById(R.id.carppool_detail_name);
         phoneTextView = (TextView) findViewById(R.id.carppool_detail_phone);
         emailTextView = (TextView) findViewById(R.id.carppool_detail_email);
@@ -64,20 +63,33 @@ public class CarpoolDetailActivity extends AppCompatActivity {
         fromAddressTextView = (TextView) findViewById(R.id.carppool_detail_from_address);
         toAddressTextView = (TextView) findViewById(R.id.carppool_detail_to_address);
         dateTextView = (TextView) findViewById(R.id.carppool_detail_departure_time);
-        reservationNumberPicker = (NumberPicker) findViewById(R.id.numberPicker);
-        reservationNumberPicker.setMinValue(1);
-        reservationNumberPicker.setMaxValue(7);
-        reservationNumberPicker.setWrapSelectorWheel(true);
+        mChooseNumberTextView = (TextView) findViewById(R.id.NumberPeople);
+//        reservationNumberPicker = (NumberPicker) findViewById(R.id.numberPicker);
+//        reservationNumberPicker.setMinValue(1);
+//        reservationNumberPicker.setMaxValue(7);
+//        reservationNumberPicker.setWrapSelectorWheel(true);
         makeReservationBtn = (Button) findViewById(R.id.reservation);
         makeCancelBtn = (Button) findViewById(R.id.cancel);
 
-        reservationNumberPicker.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
+//        reservationNumberPicker.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
+//            @Override
+//            public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
+//                //Display the newly selected number from picker
+//                numberPeople = newVal;
+//            }
+//        });
+        mChooseNumberTextView.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
-                //Display the newly selected number from picker
-                numberPeople = newVal;
+            public void onClick(View view){
+                showNumberPicker(1, carPool.getAvailable());
             }
         });
+
+
+
+
+
+
 
 
         nameTextView.setText(carPool.getOfferer().getUsername());
@@ -101,9 +113,8 @@ public class CarpoolDetailActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int offer_id = CarpoolDetailActivity.this.carPool.getOid();
-                int num = reservationNumberPicker.getValue();
-                //ReservationInput input = new ReservationInput(offer_id, num);
-                ReservationInput input = new ReservationInput(offer_id, numberPeople);
+                int num = Integer.valueOf(mChooseNumberTextView.getText().toString());
+                ReservationInput input = new ReservationInput(offer_id, num);
                 Gson gson = new Gson();
                 String inputJson = gson.toJson(input);
 
@@ -156,6 +167,32 @@ public class CarpoolDetailActivity extends AppCompatActivity {
                     }
                 });
         alertDialog.show();
+    }
+
+    private void showNumberPicker(int min, int max){
+        final cn.qqtheme.framework.picker.NumberPicker picker = new cn.qqtheme.framework.picker.NumberPicker(this);
+        picker.setItemWidth(200);
+        View headerView = View.inflate(this, R.layout.picker_header, null);
+        final TextView titleView = (TextView) headerView.findViewById(R.id.picker_title);
+        headerView.findViewById(R.id.picker_close).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                picker.dismiss();
+            }
+        });
+        picker.setHeaderView(headerView);
+        picker.setCycleDisable(true);
+        picker.setOffset(4);
+        picker.setRange(min, max, 1);
+        picker.setSelectedItem(min);
+        picker.setOnWheelListener(new cn.qqtheme.framework.picker.NumberPicker.OnWheelListener() {
+            @Override
+            public void onWheeled(int index, Number item) {
+                titleView.setText("Number of people : " + item.intValue());
+                mChooseNumberTextView.setText("Number of people : " + item.intValue());
+            }
+        });
+        picker.show();
     }
 }
 

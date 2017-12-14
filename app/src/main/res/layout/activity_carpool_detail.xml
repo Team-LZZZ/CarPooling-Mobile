@@ -23,34 +23,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <RelativeLayout
+            <LinearLayout
                 android:id="@+id/car_detail_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="@dimen/horizontal_padding"
                 android:paddingBottom="@dimen/horizontal_padding"
                 android:layout_below="@+id/car_detail_1"
-                >
+                android:orientation="horizontal"
+                android:weightSum="1">
 
                 <TextView
                     android:id="@+id/NumberPeople"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/People_number"
-                    android:textAlignment="center"
                     android:textSize="@dimen/title_size"
                     android:textStyle="bold" />
 
-                <NumberPicker
-                    android:layout_marginBottom="@dimen/horizontal_margin"
-                    android:id="@+id/numberPicker"
-                    android:layout_below="@+id/NumberPeople"
-                    android:layout_width="wrap_content"
-                    android:layout_marginLeft="150dp"
-                    android:layout_height="50dp" />
 
-
-            </RelativeLayout>
+            </LinearLayout>
 
 
 
