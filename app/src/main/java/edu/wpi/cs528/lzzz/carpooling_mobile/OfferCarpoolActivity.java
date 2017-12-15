@@ -91,7 +91,8 @@ public class OfferCarpoolActivity extends AppCompatActivity implements DatePicke
         toAddressEditText = (TextView) findViewById(R.id.carppool_arrival);
         User user = AppContainer.getInstance().getActiveUser();
         nameTextView.setText(user.getUsername());
-        phoneTextView.setText(user.getPhone());
+        String phoneNum = CommonUtils.formatPhoneNumber(user.getPhone());
+        phoneTextView.setText(phoneNum);
         emailTextView.setText(user.getEmail());
 
         View.OnClickListener selectAddressListener = new View.OnClickListener(){

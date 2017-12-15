@@ -7,9 +7,9 @@ package edu.wpi.cs528.lzzz.carpooling_mobile.utils;
 public class CommonConstants {
 
     // connections
-//    public static String BASE_URL = "http://youzhou1993.pythonanywhere.com/api/";
-    public static String BASE_URL = "http://10.0.2.2:5000/api/";
-//    public static String BASE_URL = "https://bd1858ff.ngrok.io/api/";
+  public static String BASE_URL = "http://youzhou1993.pythonanywhere.com/api/";
+ //   public static String BASE_URL = "http://10.0.2.2:5000/api/";
+//    public static String BASE_URL = "http://59890d49.ngrok.io/api/";
     public static String registration = "reg";
     public static String login = "login";
     public static String getAllCarpools = "carPools";

@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.util.Log;
 import android.widget.ImageView;
 
 import com.amazonaws.auth.CognitoCachingCredentialsProvider;
@@ -203,17 +204,24 @@ public class CommonUtils {
                 pastRes.add(cp);
             }
         }
+
         return pastRes;
     }
 
     public static List<CarPool> performUpcomingRes() {
         List<CarPool> upcomingRes = new ArrayList<>();
         for (CarPool cp : AppContainer.getInstance().getMyReservations()) {
+
+
             Long date = Long.valueOf(cp.getTime());
             if (date > System.currentTimeMillis()) {
                 upcomingRes.add(cp);
             }
         }
+        Gson gson = new Gson();
+        String s = gson.toJson(AppContainer.getInstance().getMyReservations());
+        Log.i(CommonConstants.LogPrefix, s);
+        Log.i(CommonConstants.LogPrefix, "abc" + s);
         return upcomingRes;
     }
 
@@ -239,5 +247,19 @@ public class CommonUtils {
         return upcomingOffer;
     }
 
+    public static String formatPhoneNumber(String s) {
+        StringBuilder sb = new StringBuilder();
+        if (s != null) {
+            sb.append("(");
+            sb.append(s.substring(0,3));
+            sb.append(")");
+            sb.append(s.substring(3,6));
+            sb.append("-");
+            sb.append(s.substring(6));
+        }
+        return sb.toString();
+
+
+    }
 
 }

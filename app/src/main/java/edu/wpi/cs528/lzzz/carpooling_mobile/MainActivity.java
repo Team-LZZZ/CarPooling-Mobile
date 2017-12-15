@@ -193,7 +193,8 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
 
         } else if (id == R.id.contact) {
-
+            Intent intent = new Intent(MainActivity.this, ContactActivity.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -212,7 +213,7 @@ public class MainActivity extends AppCompatActivity
         User mUser = AppContainer.getInstance().getActiveUser();
         name.setText(mUser.getUsername());
         CommonUtils.getProfile(this,mUser.getPhoto(), photo);
-        phone.setText(mUser.getPhone());
+        phone.setText( CommonUtils.formatPhoneNumber(mUser.getPhone()));
         email.setText(mUser.getEmail());
     }
 

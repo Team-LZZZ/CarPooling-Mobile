@@ -77,7 +77,8 @@ public class CarpoolDetailActivity extends AppCompatActivity {
         });
 
         nameTextView.setText(carPool.getOfferer().getUsername());
-        phoneTextView.setText(carPool.getOfferer().getPhone());
+        String phoneNum = CommonUtils.formatPhoneNumber(carPool.getOfferer().getPhone());
+        phoneTextView.setText(phoneNum);
         emailTextView.setText(carPool.getOfferer().getEmail());
         plateTextView.setText(carPool.getCar().getPlate());
         modelMakeTextView.setText(carPool.getCar().getMake() + " " + carPool.getCar().getMake());
